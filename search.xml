@@ -2,10 +2,10 @@
 <search>
   <entry>
     <title>敬请期待</title>
-    <url>/physics/phy_soon/</url>
+    <url>/maths/mat_soon/</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>物理</category>
+        <category>数学</category>
       </categories>
   </entry>
   <entry>
@@ -32,10 +32,10 @@
   </entry>
   <entry>
     <title>敬请期待</title>
-    <url>/maths/mat_soon/</url>
+    <url>/physics/phy_soon/</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>数学</category>
+        <category>物理</category>
       </categories>
   </entry>
 </search>
