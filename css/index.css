@@ -3231,7 +3231,7 @@ details p {
 }
 .tk-admin-container {
   position: fixed !important;
-  z-index: 100;
+  z-index: 9999;
 }
 .trm-read-mode {
   padding: 0;
