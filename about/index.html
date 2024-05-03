@@ -504,7 +504,8 @@
                 }).then(function () {
                     let container = document.querySelector('body>.tk-admin-container')
                     if(container) container.remove()
-                    document.body.append(document.querySelector('.tk-admin-container'))
+                    container = document.querySelector('.tk-admin-container')
+                    if (container) document.body.append(container)
                 });;
             </script>
 
