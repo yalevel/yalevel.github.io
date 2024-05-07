@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>三维空间中特征向量（Eigenvector）的第二种计算方法</title>
-    <url>/maths/eigenvector_calculation/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel FP3考生</p>
-<p><i class="far fa-check-circle"></i>AQA FP2考生</p>
-<p><i class="far fa-check-circle"></i>CIE FP2考生</p>
-<h2 id="特征向量的计算"><a href="#特征向量的计算" class="headerlink" title="特征向量的计算"></a>特征向量的计算</h2><p>标准计算特征向量的方法是先利用$\det(A-\lambda I)&#x3D;0$计算特征值（Eigenvalue），再利用$A\mathbf{x}&#x3D;\lambda\mathbf{x}$解出特征向量$\mathbf{x}$.</p>
-<p>比如：Find the eigenvalues and corresponding eigenvectors of the matrix </p>
-<div>$$A=\begin{pmatrix}
-   2 & 5 \\
-   -1 & -4
-\end{pmatrix}.$$</div>]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>敬请期待</title>
-    <url>/physics/phy_soon/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>物理</category>
-      </categories>
-  </entry>
-  <entry>
     <title>云游指南</title>
     <url>/admin/guide/</url>
     <content><![CDATA[<p>欢迎来到A Level Clouds. 本文旨在介绍A Level Clouds的功能，希望能帮助大家快速上手。</p>
@@ -46,6 +22,22 @@
 ]]></content>
       <categories>
         <category>云游日常</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>敬请期待</title>
+    <url>/physics/phy_soon/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>物理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>敬请期待</title>
+    <url>/maths/mat_soon/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>数学</category>
       </categories>
   </entry>
 </search>
