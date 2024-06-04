@@ -2,14 +2,6 @@
 <search>
   <entry>
     <title>敬请期待</title>
-    <url>/physics/phy_soon/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>物理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>敬请期待</title>
     <url>/maths/mat_soon/</url>
     <content><![CDATA[]]></content>
       <categories>
@@ -38,6 +30,14 @@
 ]]></content>
       <categories>
         <category>云游日常</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>敬请期待</title>
+    <url>/physics/phy_soon/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>物理</category>
       </categories>
   </entry>
 </search>
