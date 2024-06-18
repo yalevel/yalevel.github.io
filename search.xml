@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>敬请期待</title>
-    <url>/maths/mat_soon/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-  </entry>
-  <entry>
     <title>云游指南</title>
     <url>/admin/guide/</url>
     <content><![CDATA[<p>欢迎来到A Level Clouds. 本文旨在介绍A Level Clouds的功能，希望能帮助大家快速上手。</p>
@@ -30,14 +22,6 @@
 ]]></content>
       <categories>
         <category>云游日常</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>敬请期待</title>
-    <url>/physics/phy_soon/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>物理</category>
       </categories>
   </entry>
 </search>
