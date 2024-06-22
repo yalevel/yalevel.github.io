@@ -2570,7 +2570,7 @@ footer .footer-separator::before {
   background-color: var(--primary, #afb42b);
 }
 .trm-publication {
-  word-break: break-all;
+  word-break: normal;
 }
 .trm-publication p {
   margin-bottom: 20px;
