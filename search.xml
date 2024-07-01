@@ -210,6 +210,36 @@ $$
       </categories>
   </entry>
   <entry>
+    <title>云游指南</title>
+    <url>/admin/guide/</url>
+    <content><![CDATA[<p>欢迎来到A Level Clouds. 本文旨在介绍A Level Clouds的功能，希望能帮助大家快速上手。</p>
+<h2 id="顶部导航栏"><a href="#顶部导航栏" class="headerlink" title="顶部导航栏"></a>顶部导航栏</h2><h3 id="左侧"><a href="#左侧" class="headerlink" title="左侧"></a>左侧</h3><p>点击导航栏的左侧可以直接回到主页，但也可以疯狂点击，寓意冲A*.</p>
+<h3 id="右侧"><a href="#右侧" class="headerlink" title="右侧"></a>右侧</h3><p>导航栏的右侧包括关于我们、往年真题和全部文章。</p>
+<div></div>
+
+<p>点击<a href="/about/" target="_blank">关于我们</a>可以浏览关于我们的更多信息。点击<a href="/past-papers/" target="_blank">往年真题</a>，可以按照学科查看往年真题，如果你有耐心的话，也可以将鼠标放置于<a href="/past-papers/" target="_blank">往年真题</a>处，它会显示具体学科，然后再点击具体学科即可直接查看不同学科的往年真题。点击<a href="/posts/" target="_blank">全部文章</a>，可以按照年份查看所有文章，也可以将鼠标放置于<a href="/posts/" target="_blank">全部文章</a>处，它会显示具体学科，然后再点击具体学科即可直接查看不同学科的相关文章。</p>
+<div></div>
+
+<p>除此之外，导航栏的右侧还包括一个重要的搜索功能，可以帮助大家根据关键词搜索具体的文章，节省时间。</p>
+<div class="trm-note warning"><div class="trm-note-title">友情提示</div><p>A Level Clouds在未来<em>也许</em>会上线新的板块或功能，对于主要的板块或功能一般会更新在顶部导航栏的右侧，敬请期待。</p>
+</div>
+
+
+<h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><p><a>任何一篇文章</a>以及<a href="/about/" target="_blank">关于我们</a>页面的最下侧都开启了评论功能。本站倡导知识上的友好交流，但保留审核和删除无关或过激评论的权利。</p>
+<div></div>
+
+<p>如果你留下你的数字QQ邮箱地址，则会使用你的QQ头像发表评论。如果你使用其他邮箱地址，则会自动生成一个头像，但可以前往<a href="https://cravatar.cn">https://cravatar.cn</a>通过邮箱注册并修改头像，评论时，请留下相同的邮箱。</p>
+<div></div>
+
+<p>此外，请谨慎辨别评论信息，带<a>OA</a>标记的评论为本站的官方回复。</p>
+<h2 id="侧栏"><a href="#侧栏" class="headerlink" title="侧栏"></a>侧栏</h2><p>侧栏提供了商务联系的方式。尽管我们提供了站内评论和微信两种交流方式，但我们希望站内评论和微信的交流以知识为主。商务交流请通过邮件，我们会定期查看邮件并回复。</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>希望每一位浏览A Level Clouds的用户能有一个舒适的体验，并且有所收获。</p>
+]]></content>
+      <categories>
+        <category>云游日常</category>
+      </categories>
+  </entry>
+  <entry>
     <title>比较数据（Compare Data）</title>
     <url>/maths/compare_data/</url>
     <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel S1考生</p>
@@ -309,36 +339,6 @@ $$
 ]]></content>
       <categories>
         <category>数学</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>云游指南</title>
-    <url>/admin/guide/</url>
-    <content><![CDATA[<p>欢迎来到A Level Clouds. 本文旨在介绍A Level Clouds的功能，希望能帮助大家快速上手。</p>
-<h2 id="顶部导航栏"><a href="#顶部导航栏" class="headerlink" title="顶部导航栏"></a>顶部导航栏</h2><h3 id="左侧"><a href="#左侧" class="headerlink" title="左侧"></a>左侧</h3><p>点击导航栏的左侧可以直接回到主页，但也可以疯狂点击，寓意冲A*.</p>
-<h3 id="右侧"><a href="#右侧" class="headerlink" title="右侧"></a>右侧</h3><p>导航栏的右侧包括关于我们、往年真题和全部文章。</p>
-<div></div>
-
-<p>点击<a href="/about/" target="_blank">关于我们</a>可以浏览关于我们的更多信息。点击<a href="/past-papers/" target="_blank">往年真题</a>，可以按照学科查看往年真题，如果你有耐心的话，也可以将鼠标放置于<a href="/past-papers/" target="_blank">往年真题</a>处，它会显示具体学科，然后再点击具体学科即可直接查看不同学科的往年真题。点击<a href="/posts/" target="_blank">全部文章</a>，可以按照年份查看所有文章，也可以将鼠标放置于<a href="/posts/" target="_blank">全部文章</a>处，它会显示具体学科，然后再点击具体学科即可直接查看不同学科的相关文章。</p>
-<div></div>
-
-<p>除此之外，导航栏的右侧还包括一个重要的搜索功能，可以帮助大家根据关键词搜索具体的文章，节省时间。</p>
-<div class="trm-note warning"><div class="trm-note-title">友情提示</div><p>A Level Clouds在未来<em>也许</em>会上线新的板块或功能，对于主要的板块或功能一般会更新在顶部导航栏的右侧，敬请期待。</p>
-</div>
-
-
-<h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><p><a>任何一篇文章</a>以及<a href="/about/" target="_blank">关于我们</a>页面的最下侧都开启了评论功能。本站倡导知识上的友好交流，但保留审核和删除无关或过激评论的权利。</p>
-<div></div>
-
-<p>如果你留下你的数字QQ邮箱地址，则会使用你的QQ头像发表评论。如果你使用其他邮箱地址，则会自动生成一个头像，但可以前往<a href="https://cravatar.cn">https://cravatar.cn</a>通过邮箱注册并修改头像，评论时，请留下相同的邮箱。</p>
-<div></div>
-
-<p>此外，请谨慎辨别评论信息，带<a>OA</a>标记的评论为本站的官方回复。</p>
-<h2 id="侧栏"><a href="#侧栏" class="headerlink" title="侧栏"></a>侧栏</h2><p>侧栏提供了商务联系的方式。尽管我们提供了站内评论和微信两种交流方式，但我们希望站内评论和微信的交流以知识为主。商务交流请通过邮件，我们会定期查看邮件并回复。</p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>希望每一位浏览A Level Clouds的用户能有一个舒适的体验，并且有所收获。</p>
-]]></content>
-      <categories>
-        <category>云游日常</category>
       </categories>
   </entry>
   <entry>
