@@ -2068,6 +2068,75 @@ blockquote:after {
 .trm-btn:focus {
   outline: inherit;
 }
+.trm-btn-404 {
+  white-space: nowrap;
+  background-color: var(--primary, #afb42b);
+  height: 45px;
+  border: solid 2px var(--primary, #afb42b);
+  color: #fcfcfe;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  display: inline-flex;
+  padding: 0 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+.trm-btn-404 svg,
+.trm-btn-404 i {
+  margin-left: 0px;
+}
+.trm-btn-404 .arrow-right {
+  margin-left: 10px;
+  transition: all 0.4s ease-in-out;
+}
+.trm-btn-404 .arrow-left {
+  margin-right: 10px;
+  transition: all 0.4s ease-in-out;
+}
+.trm-btn-404.trm-btn-sm {
+  height: 40px;
+  padding: 0 25px;
+}
+.trm-btn-404:hover {
+  transform: scale(1.03);
+  color: #fcfcfe;
+  background-color: var(--primary-weak, #afb42b);
+  border: solid 2px var(--primary-weak, #afb42b);
+}
+.trm-btn-404:hover .arrow-right {
+  transform: translateX(5px);
+}
+.trm-btn-404:hover .arrow-left {
+  transform: translateX(-5px);
+}
+.trm-btn-404.trm-btn-border {
+  border: solid 2px #fcfcfe;
+  background-color: transparent;
+}
+.trm-btn-404.trm-btn-border:hover {
+  border: solid 2px #fcfcfe;
+  background-color: transparent;
+}
+.trm-btn-404.trm-btn-circle {
+  padding: 0;
+  width: 45px;
+  border-radius: 50%;
+}
+.trm-btn-404.trm-btn-circle.trm-btn-sm {
+  width: 40px;
+}
+.trm-btn-404.trm-btn-circle svg,
+.trm-btn-404.trm-btn-circle i {
+  font-size: 13px;
+  margin: 0;
+}
+.trm-btn-404:focus {
+  outline: inherit;
+}
 .trm-video {
   box-shadow: var(--box-shadow2, 0 2px 4px -2px rgba(0, 0, 0, 0.15));
   border-radius: 10px;

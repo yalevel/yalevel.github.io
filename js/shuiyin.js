@@ -6,12 +6,12 @@
 
     watermark.prototype = {
         defaults : {
-            texts : ['此处水印文字'],
-            width : 100, //每行水印文字的水平间距
-            height : 100, //水印文字的高度间距（低于文字高度会被替代）
-            textRotate : -30 , //文字旋转 度数
-            textColor : '#ede8e8', //文字颜色
-            textFont : '15px 微软雅黑' //字体
+            texts : [''],
+            width : 100,
+            height : 100,
+            textRotate : -30 ,
+            textColor : '#ede8e8',
+            textFont : '15px 微软雅黑'
         },
         options : {
             canvas : []
@@ -25,7 +25,7 @@
                 settings = this.options,
                 txtlen = settings.texts.length;
 
-            settings.deg = settings.textRotate * Math.PI / 180; //js里的正弦余弦用的是弧度
+            settings.deg = settings.textRotate * Math.PI / 180;
 
             this.__calcTextSize($body);
             var repeatTimes = Math.ceil(screen.width / settings.txts.length / settings.width);
@@ -127,35 +127,3 @@
     }
 
 })(jQuery);
-
-function getnowDay() {
-    var d = new Date();
-    var year = d.getFullYear();
-    var month = change(d.getMonth() + 1);
-    var day = change(d.getDate());
-    function change(t) {
-        if (t < 10) {
-            return "0" + t;
-        } else {
-            return t;
-        }
-    }
-    var time = year + '年' + month + '月' + day + '日 ';
-    return time;
-}
-
-function getnowTime() {
-    var d = new Date();
-    var hour = change(d.getHours());
-    var minute = change(d.getMinutes());
-    var second = change(d.getSeconds());
-    function change(t) {
-        if (t < 10) {
-            return "0" + t;
-        } else {
-            return t;
-        }
-    }
-    var time = hour + '时' + minute + '分' + second + '秒';
-    return time;
-}
