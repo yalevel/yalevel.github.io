@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="default">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="主要适用对象Edexcel FP1、FP3考生 AQA FPSM1、FP2考生 CIE FP1、FP2考生 $2 \times 2$矩阵的逆矩阵计算在爱德思（Edexcel）FP1、AQA FPSM1和CIE FP1考试中，$2 \times 2$矩阵的逆矩阵的计算公式是必须要掌握的. Note. If $\displaystyle A&#x3D;\begin{pmatrix}    a &amp; b \\">
+<meta property="og:type" content="article">
+<meta property="og:title" content="逆矩阵（Inverse Matrix）的常见计算方法">
+<meta property="og:url" content="https://yalevel.github.io/maths/inverse_matrix/index.html">
+<meta property="og:site_name" content="A Level Clouds">
+<meta property="og:description" content="主要适用对象Edexcel FP1、FP3考生 AQA FPSM1、FP2考生 CIE FP1、FP2考生 $2 \times 2$矩阵的逆矩阵计算在爱德思（Edexcel）FP1、AQA FPSM1和CIE FP1考试中，$2 \times 2$矩阵的逆矩阵的计算公式是必须要掌握的. Note. If $\displaystyle A&#x3D;\begin{pmatrix}    a &amp; b \\">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-07-25T12:08:00.000Z">
+<meta property="article:modified_time" content="2024-08-04T15:41:17.397Z">
+<meta property="article:author" content="云中君">
+<meta property="article:tag" content="数学; 物理; A-Level; Edexcel; 爱德思; AQA; CIE">
+<meta name="twitter:card" content="summary">
+
+    <meta name="keywords" content="数学; 物理; A-Level; Edexcel; 爱德思; AQA; CIE">
+
+
+<title >逆矩阵（Inverse Matrix）的常见计算方法</title>
+
+<!-- Favicon -->
+
+    <link href='/img/favicon.png?v=2.1.15' rel='icon' type='image/png' sizes='16x16' ></link>
+
+
+    <link href='/img/favicon.png?v=2.1.15' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+    <link href='/img/apple-touch-icon.png?v=2.1.15' rel='apple-touch-icon' sizes='180x180' ></link>
+
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    
+    
+<link rel="stylesheet" href="https://unpkg.com/katex@latest/dist/katex.min.css">
+
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"yalevel.github.io","author":"云中君","root":"/","typed_text":null,"theme_version":"2.1.15","theme":{"switch":false,"default":"style-light"},"favicon":{"logo":"/img/favicon.png","icon16":"/img/favicon.png","icon32":"/img/favicon.png","appleTouchIcon":"/img/apple-touch-icon.png","webmanifest":null,"visibilitychange":false},"i18n":{"placeholder":"搜索知识...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true},"live_time":{"start_time":"","prefix":"运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner","avatar":false,"delayRange":5000,"speed":80},"search":{"enable":true,"type":"local","domain":null,"path":"search.xml"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-08-04 23:41:17"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.15" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+ 
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+        May The&ensp;<img alt="logo" src="/img/favicon.png">
+    Be With You
+    <!-- 隐藏 -->
+    
+    <!-- 隐藏 -->
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/" target="">
+                    首页
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/about/" target="">
+                    关于我们
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/mock-exams/" target="">
+                    考前模拟（限时开放）
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/past-papers/" target="">
+                    往年真题
+                </a>
+                
+                <ul>
+                    
+                    <li>
+                        <a  href="/past-papers/Edexcel/maths/" target="">
+                            爱德思数学
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a  href="/past-papers/Edexcel/physics/" target="">
+                            爱德思物理
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a  href="/past-papers/AQA/maths/" target="">
+                            AQA数学
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a  href="/past-papers/AQA/physics/" target="">
+                            AQA物理
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/topic-questions/" target="">
+                    分类真题
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/posts/" target="">
+                    全部文章
+                </a>
+                
+                <ul>
+                    
+                    <li>
+                        <a  href="/categories/maths/" target="">
+                            数学
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a  href="/categories/physics/" target="">
+                            物理
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+			
+    
+    <div id="trm-search-btn" class="trm-search-btn">
+        <i class="iconfont fas fa-search"></i>
+    </div>
+     
+
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
+    
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/img/banner.png">
+    <!-- banner cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-12">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text trm-text-center ">
+                        <div class="trm-label trm-mb-20">
+                            
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            逆矩阵（Inverse Matrix）的常见计算方法
+                        </h1>
+
+                        <!--
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        maths
+                                    </span>
+                                </li>
+                            </ul>
+                         -->
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <!--
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span> -->
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+            <div class="trm-page-content col-lg-12">
+                <div id="trm-content" class="trm-content">
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            07/25
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            20:08
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            云中君
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel FP1、FP3考生</p>
+<p><i class="far fa-check-circle"></i>AQA FPSM1、FP2考生</p>
+<p><i class="far fa-check-circle"></i>CIE FP1、FP2考生</p>
+<h2 id="2-times-2-矩阵的逆矩阵计算"><a href="#2-times-2-矩阵的逆矩阵计算" class="headerlink" title="$2 \times 2$矩阵的逆矩阵计算"></a>$2 \times 2$矩阵的逆矩阵计算</h2><p>在爱德思（Edexcel）FP1、AQA FPSM1和CIE FP1考试中，$2 \times 2$矩阵的逆矩阵的计算公式是必须要掌握的.</p>
+<div class="trm-note danger"><div class="trm-note-title">Note.</div><div>
+If $\displaystyle A=\begin{pmatrix}
+   a & b \\
+   c & d \\
+\end{pmatrix}$, then $\displaystyle A^{-1}=\frac{1}{ad-bc}\begin{pmatrix}
+   d & -b \\
+   -c & a \\
+\end{pmatrix}$, where $\det(A)=ad-bc$.
+</div></div>
+
+<p>这个计算公式可以直接利用逆矩阵的定义$AA^{-1}&#x3D;A^{-1}A&#x3D;I$证明.</p>
+<h2 id="3-times-3-矩阵的逆矩阵计算"><a href="#3-times-3-矩阵的逆矩阵计算" class="headerlink" title="$3 \times 3$矩阵的逆矩阵计算"></a>$3 \times 3$矩阵的逆矩阵计算</h2><h3 id="方法一：Cofactor-Matrix"><a href="#方法一：Cofactor-Matrix" class="headerlink" title="方法一：Cofactor Matrix"></a>方法一：Cofactor Matrix</h3><p>在Edexcel FP3和AQA FP2教材中，$3 \times 3$矩阵的逆矩阵计算利用了cofactor matrix. 假设$A$是一个$3 \times 3$矩阵，求$A^{-1}$的具体步骤如下：</p>
+<div class="trm-note danger"><div class="trm-note-title">Note.</div><div>
+Step 1. Find $\det(A)$.
+<br>
+<br>
+Step 2. Find the matrix of the <u>minors</u> of $A$, denoted as $M$. <u>Minor</u> of an element of a matrix is the determinant of the matrix formed by deleting the row and column containing that element.
+<br>
+<br>
+Step 3. From the matrix of minors, form the matrix of cofactors (denoted as $C$) by changing the signs of some elements of the matrix of minors according to the rule of alternating signs illustrated by the pattern:
+$$\begin{pmatrix}
+   + & - & + \\
+   - & + & - \\
+   + & - & +
+\end{pmatrix}.$$ Leave the elements of the matrix of minors corresponding to the $+$ signs in this pattern unchanged. Change the signs of the elements corresponding to the $-$ signs.
+<br>
+<br>
+Step 4. Find $C^\top$.
+<br>
+<br>
+Step 5. $\displaystyle A^{-1}=\frac{1}{\det(A)}C^\top$.
+</div></div>
+
+<p>我们以一道例题进一步解释易错步骤.</p>
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>Find the inverse matrix of</p>
+<div>
+$$A=\begin{pmatrix}
+   2 & 1 & 1 \\
+   0 & 2 & 1 \\
+   5 & 0 & 8
+\end{pmatrix}.$$
+</div></div>
+
+<div class="trm-note warning"><div class="trm-note-title">Solution.</div><div>
+Step 1.
+$$
+\det(A)=2\begin{vmatrix}
+   2 & 1 \\
+   0 & 8
+\end{vmatrix}+5\begin{vmatrix}
+   1 & 1 \\
+   2 & 1
+\end{vmatrix}=27.
+$$
+Step 2. 以矩阵中第二行第二列的元素$2$为例，删除了$2$所在行和所在列后，我们得到矩阵
+$$\begin{pmatrix}
+   2 & 1 \\
+   5 & 8
+\end{pmatrix}.$$ 它所对应的minor为$$\begin{vmatrix}
+   2 & 1 \\
+   5 & 8
+\end{vmatrix}=11.$$ 同理，可以找到matrix of the minors of $A$:
+$$M=\begin{pmatrix}
+   16 & -5 & -10 \\
+   8 & 11 & -5 \\
+   -1 & 2 & 4
+\end{pmatrix}.$$
+Step 3. 根据rule of alternating signs，元素位置位于$+$的不变，元素位置位于$-$的取其相反数构成cofactor matrix:
+$$C=\begin{pmatrix}
+   16 & 5 & -10 \\
+   -8 & 11 & 5 \\
+   -1 & -2 & 4
+\end{pmatrix}.$$
+Step 4.
+$$C^\top=\begin{pmatrix}
+   16 & -8 & -1 \\
+   5 & 11 & -2 \\
+   -10 & 5 & 4
+\end{pmatrix}.$$
+Step 5.
+$$A^{-1}=\frac{1}{\det(A)}C^\top=\frac{1}{27}\begin{pmatrix}
+   16 & -8 & -1 \\
+   5 & 11 & -2 \\
+   -10 & 5 & 4
+\end{pmatrix}.$$
+</div></div>
+
+<details><summary>拓展：Cofactor&nbsp;Matrix的原理</summary><div>
+这一原理的证明需要用到更多的定义与定理，为了增强可读性，我们不妨<u><em>暂时</em></u>接受一些定理，并只基于$3 \times 3$矩阵分析这一原理.
+<br>
+<br>
+假设矩阵
+$$A=\begin{pmatrix}
+   a_{11} & a_{12} & a_{13} \\
+   a_{21} & a_{22} & a_{23} \\
+   a_{31} & a_{32} & a_{33}
+\end{pmatrix}.$$ 我们需要计算出每一个元素对应的minor，记为$M_{ij}$，并构成matrix of the minors of $A$. 第三步，我们需要写出matrix of cofactors. 根据规则，cofactor matrix的每一个元素正好等于$$C_{ij}=(-1)^{i+j}M_{ij}.$$ 元素位置位于$+$的行数加列数为偶数，$(-1)^\text{even}=1$，根据规则，该元素不变；元素位置位于$-$的行数加列数为奇数，$(-1)^\text{odd}=-1$，根据规则，取相反数.
+<br>
+<br>
+当我们定义好这些符号后，不妨检验一下，沿着第一行展开计算$\det(A)$可以写为
+$$
+\det(A)=a_{11}C_{11}+a_{12}C_{12}+a_{13}C_{13}.
+$$
+当然，我们还介绍过，计算$\det(A)$可以沿着任意一行（第$i$行）或任意一列（第$j$列）展开，归纳为<u><em>定理</em></u>：
+$$\sum_{j=1}^3 a_{ij}C_{kj}=\begin{cases}
+\det(A), & k=i \\
+0, & k \neq i
+\end{cases} \ \ \textrm{以及}\ \ \sum_{i=1}^3 a_{ij}C_{il}=\begin{cases}
+\det(A), & l=j \\
+0, & l \neq j
+\end{cases}.$$
+回到方法，第三步无非就是构造了一个矩阵
+$$C=\begin{pmatrix}
+   C_{11} & C_{12} & C_{13} \\
+   C_{21} & C_{22} & C_{23} \\
+   C_{31} & C_{32} & C_{33}
+\end{pmatrix}.$$
+而第四步则是
+$$C^\top=\begin{pmatrix}
+   C_{11} & C_{21} & C_{31} \\
+   C_{12} & C_{22} & C_{32} \\
+   C_{13} & C_{23} & C_{33}
+\end{pmatrix}.$$
+因为
+$$
+AC^\top=\begin{pmatrix}
+   a_{11} & a_{12} & a_{13} \\
+   a_{21} & a_{22} & a_{23} \\
+   a_{31} & a_{32} & a_{33}
+\end{pmatrix}\begin{pmatrix}
+   C_{11} & C_{21} & C_{31} \\
+   C_{12} & C_{22} & C_{32} \\
+   C_{13} & C_{23} & C_{33}
+\end{pmatrix}=\begin{pmatrix}
+   \det(A) & 0 & 0 \\
+   0 & \det(A) & 0 \\
+   0 & 0 & \det(A)
+\end{pmatrix}=\det(A)I
+$$且
+$$
+C^\top A=\begin{pmatrix}
+   C_{11} & C_{21} & C_{31} \\
+   C_{12} & C_{22} & C_{32} \\
+   C_{13} & C_{23} & C_{33}
+\end{pmatrix}\begin{pmatrix}
+   a_{11} & a_{12} & a_{13} \\
+   a_{21} & a_{22} & a_{23} \\
+   a_{31} & a_{32} & a_{33}
+\end{pmatrix}=\begin{pmatrix}
+   \det(A) & 0 & 0 \\
+   0 & \det(A) & 0 \\
+   0 & 0 & \det(A)
+\end{pmatrix}=\det(A)I
+$$我们有
+$$
+A^{-1}=\frac{1}{\det(A)}C^\top
+$$如第五步所示.
+</div></details>
+
+<h3 id="方法二：Row-Operation"><a href="#方法二：Row-Operation" class="headerlink" title="方法二：Row Operation"></a>方法二：Row Operation</h3><p>在CIE FP1教材中，$3 \times 3$矩阵的逆矩阵计算利用了row operation. 假设$A$是一个$3 \times 3$矩阵，求$A^{-1}$的步骤如下：</p>
+<div class="trm-note danger"><div class="trm-note-title">Note.</div><div>
+Suppose
+$$A=\begin{pmatrix}
+   a_{11} & a_{12} & a_{13} \\
+   a_{21} & a_{22} & a_{23} \\
+   a_{31} & a_{32} & a_{33}
+\end{pmatrix}.$$
+From the rule of row operation (row switching, row multiplication and row addition), change the augmented matrix
+$$
+\begin{pmatrix}
+   a_{11} & a_{12} & a_{13} & \mid & 1 & 0 & 0 \\
+   a_{21} & a_{22} & a_{23} & \mid & 0 & 1 & 0 \\
+   a_{31} & a_{32} & a_{33} & \mid & 0 & 0 & 1
+\end{pmatrix}
+$$ to
+$$
+\begin{pmatrix}
+   1 & 0 & 0 & \mid & n_{11} & n_{12} & n_{13} \\
+   0 & 1 & 0 & \mid & n_{21} & n_{22} & n_{23} \\
+   0 & 0 & 1 & \mid & n_{31} & n_{32} & n_{33}
+\end{pmatrix}.$$
+Then,
+$$
+A^{-1}=\begin{pmatrix}
+   n_{11} & n_{12} & n_{13} \\
+   n_{21} & n_{22} & n_{23} \\
+   n_{31} & n_{32} & n_{33}
+\end{pmatrix}.
+$$
+</div></div>
+
+<p>使用row operation时，一个计算技巧就是先让矩阵$A$变为阶梯形矩阵（Row Echelon Form），即矩阵中每一行的第一个不为零的元素的左边及其所在列以下全为零. 我们以相同的例题来介绍这一方法.</p>
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>Find the inverse matrix of</p>
+<div>
+$$A=\begin{pmatrix}
+   2 & 1 & 1 \\
+   0 & 2 & 1 \\
+   5 & 0 & 8
+\end{pmatrix}.$$
+</div></div>
+
+<div class="trm-note warning"><div class="trm-note-title">Solution.</div><div>
+The augmented matrix is
+$$
+\begin{pmatrix}
+   2 & 1 & 1 & \mid & 1 & 0 & 0 \\
+   0 & 2 & 1 & \mid & 0 & 1 & 0 \\
+   5 & 0 & 8 & \mid & 0 & 0 & 1
+\end{pmatrix}.
+$$
+(1) $\displaystyle r_3 \to r_3-\frac{5}{2}r_1$:
+$$
+\begin{pmatrix}
+   2 & 1 & 1 & \mid & 1 & 0 & 0 \\
+   0 & 2 & 1 & \mid & 0 & 1 & 0 \\
+   0 & -\frac{5}{2} & \frac{11}{2} & \mid & -\frac{5}{2} & 0 & 1
+\end{pmatrix}
+$$
+(2) $\displaystyle r_3 \to r_3+\frac{5}{4}r_2$:
+$$
+\begin{pmatrix}
+   2 & 1 & 1 & \mid & 1 & 0 & 0 \\
+   0 & 2 & 1 & \mid & 0 & 1 & 0 \\
+   0 & 0 & \frac{27}{4} & \mid & -\frac{5}{4} & \frac{5}{4} & 1
+\end{pmatrix}
+$$
+(3) $\displaystyle r_1 \to r_1-\frac{1}{2}r_2$:
+$$
+\begin{pmatrix}
+   2 & 0 & \frac{1}{2} & \mid & 1 & -\frac{1}{2} & 0 \\
+   0 & 2 & 1 & \mid & 0 & 1 & 0 \\
+   0 & 0 & \frac{27}{4} & \mid & -\frac{5}{2} & \frac{5}{4} & 1
+\end{pmatrix}
+$$
+(4) $\displaystyle r_1 \to r_1-\frac{2}{27}r_3$:
+$$
+\begin{pmatrix}
+   2 & 0 & 0 & \mid & \frac{32}{27} & -\frac{16}{27} & -\frac{2}{27} \\
+   0 & 2 & 1 & \mid & 0 & 1 & 0 \\
+   0 & 0 & \frac{27}{4} & \mid & -\frac{5}{2} & \frac{5}{4} & 1
+\end{pmatrix}
+$$
+(5) $\displaystyle r_2 \to r_2-\frac{4}{27}r_3$:
+$$
+\begin{pmatrix}
+   2 & 0 & 0 & \mid & \frac{32}{27} & -\frac{16}{27} & -\frac{2}{27} \\
+   0 & 2 & 0 & \mid & \frac{10}{27} & \frac{22}{27} & -\frac{4}{27} \\
+   0 & 0 & \frac{27}{4} & \mid & -\frac{5}{2} & \frac{5}{4} & 1
+\end{pmatrix}
+$$
+(6) $\displaystyle r_1 \to \frac{1}{2}r_1$, $\displaystyle r_2 \to \frac{1}{2}r_2$, $\displaystyle r_3 \to \frac{4}{27}r_3$:
+$$
+\begin{pmatrix}
+   1 & 0 & 0 & \mid & \frac{16}{27} & -\frac{8}{27} & -\frac{1}{27} \\
+   0 & 1 & 0 & \mid & \frac{5}{27} & \frac{11}{27} & -\frac{2}{27} \\
+   0 & 0 & 1 & \mid & -\frac{10}{27} & \frac{5}{27} & \frac{4}{27}
+\end{pmatrix}
+$$
+So
+$$
+A^{-1}=\begin{pmatrix}
+   \frac{16}{27} & -\frac{8}{27} & -\frac{1}{27} \\
+   \frac{5}{27} & \frac{11}{27} & -\frac{2}{27} \\
+   -\frac{10}{27} & \frac{5}{27} & \frac{4}{27}
+\end{pmatrix}=\frac{1}{27}\begin{pmatrix}
+   16 & -8 & -1 \\
+   5 & 11 & -2 \\
+   -10 & 5 & 4
+\end{pmatrix}.
+$$
+</div></div>
+
+<p>这一方法的运算量较大，需要仔细计算. 对于CIE FP1考生，我们也建议尽量掌握利用<a>cofactor matrix</a>的方法.</p>
+<details><summary>拓展：Row&nbsp;Operation的原理</summary><div>
+与解释方法一类似，为了增强可读性，我们不妨<u><em>暂时</em></u>接受一些定义或定理.
+<br>
+<br>
+任何一个初等行变化（Row Operation，更严谨的说法为<em>Elementary Row Operation</em>）都可以用一个<u><em>初等矩阵</em></u>$P$来表示，比如对矩阵$A$进行初等行变化后得到的一个新矩阵$A_1$，总是可以写成$A_1=PA$. <u><em>定理</em></u>称，如果矩阵$A$是可逆的（即$A^{-1}$是存在的），那么它可以表示成一系列初等矩阵的乘积，也即$$P_nP_{n-1} \cdots P_2P_1A=I.$$ 因此$$P_nP_{n-1} \cdots P_2P_1AA^{-1}=IA^{-1} \Rightarrow P_nP_{n-1} \cdots P_2P_1I=A^{-1}.$$
+因此增广矩阵（Augmented Matrix）$(A \mid I)$在经历一系列初等行变化后，本质上就变成了$$(P_nP_{n-1} \cdots P_2P_1A \mid P_nP_{n-1} \cdots P_2P_1I) \to (I \mid A^{-1}).$$
+</div></details>
+
+<h3 id="方法三：Cayley-Hamilton-Theorem"><a href="#方法三：Cayley-Hamilton-Theorem" class="headerlink" title="方法三：Cayley-Hamilton Theorem"></a>方法三：Cayley-Hamilton Theorem</h3><p>在CIE FP2教材中，$3 \times 3$矩阵的逆矩阵计算可以直接使用Cayley-Hamilton定理. 对于CIE FP2考生，几乎没有其它选择去计算逆矩阵，因为题目一般要求use the characteristic equation of $A$ to find $A^{-1}$. 定理内容为：</p>
+<div class="trm-note danger"><div class="trm-note-title">Note.</div><div>
+If matrix $A$ has characteristic equation $P_A(\lambda)=\lambda^n+a_{n-1}\lambda^{n-1}+a_{n-2}\lambda^{n-2}+\cdots+a_1\lambda+a_0=0$, then $$P_A(A)=A^n+a_{n-1}A^{n-1}+a_{n-2}A^{n-2}+\cdots+a_1A+a_0I=O$$ where $O$ is zero matrix.
+</div></div>
+
+<p>下面我们来介绍一下，根据Cayley-Hamilton定理计算一个$3 \times 3$矩阵的逆矩阵. 假设该$3 \times 3$矩阵的特征方程（Characteristic Equation）为$$a\lambda^3+b\lambda^2+c\lambda+d&#x3D;0$$ 根据Cayley-Hamilton定理可得$$aA^3+bA^2+cA+dI&#x3D;O.$$ 移项后，$$-dI&#x3D;aA^3+bA^2+cA&#x3D;A(aA^2+bA+cI).$$ 等式两边同时左乘$\displaystyle -\frac{1}{d}A^{-1}$后得到$$A^{-1}&#x3D;\frac{aA^2+bA+cI}{-d}.$$ 我们以相同的例题来介绍这一方法.</p>
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>Find the inverse matrix of</p>
+<div>
+$$A=\begin{pmatrix}
+   2 & 1 & 1 \\
+   0 & 2 & 1 \\
+   5 & 0 & 8
+\end{pmatrix}.$$
+</div></div>
+
+<div class="trm-note warning"><div class="trm-note-title">Solution.</div><div>
+The characteristic equation of $A$ is $$-\lambda^3+12\lambda^2-31\lambda+27=0.$$ By Cayley-Hamilton theorem 
+$$\begin{aligned}
+A^{-1}& =\frac{-A^2+12A-31I}{-27} \\
+&=\frac{1}{27}\left(\begin{pmatrix}
+   9 & 4 & 11 \\
+   5 & 4 & 10 \\
+   50 & 5 & 69
+\end{pmatrix}-12\begin{pmatrix}
+   2 & 1 & 1 \\
+   0 & 2 & 1 \\
+   5 & 0 & 8
+\end{pmatrix}+31\begin{pmatrix}
+   1 & 0 & 0 \\
+   0 & 1 & 0 \\
+   0 & 0 & 1
+\end{pmatrix}\right)
+\\&=\frac{1}{27}\begin{pmatrix}
+   16 & -8 & -1 \\
+   5 & 11 & -2 \\
+   -10 & 5 & 4
+\end{pmatrix}.
+\end{aligned}$$
+</div></div>
+
+<details><summary>拓展：Cayley-HamiltonRow&nbsp;Theorem的原理</summary><div>
+Cayley-Hamilton定理的一个简易证明是利用矩阵分解，但也已经超出了我们的学习范畴. 为了增强可读性，我们仅在$2 \times 2$矩阵中证明这一定理.
+<br>
+<br>
+假设矩阵
+$$A=\begin{pmatrix}
+   a & b \\
+   c & d
+\end{pmatrix}.$$ 其特征方程为$$P_A(\lambda)=\lambda^2-(a+d)\lambda+(ad-bc)=0.$$ 因此，
+$$
+\begin{aligned}
+P_A(A)&=A^2-(a+d)A+(ad-bc)I \\
+&=\begin{pmatrix}
+   a^2+bc & ab+bd \\
+   ac+cd & bc+d^2
+\end{pmatrix}-\begin{pmatrix}
+   (a+d)a & (a+d)b \\
+   (a+d)c & (a+d)d
+\end{pmatrix}+\begin{pmatrix}
+   ad-bc & 0 \\
+   0 & ad-bc
+\end{pmatrix} \\
+&=\begin{pmatrix}
+   0 & 0 \\
+   0 & 0
+\end{pmatrix} \\
+&=O.
+\end{aligned}
+$$
+</div></details>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>逆矩阵的计算在A Level考试中是一定会考察的知识点. 考生应该掌握$2 \times 2$矩阵的逆矩阵计算公式. </p>
+<p>对于Edexcel FP3、AQA FP2考生，我们推荐使用cofactor matrix计算$3 \times 3$矩阵的逆矩阵，这就要求考生对每一个步骤都非常熟悉. 对于CIE FP1考生，row operation方法计算量偏大，也可以考虑掌握cofactor matrix方法计算$3 \times 3$矩阵的逆矩阵. </p>
+<p>对于CIE FP2考生，Cayley-Hamilton theorem是必须掌握的方法，需要考生对定理描述以及推导过程非常熟悉.</p>
+
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="Others"></span>
+        </h5>
+    </div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-older-publications-card trm-scroll-animation trm-active-el">
+        <div class="trm-older-publication">
+            
+            <a class="trm-op-top trm-anima-link" href="/maths/compare_data/">
+                <span class="trm-op-cover">
+                    <img alt="cover" class="no-fancybox" src="/img/mp.jpg">
+                </span>
+                <h6 class="trm-op-title">比较数据（Compare Data）</h6>
+            </a>
+            <div class="trm-divider trm-mb-15 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/06/18</li>
+                <li>14:20</li>
+                <li>数学</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+    <div class="trm-card trm-scroll-animation comment-container">
+    <div id="tcomment"></div>
+</div>
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-scroll-animation">
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>© 2023-2024</span>
+            <span class="footer-separator"data-separator=" · "></span>
+            <span class="trm-accent-color">A Level Clouds</span>
+        </div>
+    
+
+      
+
+     
+
+    
+
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</footer>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+
+            
+
+            
+<div class="trm-fixed-container">
+    
+    
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
+  
+    <div class="trm-search-popup">
+        <div class="trm-search-wrapper">
+            <div class="form trm-search-form">
+                <div class="trm-search-input-icon">
+                    <i class="iconfont fas fa-search"></i>
+                </div>
+                <input class="trm-search-input" type="text" placeholder="搜索知识...">
+                <div class="trm-search-btn-close">
+                    <i class="iconfont fas fa-times"></i>
+                </div>
+            </div>
+            <div class="trm-search-result-container">
+                <div class="trm-search-empty">
+                    请输入关键词进行搜索
+                </div>
+            </div>
+            <div class="trm-search-footer">
+                <div class="trm-search-stats"></div>
+                <ul class="trm-search-commands">
+                    <li>
+                        <kbd class="command-palette-commands-key">
+                            <svg width="15" height="15" aria-label="Escape key" role="img">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.2">
+                                    <path
+                                        d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956">
+                                    </path>
+                                </g>
+                            </svg>
+                        </kbd>
+                        <span class="command-palette-Label">to close</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  <!-- Plugin -->
+
+
+
+
+    
+    
+<script src="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+
+    
+
+    
+        
+<script src="https://unpkg.com/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+
+        <script src="/js/plugins/local_search.js?v=2.1.15"></script>
+    
+
+    <!-- 数学公式 -->
+    
+        
+<script src="https://unpkg.com/katex@latest/dist/katex.min.js" data-swup-reload-script></script>
+
+        
+            
+<script src="https://unpkg.com/katex@latest/dist/contrib/copy-tex.min.js" data-swup-reload-script></script>
+
+        
+        
+<script src="https://unpkg.com/katex@latest/dist/contrib/auto-render.min.js" data-swup-reload-script></script>
+
+        <script data-swup-reload-script>
+              window.renderMathInElement(document.body, {
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '$', right: '$', display: false },
+                    { left: '\\(', right: '\\)', display: false },
+                    { left: '\\[', right: '\\]', display: true },
+                ],
+                ...{},
+            })
+        </script>
+    
+
+    <!-- 评论插件 -->
+    
+        
+
+        
+
+            
+<script src="https://unpkg.com/twikoo@1.6.32/dist/twikoo.all.min.js" data-swup-reload-script data-reset="true"></script>
+
+            <script data-swup-reload-script>
+                twikoo.init({
+                    ...{"enable":true,"envId":"https://alevelclouds-twikoo.hf.space"},
+                    el:'#tcomment'
+                }).then(function () {
+                    let container = document.querySelector('body>.tk-admin-container')
+                    if(container) container.remove()
+                    container = document.querySelector('css>index.css>.tk-admin-container')
+                    if (container) document.body.append(container)
+                });;
+            </script>
+
+        
+    
+
+		
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+    <script data-swup-reload-script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+
+
+<script id="async-script" src="/js/main.js?v=2.1.15"></script>
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+</body>
+
+</html>
