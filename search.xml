@@ -709,65 +709,6 @@ $$
       </categories>
   </entry>
   <entry>
-    <title>示波器（Oscilloscope）的使用</title>
-    <url>/physics/oscilloscope/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel U2和U5考生</p>
-<p><i class="far fa-check-circle"></i>AQA U2考生</p>
-<p><i class="far fa-check-circle"></i>CIE AS阶段考生</p>
-<h2 id="示波器结构"><a href="#示波器结构" class="headerlink" title="示波器结构"></a>示波器结构</h2><p><img src="/img/oscilloscope_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<h3 id="水平方向"><a href="#水平方向" class="headerlink" title="水平方向"></a>水平方向</h3><p>可缩放，通过调节<code>time base</code>旋钮（单位：<code>s/div</code>）控制单元格水平方向时间数值，使得至少一个完整的波形周期显示出来.</p>
-<h3 id="竖直方向"><a href="#竖直方向" class="headerlink" title="竖直方向"></a>竖直方向</h3><p>可缩放，通过调节<code>Y-gain/Y-sensitivity</code>旋钮（单位：<code>V/div</code>）控制单元格竖直方向电压数值，使得完成的波形（波峰及波谷）显示出来.</p>
-<h2 id="主要考察知识点：示波器的读数和实验应用"><a href="#主要考察知识点：示波器的读数和实验应用" class="headerlink" title="主要考察知识点：示波器的读数和实验应用"></a>主要考察知识点：示波器的读数和实验应用</h2><h3 id="周期（Period）的测量"><a href="#周期（Period）的测量" class="headerlink" title="周期（Period）的测量"></a>周期（Period）的测量</h3><p>示波器水平方向代表时间长度，可以通过以下公式算出这段时间:</p>
-<div>
-$$
-\text{Time}(s)=n \times \text{Scale of time base}
-$$
-</div>
-其中，$n$表示number of divisions of one complete wave.
-<br>
-<br>
-如果示波器屏幕上显示了若干个周期，可以求出总时间再除以完整波形数量$N$算出周期：
-<div>
-$$
-T(s)=\frac{\text{Total time}}{N}.
-$$
-</div>
-类似于求平均值，能有效的减小误差（Reduce Percentage Uncertainty）.
-
-<br>
-<br>
-
-<p><img src="/img/oscilloscope_2.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<center><p style="font-size: 18px;"><em>Note</em>: Time for $2T=6.4$ to $6.6$ divisions.</p></center>
-
-<br>
-选取参照点位时，常用点位是波峰和波谷位置，也可以选择pulse的起点和终点作为参照，优先选取方便读数的点位. 如上图，pulse的起点和终点的读数更为准确.
-
-<h3 id="振幅（Amplitude）的测量"><a href="#振幅（Amplitude）的测量" class="headerlink" title="振幅（Amplitude）的测量"></a>振幅（Amplitude）的测量</h3><p>示波器竖直方向代表potential difference (p.d.)，可根据比例关系得到振幅大小. <b><em>The vertical displacement of the spot is proportional to the applied p.d.</em></b></p>
-<div>
-$$
-\text{Amplitude}(V)=\frac{1}{2} \times n \times \text{Scale of Y-gain}
-$$
-</div>
-其中，$n$表示number of divisions between the bottom to the top of the wave.
-<br>
-<br>
-如果用到twin beam oscilloscope，可以比较振幅来得到两个波能量的高低. 因为在波的理论中，振幅与能量成正比. 以下用爱德思真题举例说明.
-<br>
-<br>
-
-<p><img src="/img/oscilloscope_3.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<p><img src="/img/oscilloscope_4.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<br>
-如图所示，左图中的上方波形的振幅明显比右图中的小，说明左图的microphone距离loudspeaker更远，波在空气中传播距离越远，能量越低，振幅越小. 下方的波形是loudspeaker产生的标准波形.
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>示波器的工作原理在A Level考试中考察可能性较低，不再赘述. 考生应该掌握图像信息的获取，计算周期和振幅，相关应用领域还有周期性运动，比如检测简谐运动（SHM）规律.</p>
-]]></content>
-      <categories>
-        <category>物理</category>
-      </categories>
-  </entry>
-  <entry>
     <title>碰撞模型：Newton’s Law of Restitution</title>
     <url>/maths/newton_law_of_restitution/</url>
     <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel M2考生</p>
@@ -991,6 +932,65 @@ Therefore, the general solution to the differential equation is $\displaystyle -
 ]]></content>
       <categories>
         <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>示波器（Oscilloscope）的使用</title>
+    <url>/physics/oscilloscope/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel U2和U5考生</p>
+<p><i class="far fa-check-circle"></i>AQA U2考生</p>
+<p><i class="far fa-check-circle"></i>CIE AS阶段考生</p>
+<h2 id="示波器结构"><a href="#示波器结构" class="headerlink" title="示波器结构"></a>示波器结构</h2><p><img src="/img/oscilloscope_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<h3 id="水平方向"><a href="#水平方向" class="headerlink" title="水平方向"></a>水平方向</h3><p>可缩放，通过调节<code>time base</code>旋钮（单位：<code>s/div</code>）控制单元格水平方向时间数值，使得至少一个完整的波形周期显示出来.</p>
+<h3 id="竖直方向"><a href="#竖直方向" class="headerlink" title="竖直方向"></a>竖直方向</h3><p>可缩放，通过调节<code>Y-gain/Y-sensitivity</code>旋钮（单位：<code>V/div</code>）控制单元格竖直方向电压数值，使得完成的波形（波峰及波谷）显示出来.</p>
+<h2 id="主要考察知识点：示波器的读数和实验应用"><a href="#主要考察知识点：示波器的读数和实验应用" class="headerlink" title="主要考察知识点：示波器的读数和实验应用"></a>主要考察知识点：示波器的读数和实验应用</h2><h3 id="周期（Period）的测量"><a href="#周期（Period）的测量" class="headerlink" title="周期（Period）的测量"></a>周期（Period）的测量</h3><p>示波器水平方向代表时间长度，可以通过以下公式算出这段时间:</p>
+<div>
+$$
+\text{Time}(s)=n \times \text{Scale of time base}
+$$
+</div>
+其中，$n$表示number of divisions of one complete wave.
+<br>
+<br>
+如果示波器屏幕上显示了若干个周期，可以求出总时间再除以完整波形数量$N$算出周期：
+<div>
+$$
+T(s)=\frac{\text{Total time}}{N}.
+$$
+</div>
+类似于求平均值，能有效的减小误差（Reduce Percentage Uncertainty）.
+
+<br>
+<br>
+
+<p><img src="/img/oscilloscope_2.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<center><p style="font-size: 18px;"><em>Note</em>: Time for $2T=6.4$ to $6.6$ divisions.</p></center>
+
+<br>
+选取参照点位时，常用点位是波峰和波谷位置，也可以选择pulse的起点和终点作为参照，优先选取方便读数的点位. 如上图，pulse的起点和终点的读数更为准确.
+
+<h3 id="振幅（Amplitude）的测量"><a href="#振幅（Amplitude）的测量" class="headerlink" title="振幅（Amplitude）的测量"></a>振幅（Amplitude）的测量</h3><p>示波器竖直方向代表potential difference (p.d.)，可根据比例关系得到振幅大小. <b><em>The vertical displacement of the spot is proportional to the applied p.d.</em></b></p>
+<div>
+$$
+\text{Amplitude}(V)=\frac{1}{2} \times n \times \text{Scale of Y-gain}
+$$
+</div>
+其中，$n$表示number of divisions between the bottom to the top of the wave.
+<br>
+<br>
+如果用到twin beam oscilloscope，可以比较振幅来得到两个波能量的高低. 因为在波的理论中，振幅与能量成正比. 以下用爱德思真题举例说明.
+<br>
+<br>
+
+<p><img src="/img/oscilloscope_3.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<p><img src="/img/oscilloscope_4.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<br>
+如图所示，左图中的上方波形的振幅明显比右图中的小，说明左图的microphone距离loudspeaker更远，波在空气中传播距离越远，能量越低，振幅越小. 下方的波形是loudspeaker产生的标准波形.
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>示波器的工作原理在A Level考试中考察可能性较低，不再赘述. 考生应该掌握图像信息的获取，计算周期和振幅，相关应用领域还有周期性运动，比如检测简谐运动（SHM）规律.</p>
+]]></content>
+      <categories>
+        <category>物理</category>
       </categories>
   </entry>
 </search>

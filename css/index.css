@@ -760,6 +760,7 @@ html.is-animating .trm-swup-animation {
   display: flex;
   align-items: center;
   height: 80px;
+  white-space: nowrap;
 }
 .trm-top-bar .container .trm-left-side .trm-logo-frame .trm-logo-text {
   position: relative;
