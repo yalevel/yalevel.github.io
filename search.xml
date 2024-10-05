@@ -1,105 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>比较数据（Compare Data）</title>
-    <url>/maths/compare_data/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel S1考生</p>
-<p><i class="far fa-check-circle"></i>CIE S1考生</p>
-<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><p>比较数据一般从两个角度进行比较：</p>
+    <title>云游指南</title>
+    <url>/admin/guide/</url>
+    <content><![CDATA[<p>欢迎来到A Level Clouds. 本文旨在介绍A Level Clouds的功能，希望能帮助大家快速上手。</p>
+<h2 id="顶部导航栏"><a href="#顶部导航栏" class="headerlink" title="顶部导航栏"></a>顶部导航栏</h2><h3 id="左侧"><a href="#左侧" class="headerlink" title="左侧"></a>左侧</h3><p>点击导航栏的左侧会进入一个全新界面，欢迎探索。</p>
+<h3 id="右侧"><a href="#右侧" class="headerlink" title="右侧"></a>右侧</h3><p>导航栏的右侧包括关于我们、考前模拟（限时开放）、每日一题、往年真题、分类真题和全部文章。</p>
 <div></div>
 
-<ol>
-<li>集中趋势（Measure of Central Tendency）</li>
-</ol>
-<div></div>
-(1) 常用于比较的指标：中位数（Median）、平均数（Mean）.
-<br>
-(2) 描述模版：比较指标，the average of (something) is higher/lower than that of (something).
-<br>
-
-<ol start="2">
-<li>离散程度（Measure of Spread&#x2F;Variation）</li>
-</ol>
-<div></div>
-(1) 常用于比较的指标： 极差（Range）、四分位距（Interquartile Range/IQR）、方差（Variance）、标准差（Standard Deviation）.
-<br>
-(2) 描述模版：比较指标，(something) is more/less variable (or spread out) than (something).
-<br>
-<br>
-一般我们同时使用中位数和IQR来比较数据，或者同时使用平均数和方差（或标准差）来比较数据. 前者的优点是不容易受到极端值的影响.
-
-<h2 id="比较数据"><a href="#比较数据" class="headerlink" title="比较数据"></a>比较数据</h2><p>集中趋势和离散程度是描述数据分布（Distribution）最常用的两个性质，集中趋势表明数据的平均水平，离散程度表明数据的波动程度. 需要注意的是，波动程度和稳定性是联系在一起的：数据波动程度越大，越不稳定；数据波动程度越小，越稳定. 如果考察到比较数据的题型，一般比较直接，只需要算出指标的准确值并进行比较.</p>
-<div></div>
-但在部分题目中，问法不够明显，这就要求考生理解两个性质以及在现实生活中的意义. 以下用爱德思（Edexcel）真题举例说明.
-
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>At the start of a course, an instructor asked a group of 80 apprentices to estimate the length of a piece of pipe. The error (true length$-$estimated length) was recorded in centimetres. The results are summarised in the box plot below.</p>
+<p>点击<a href="/about/" target="_blank">关于我们</a>可以浏览关于我们的更多信息。点击<a href="/mock-exams/" target="_blank">考前模拟（限时开放）</a>，可以下载考前模拟卷并查看答案。点击<a href="/daily-practice/" target="_blank">每日一题</a>，可以查看每天更新的一道真题及相关知识点。点击<a href="/past-papers/" target="_blank">往年真题</a>，可以按照考试局与学科查看往年真题，如果你有耐心的话，也可以将鼠标放置于<a href="/past-papers/" target="_blank">往年真题</a>处，它会显示具体学科，点击后就可以直接查看往年真题。点击<a href="/topic-questions/" target="_blank">分类真题</a>，可以按照考试局与学科查看目前平台已有的分类真题资料。点击<a href="/posts/" target="_blank">全部文章</a>，可以按照年份查看所有文章，也可以将鼠标放置于<a href="/posts/" target="_blank">全部文章</a>处，它会显示具体学科，点击后就可以直接查看相关文章。</p>
 <div></div>
 
-<p><img src="/img/compare_data_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<div></div>
-One month later, the instructor asked the 80 apprentices to estimate the length of a different piece of pipe and recorded their errors. The results are summarised in the table below.
-
-<table class="tg" style="text-align:center; margin:auto; border: 1.5px solid">
-<thead style="border: 1.5px solid">
-  <tr>
-    <th scope="col" width="99" style="border: 1.5px solid">Error ($e$ cm)</th>
-    <th scope="col" width="99" style="border: 1.5px solid">Number of apprentices</th>
-  </tr>
-</thead>
-<tbody>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$-40 \lt e \leq -16$</td>
-    <td style="border: 1.5px solid">2</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$-16 \lt e \leq -8$</td>
-    <td style="border: 1.5px solid">18</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$-8 \lt e \leq 0$</td>
-    <td style="border: 1.5px solid">33</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$0 \lt e \leq 8$</td>
-    <td style="border: 1.5px solid">14</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$8 \lt e \leq 16$</td>
-    <td style="border: 1.5px solid">10</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$16 \lt e \leq 40$</td>
-    <td style="border: 1.5px solid">3</td>
-  </tr>
-</tbody>
-</table>
-
-<p>State, giving reasons, whether or not the apprentices’ ability to estimate the length of a piece of pipe has improved over the first month of the course.</p>
+<p>除此之外，导航栏的右侧还包括一个重要的搜索功能，可以帮助大家根据关键词搜索具体的文章，节省时间。</p>
+<div class="trm-note warning"><div class="trm-note-title">友情提示</div><p>A Level Clouds在未来<em>也许</em>会上线新的板块或功能，对于主要的板块或功能一般会更新在顶部导航栏的右侧，敬请期待。</p>
 </div>
 
-<p>本题考察的知识点本质上是比较数据，大部分的考生能够答到中位数更接近$0$，误差减小，所以有提升. 除了集中趋势，还需要考虑波动程度. 波动程度反映的是数据的稳定性，试想一下，如果一组数据的误差是：$-200$、$-100$、$+100$、$+200$，另一组数据的误差是：$-3$、$-2$、$+1$、$+5$，尽管前者的中位数为$0$，但波动程度极大，数据的不稳定会人们怀疑准确性——很有可能前者的猜测比较“幸运”，让最后的平均误差为$0$罢了.</p>
-<div></div>
-因此，本题还需要答到$\text{IQR}$减少，所以有提升.
 
-<h2 id="知识点拓展：稳定性的好处"><a href="#知识点拓展：稳定性的好处" class="headerlink" title="知识点拓展：稳定性的好处"></a>知识点拓展：稳定性的好处</h2><p>在学习离散程度的测量时，我们会将离散程度和稳定性联系在一起，稳定性的提高会提升准确性. 在后续学习中（Edexcel S3；AQA S2；CIE S2），我们会学习概率论中的一个重要定理：中心极限定理（Central Limit Theorem），它指在满足一定条件下，样本均值（Sample Mean）$\overline{X}$的分布近似一个正态分布（Normal Distribution）：</p>
-<div>
-$$
-\overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)
-$$
-</div>
+<h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><p><a>任何一篇文章</a>以及<a href="/about/" target="_blank">关于我们</a>页面的最下侧都开启了评论功能。本站倡导知识上的友好交流，但保留审核和删除无关或过激评论的权利。</p>
+<div></div>
 
-<p>其中$n$是样本大小（Sample Size）. </p>
+<p>如果你留下你的数字QQ邮箱地址，则会使用你的QQ头像发表评论。如果你使用其他邮箱地址，则会自动生成一个头像，但可以前往<a href="https://cravatar.cn">https://cravatar.cn</a>通过邮箱注册并修改头像，评论时，请留下相同的邮箱。</p>
 <div></div>
-现阶段，如果不能理解何为样本均值的分布，不妨考虑这么一个例子，研究人员想估算全国人民的平均年龄，不停地随机抽样（每次随机抽中$n$个人），每一次随机抽样都可以计算出一个平均年龄，并将这些平均年龄记录下来.
-<div></div>
-平均年龄的数据分布像一个正态分布，而均值是$\mu$（真实的全国人民平均年龄），方差是$\displaystyle \frac{\sigma^2}{n}$（真实的全国人民年龄的方差除以样本大小）. 
-<div></div>
-可以看到，随着样本大小增加，抽样计算出的平均年龄的方差减少，趋近于$0$. 它的好处是，随着样本大小增加，我们单次计算出来的平均年龄会有极大的概率接近真实的平均年龄，也就更加可信.
 
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>比较数据是A Level考试中的一类考法，多见于爱德思和CIE考试局. 近年来考察可能性偏低，但考生应该掌握比较角度和描述模版. 有意向进一步学习S系列的考生应加深对离散程度的理解.</p>
+<p>此外，请谨慎辨别评论信息，带<a>OA</a>标记的评论为本站的官方回复。</p>
+<h2 id="侧栏"><a href="#侧栏" class="headerlink" title="侧栏"></a>侧栏</h2><p>侧栏提供了商务联系的方式。尽管我们提供了站内评论和微信两种交流方式，但我们希望站内评论和微信的交流以知识为主。商务交流请通过邮件，我们会定期查看邮件并回复。</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>希望每一位浏览A Level Clouds的用户能有一个舒适的体验，并且有所收获。</p>
 ]]></content>
       <categories>
-        <category>数学</category>
+        <category>云游日常</category>
       </categories>
   </entry>
   <entry>
@@ -312,33 +240,200 @@ $$
       </categories>
   </entry>
   <entry>
-    <title>云游指南</title>
-    <url>/admin/guide/</url>
-    <content><![CDATA[<p>欢迎来到A Level Clouds. 本文旨在介绍A Level Clouds的功能，希望能帮助大家快速上手。</p>
-<h2 id="顶部导航栏"><a href="#顶部导航栏" class="headerlink" title="顶部导航栏"></a>顶部导航栏</h2><h3 id="左侧"><a href="#左侧" class="headerlink" title="左侧"></a>左侧</h3><p>点击导航栏的左侧会进入一个全新界面，欢迎探索。</p>
-<h3 id="右侧"><a href="#右侧" class="headerlink" title="右侧"></a>右侧</h3><p>导航栏的右侧包括关于我们、考前模拟（限时开放）、每日一题、往年真题、分类真题和全部文章。</p>
-<div></div>
-
-<p>点击<a href="/about/" target="_blank">关于我们</a>可以浏览关于我们的更多信息。点击<a href="/mock-exams/" target="_blank">考前模拟（限时开放）</a>，可以下载考前模拟卷并查看答案。点击<a href="/daily-practice/" target="_blank">每日一题</a>，可以查看每天更新的一道真题及相关知识点。点击<a href="/past-papers/" target="_blank">往年真题</a>，可以按照考试局与学科查看往年真题，如果你有耐心的话，也可以将鼠标放置于<a href="/past-papers/" target="_blank">往年真题</a>处，它会显示具体学科，点击后就可以直接查看往年真题。点击<a href="/topic-questions/" target="_blank">分类真题</a>，可以按照考试局与学科查看目前平台已有的分类真题资料。点击<a href="/posts/" target="_blank">全部文章</a>，可以按照年份查看所有文章，也可以将鼠标放置于<a href="/posts/" target="_blank">全部文章</a>处，它会显示具体学科，点击后就可以直接查看相关文章。</p>
-<div></div>
-
-<p>除此之外，导航栏的右侧还包括一个重要的搜索功能，可以帮助大家根据关键词搜索具体的文章，节省时间。</p>
-<div class="trm-note warning"><div class="trm-note-title">友情提示</div><p>A Level Clouds在未来<em>也许</em>会上线新的板块或功能，对于主要的板块或功能一般会更新在顶部导航栏的右侧，敬请期待。</p>
+    <title>碰撞模型：Newton’s Law of Restitution</title>
+    <url>/maths/newton_law_of_restitution/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel M2考生</p>
+<p><i class="far fa-check-circle"></i>AQA FM1考生</p>
+<p><i class="far fa-check-circle"></i>CIE FM考生</p>
+<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><ol>
+<li><p>Conservation of Linear Momentum:</p>
+<div>
+$$
+m_1\mathbf{u}_1+m_2\mathbf{u}_2=m_1\mathbf{v}_1+m_2\mathbf{v}_2.
+$$
 </div>
-
-
-<h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><p><a>任何一篇文章</a>以及<a href="/about/" target="_blank">关于我们</a>页面的最下侧都开启了评论功能。本站倡导知识上的友好交流，但保留审核和删除无关或过激评论的权利。</p>
+</li>
+<li><p>Impulse-Momentum Principle:</p>
+<div>
+$$
+\mathbf{I}=\mathbf{F}t=m\mathbf{v}-m\mathbf{u}.
+$$
+</div></li>
+</ol>
+<p>注意，以上两个物理公式要满足矢量关系，规定好正方向，同向为正，反向为负.</p>
+<ol start="3">
+<li>Newton‘s Law of Restitution (Impact Law):<div>
+$$
+e=\frac{\text{Separation speed}}{\text{Approach speed}}\ \ 0 \leq e \leq 1.
+$$
+</div></li>
+</ol>
+<p>其中，$e&#x3D;0$为非弹性碰撞（Inelastic Collision），即碰撞后相对速度为$0$；$e&#x3D;1$为弹性碰撞（Elastic Collision），即碰撞前后动能相等. 常数$e$可以理解为碰撞后的相对速度与碰撞前的相对速度的比值.</p>
 <div></div>
+<em>相对速度</em>：同向运动，速度大小相减；反向运动，速度大小相加.
 
-<p>如果你留下你的数字QQ邮箱地址，则会使用你的QQ头像发表评论。如果你使用其他邮箱地址，则会自动生成一个头像，但可以前往<a href="https://cravatar.cn">https://cravatar.cn</a>通过邮箱注册并修改头像，评论时，请留下相同的邮箱。</p>
+<h2 id="建立碰撞模型"><a href="#建立碰撞模型" class="headerlink" title="建立碰撞模型"></a>建立碰撞模型</h2><p>部分题型没有给出碰撞前后的示意图，在题干中也没有明确表示碰撞前或碰撞后物体的运动方向，需要自己建立一个合理的模型.</p>
 <div></div>
+建立模型的重点是标注好碰撞前后各物体其中一种可能的运动方向，然后按照自己设定的模型，首先规定好正方向，列出动量守恒和impact law两个物理方程，联解方程即可得出相关物理量. 不用纠结是否有其他情况，严格按照矢量原则列式，算出来的结果的正负就代表了准确方向. 以下用爱德思（Edexcel）真题举例说明.
 
-<p>此外，请谨慎辨别评论信息，带<a>OA</a>标记的评论为本站的官方回复。</p>
-<h2 id="侧栏"><a href="#侧栏" class="headerlink" title="侧栏"></a>侧栏</h2><p>侧栏提供了商务联系的方式。尽管我们提供了站内评论和微信两种交流方式，但我们希望站内评论和微信的交流以知识为主。商务交流请通过邮件，我们会定期查看邮件并回复。</p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>希望每一位浏览A Level Clouds的用户能有一个舒适的体验，并且有所收获。</p>
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>A particle $P$ of mass $2m$ is moving in a straight line with speed $u$ on a smooth horizontal plane. The particle $P$ collides directly with a particle $Q$, of mass $m$, which is moving on the plane along the same straight line as $P$ but in the opposite direction to $P$. Immediately before the collision the speed of $Q$ is $3u$. The coefficient of restitution between $P$ and $Q$ is $e$, where $\displaystyle e&gt;\frac{1}{8}$.</p>
+<div></div>
+Find, in terms of $u$ and $e$,
+<br>
+(i) the speed of $P$ immediately after the collision,
+<br>
+(ii) the speed of $Q$ immediately after the coolision.</div>
+
+<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>根据题意，已知碰撞前两小球运动方向，没有描述碰撞后的结果，所以会有三种可能情况：<br><img src="/img/newton_law_of_restitution_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>现通过前两种情况分析理解.</p>
+<div></div>
+<b>Case (1):</b>
+<br>
+Conservation of Linear Momentum:
+<div>
+$$
+(\rightarrow): 2mu+m(-3u)=2m(-v_P)+mv_Q.
+$$
+</div>
+Impact Law:
+<div>
+$$
+e=\frac{v_P+v_Q}{3u+u}.
+$$
+</div>
+Solving simultaneous equations, we have:
+<div>
+$$
+v_P=\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
+$$
+</div>
+<b>Case (2):</b>
+<br>
+Conservation of Linear Momentum:
+<div>
+$$
+(\rightarrow): 2mu+m(-3u)=2m(v_P)+mv_Q.
+$$
+</div>
+Impact Law:
+<div>
+$$
+e=\frac{v_Q-v_P}{3u+u}.
+$$
+</div>
+Solving simultaneous equations, we have:
+<div>
+$$
+v_P=\textcolor{red}{-}\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
+$$
+</div>
+第一种情况是碰撞后的真实情况，所以得到速度都是正数. 第二种情况中$v_P<0$，说明与假设的方向相反. 而且可以预见，第三种情况算出来$v_P>0$但$v_Q<0$. 但无论是哪一种情况，计算出来的关于$P$和$Q$的速率（Speed）的表达式都是一致的.</div>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>碰撞模型建立是A Level考试中碰撞题型中的基础考法，对矢量表达要求较高，需要理解restitution计算式中的相对速度.</p>
 ]]></content>
       <categories>
-        <category>云游日常</category>
+        <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>比较数据（Compare Data）</title>
+    <url>/maths/compare_data/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel S1考生</p>
+<p><i class="far fa-check-circle"></i>CIE S1考生</p>
+<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><p>比较数据一般从两个角度进行比较：</p>
+<div></div>
+
+<ol>
+<li>集中趋势（Measure of Central Tendency）</li>
+</ol>
+<div></div>
+(1) 常用于比较的指标：中位数（Median）、平均数（Mean）.
+<br>
+(2) 描述模版：比较指标，the average of (something) is higher/lower than that of (something).
+<br>
+
+<ol start="2">
+<li>离散程度（Measure of Spread&#x2F;Variation）</li>
+</ol>
+<div></div>
+(1) 常用于比较的指标： 极差（Range）、四分位距（Interquartile Range/IQR）、方差（Variance）、标准差（Standard Deviation）.
+<br>
+(2) 描述模版：比较指标，(something) is more/less variable (or spread out) than (something).
+<br>
+<br>
+一般我们同时使用中位数和IQR来比较数据，或者同时使用平均数和方差（或标准差）来比较数据. 前者的优点是不容易受到极端值的影响.
+
+<h2 id="比较数据"><a href="#比较数据" class="headerlink" title="比较数据"></a>比较数据</h2><p>集中趋势和离散程度是描述数据分布（Distribution）最常用的两个性质，集中趋势表明数据的平均水平，离散程度表明数据的波动程度. 需要注意的是，波动程度和稳定性是联系在一起的：数据波动程度越大，越不稳定；数据波动程度越小，越稳定. 如果考察到比较数据的题型，一般比较直接，只需要算出指标的准确值并进行比较.</p>
+<div></div>
+但在部分题目中，问法不够明显，这就要求考生理解两个性质以及在现实生活中的意义. 以下用爱德思（Edexcel）真题举例说明.
+
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>At the start of a course, an instructor asked a group of 80 apprentices to estimate the length of a piece of pipe. The error (true length$-$estimated length) was recorded in centimetres. The results are summarised in the box plot below.</p>
+<div></div>
+
+<p><img src="/img/compare_data_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<div></div>
+One month later, the instructor asked the 80 apprentices to estimate the length of a different piece of pipe and recorded their errors. The results are summarised in the table below.
+
+<table class="tg" style="text-align:center; margin:auto; border: 1.5px solid">
+<thead style="border: 1.5px solid">
+  <tr>
+    <th scope="col" width="99" style="border: 1.5px solid">Error ($e$ cm)</th>
+    <th scope="col" width="99" style="border: 1.5px solid">Number of apprentices</th>
+  </tr>
+</thead>
+<tbody>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$-40 \lt e \leq -16$</td>
+    <td style="border: 1.5px solid">2</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$-16 \lt e \leq -8$</td>
+    <td style="border: 1.5px solid">18</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$-8 \lt e \leq 0$</td>
+    <td style="border: 1.5px solid">33</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$0 \lt e \leq 8$</td>
+    <td style="border: 1.5px solid">14</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$8 \lt e \leq 16$</td>
+    <td style="border: 1.5px solid">10</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$16 \lt e \leq 40$</td>
+    <td style="border: 1.5px solid">3</td>
+  </tr>
+</tbody>
+</table>
+
+<p>State, giving reasons, whether or not the apprentices’ ability to estimate the length of a piece of pipe has improved over the first month of the course.</p>
+</div>
+
+<p>本题考察的知识点本质上是比较数据，大部分的考生能够答到中位数更接近$0$，误差减小，所以有提升. 除了集中趋势，还需要考虑波动程度. 波动程度反映的是数据的稳定性，试想一下，如果一组数据的误差是：$-200$、$-100$、$+100$、$+200$，另一组数据的误差是：$-3$、$-2$、$+1$、$+5$，尽管前者的中位数为$0$，但波动程度极大，数据的不稳定会人们怀疑准确性——很有可能前者的猜测比较“幸运”，让最后的平均误差为$0$罢了.</p>
+<div></div>
+因此，本题还需要答到$\text{IQR}$减少，所以有提升.
+
+<h2 id="知识点拓展：稳定性的好处"><a href="#知识点拓展：稳定性的好处" class="headerlink" title="知识点拓展：稳定性的好处"></a>知识点拓展：稳定性的好处</h2><p>在学习离散程度的测量时，我们会将离散程度和稳定性联系在一起，稳定性的提高会提升准确性. 在后续学习中（Edexcel S3；AQA S2；CIE S2），我们会学习概率论中的一个重要定理：中心极限定理（Central Limit Theorem），它指在满足一定条件下，样本均值（Sample Mean）$\overline{X}$的分布近似一个正态分布（Normal Distribution）：</p>
+<div>
+$$
+\overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)
+$$
+</div>
+
+<p>其中$n$是样本大小（Sample Size）. </p>
+<div></div>
+现阶段，如果不能理解何为样本均值的分布，不妨考虑这么一个例子，研究人员想估算全国人民的平均年龄，不停地随机抽样（每次随机抽中$n$个人），每一次随机抽样都可以计算出一个平均年龄，并将这些平均年龄记录下来.
+<div></div>
+平均年龄的数据分布像一个正态分布，而均值是$\mu$（真实的全国人民平均年龄），方差是$\displaystyle \frac{\sigma^2}{n}$（真实的全国人民年龄的方差除以样本大小）. 
+<div></div>
+可以看到，随着样本大小增加，抽样计算出的平均年龄的方差减少，趋近于$0$. 它的好处是，随着样本大小增加，我们单次计算出来的平均年龄会有极大的概率接近真实的平均年龄，也就更加可信.
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>比较数据是A Level考试中的一类考法，多见于爱德思和CIE考试局. 近年来考察可能性偏低，但考生应该掌握比较角度和描述模版. 有意向进一步学习S系列的考生应加深对离散程度的理解.</p>
+]]></content>
+      <categories>
+        <category>数学</category>
       </categories>
   </entry>
   <entry>
@@ -709,160 +804,6 @@ $$
       </categories>
   </entry>
   <entry>
-    <title>示波器（Oscilloscope）的使用</title>
-    <url>/physics/oscilloscope/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel U2和U5考生</p>
-<p><i class="far fa-check-circle"></i>AQA U2考生</p>
-<p><i class="far fa-check-circle"></i>CIE AS阶段考生</p>
-<h2 id="示波器结构"><a href="#示波器结构" class="headerlink" title="示波器结构"></a>示波器结构</h2><p><img src="/img/oscilloscope_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<h3 id="水平方向"><a href="#水平方向" class="headerlink" title="水平方向"></a>水平方向</h3><p>可缩放，通过调节<code>time base</code>旋钮（单位：<code>s/div</code>）控制单元格水平方向时间数值，使得至少一个完整的波形周期显示出来.</p>
-<h3 id="竖直方向"><a href="#竖直方向" class="headerlink" title="竖直方向"></a>竖直方向</h3><p>可缩放，通过调节<code>Y-gain/Y-sensitivity</code>旋钮（单位：<code>V/div</code>）控制单元格竖直方向电压数值，使得完成的波形（波峰及波谷）显示出来.</p>
-<h2 id="主要考察知识点：示波器的读数和实验应用"><a href="#主要考察知识点：示波器的读数和实验应用" class="headerlink" title="主要考察知识点：示波器的读数和实验应用"></a>主要考察知识点：示波器的读数和实验应用</h2><h3 id="周期（Period）的测量"><a href="#周期（Period）的测量" class="headerlink" title="周期（Period）的测量"></a>周期（Period）的测量</h3><p>示波器水平方向代表时间长度，可以通过以下公式算出这段时间:</p>
-<div>
-$$
-\text{Time}(s)=n \times \text{Scale of time base}
-$$
-</div>
-其中，$n$表示number of divisions of one complete wave.
-<br>
-<br>
-如果示波器屏幕上显示了若干个周期，可以求出总时间再除以完整波形数量$N$算出周期：
-<div>
-$$
-T(s)=\frac{\text{Total time}}{N}.
-$$
-</div>
-类似于求平均值，能有效的减小误差（Reduce Percentage Uncertainty）.
-
-<br>
-<br>
-
-<p><img src="/img/oscilloscope_2.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<center><p style="font-size: 18px;"><em>Note</em>: Time for $2T=6.4$ to $6.6$ divisions.</p></center>
-
-<br>
-选取参照点位时，常用点位是波峰和波谷位置，也可以选择pulse的起点和终点作为参照，优先选取方便读数的点位. 如上图，pulse的起点和终点的读数更为准确.
-
-<h3 id="振幅（Amplitude）的测量"><a href="#振幅（Amplitude）的测量" class="headerlink" title="振幅（Amplitude）的测量"></a>振幅（Amplitude）的测量</h3><p>示波器竖直方向代表potential difference (p.d.)，可根据比例关系得到振幅大小. <b><em>The vertical displacement of the spot is proportional to the applied p.d.</em></b></p>
-<div>
-$$
-\text{Amplitude}(V)=\frac{1}{2} \times n \times \text{Scale of Y-gain}
-$$
-</div>
-其中，$n$表示number of divisions between the bottom to the top of the wave.
-<br>
-<br>
-如果用到twin beam oscilloscope，可以比较振幅来得到两个波能量的高低. 因为在波的理论中，振幅与能量成正比. 以下用爱德思真题举例说明.
-<br>
-<br>
-
-<p><img src="/img/oscilloscope_3.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<p><img src="/img/oscilloscope_4.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<br>
-如图所示，左图中的上方波形的振幅明显比右图中的小，说明左图的microphone距离loudspeaker更远，波在空气中传播距离越远，能量越低，振幅越小. 下方的波形是loudspeaker产生的标准波形.
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>示波器的工作原理在A Level考试中考察可能性较低，不再赘述. 考生应该掌握图像信息的获取，计算周期和振幅，相关应用领域还有周期性运动，比如检测简谐运动（SHM）规律.</p>
-]]></content>
-      <categories>
-        <category>物理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>碰撞模型：Newton’s Law of Restitution</title>
-    <url>/maths/newton_law_of_restitution/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel M2考生</p>
-<p><i class="far fa-check-circle"></i>AQA FM1考生</p>
-<p><i class="far fa-check-circle"></i>CIE FM考生</p>
-<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><ol>
-<li><p>Conservation of Linear Momentum:</p>
-<div>
-$$
-m_1\mathbf{u}_1+m_2\mathbf{u}_2=m_1\mathbf{v}_1+m_2\mathbf{v}_2.
-$$
-</div>
-</li>
-<li><p>Impulse-Momentum Principle:</p>
-<div>
-$$
-\mathbf{I}=\mathbf{F}t=m\mathbf{v}-m\mathbf{u}.
-$$
-</div></li>
-</ol>
-<p>注意，以上两个物理公式要满足矢量关系，规定好正方向，同向为正，反向为负.</p>
-<ol start="3">
-<li>Newton‘s Law of Restitution (Impact Law):<div>
-$$
-e=\frac{\text{Separation speed}}{\text{Approach speed}}\ \ 0 \leq e \leq 1.
-$$
-</div></li>
-</ol>
-<p>其中，$e&#x3D;0$为非弹性碰撞（Inelastic Collision），即碰撞后相对速度为$0$；$e&#x3D;1$为弹性碰撞（Elastic Collision），即碰撞前后动能相等. 常数$e$可以理解为碰撞后的相对速度与碰撞前的相对速度的比值.</p>
-<div></div>
-<em>相对速度</em>：同向运动，速度大小相减；反向运动，速度大小相加.
-
-<h2 id="建立碰撞模型"><a href="#建立碰撞模型" class="headerlink" title="建立碰撞模型"></a>建立碰撞模型</h2><p>部分题型没有给出碰撞前后的示意图，在题干中也没有明确表示碰撞前或碰撞后物体的运动方向，需要自己建立一个合理的模型.</p>
-<div></div>
-建立模型的重点是标注好碰撞前后各物体其中一种可能的运动方向，然后按照自己设定的模型，首先规定好正方向，列出动量守恒和impact law两个物理方程，联解方程即可得出相关物理量. 不用纠结是否有其他情况，严格按照矢量原则列式，算出来的结果的正负就代表了准确方向. 以下用爱德思（Edexcel）真题举例说明.
-
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>A particle $P$ of mass $2m$ is moving in a straight line with speed $u$ on a smooth horizontal plane. The particle $P$ collides directly with a particle $Q$, of mass $m$, which is moving on the plane along the same straight line as $P$ but in the opposite direction to $P$. Immediately before the collision the speed of $Q$ is $3u$. The coefficient of restitution between $P$ and $Q$ is $e$, where $\displaystyle e&gt;\frac{1}{8}$.</p>
-<div></div>
-Find, in terms of $u$ and $e$,
-<br>
-(i) the speed of $P$ immediately after the collision,
-<br>
-(ii) the speed of $Q$ immediately after the coolision.</div>
-
-<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>根据题意，已知碰撞前两小球运动方向，没有描述碰撞后的结果，所以会有三种可能情况：<br><img src="/img/newton_law_of_restitution_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>现通过前两种情况分析理解.</p>
-<div></div>
-<b>Case (1):</b>
-<br>
-Conservation of Linear Momentum:
-<div>
-$$
-(\rightarrow): 2mu+m(-3u)=2m(-v_P)+mv_Q.
-$$
-</div>
-Impact Law:
-<div>
-$$
-e=\frac{v_P+v_Q}{3u+u}.
-$$
-</div>
-Solving simultaneous equations, we have:
-<div>
-$$
-v_P=\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
-$$
-</div>
-<b>Case (2):</b>
-<br>
-Conservation of Linear Momentum:
-<div>
-$$
-(\rightarrow): 2mu+m(-3u)=2m(v_P)+mv_Q.
-$$
-</div>
-Impact Law:
-<div>
-$$
-e=\frac{v_Q-v_P}{3u+u}.
-$$
-</div>
-Solving simultaneous equations, we have:
-<div>
-$$
-v_P=\textcolor{red}{-}\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
-$$
-</div>
-第一种情况是碰撞后的真实情况，所以得到速度都是正数. 第二种情况中$v_P<0$，说明与假设的方向相反. 而且可以预见，第三种情况算出来$v_P>0$但$v_Q<0$. 但无论是哪一种情况，计算出来的关于$P$和$Q$的速率（Speed）的表达式都是一致的.</div>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>碰撞模型建立是A Level考试中碰撞题型中的基础考法，对矢量表达要求较高，需要理解restitution计算式中的相对速度.</p>
-]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-  </entry>
-  <entry>
     <title>分离变量法（Separation of Variables）的常见疑问</title>
     <url>/maths/separation_of_variables/</url>
     <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel P4考生</p>
@@ -991,6 +932,65 @@ Therefore, the general solution to the differential equation is $\displaystyle -
 ]]></content>
       <categories>
         <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>示波器（Oscilloscope）的使用</title>
+    <url>/physics/oscilloscope/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel U2和U5考生</p>
+<p><i class="far fa-check-circle"></i>AQA U2考生</p>
+<p><i class="far fa-check-circle"></i>CIE AS阶段考生</p>
+<h2 id="示波器结构"><a href="#示波器结构" class="headerlink" title="示波器结构"></a>示波器结构</h2><p><img src="/img/oscilloscope_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<h3 id="水平方向"><a href="#水平方向" class="headerlink" title="水平方向"></a>水平方向</h3><p>可缩放，通过调节<code>time base</code>旋钮（单位：<code>s/div</code>）控制单元格水平方向时间数值，使得至少一个完整的波形周期显示出来.</p>
+<h3 id="竖直方向"><a href="#竖直方向" class="headerlink" title="竖直方向"></a>竖直方向</h3><p>可缩放，通过调节<code>Y-gain/Y-sensitivity</code>旋钮（单位：<code>V/div</code>）控制单元格竖直方向电压数值，使得完成的波形（波峰及波谷）显示出来.</p>
+<h2 id="主要考察知识点：示波器的读数和实验应用"><a href="#主要考察知识点：示波器的读数和实验应用" class="headerlink" title="主要考察知识点：示波器的读数和实验应用"></a>主要考察知识点：示波器的读数和实验应用</h2><h3 id="周期（Period）的测量"><a href="#周期（Period）的测量" class="headerlink" title="周期（Period）的测量"></a>周期（Period）的测量</h3><p>示波器水平方向代表时间长度，可以通过以下公式算出这段时间:</p>
+<div>
+$$
+\text{Time}(s)=n \times \text{Scale of time base}
+$$
+</div>
+其中，$n$表示number of divisions of one complete wave.
+<br>
+<br>
+如果示波器屏幕上显示了若干个周期，可以求出总时间再除以完整波形数量$N$算出周期：
+<div>
+$$
+T(s)=\frac{\text{Total time}}{N}.
+$$
+</div>
+类似于求平均值，能有效的减小误差（Reduce Percentage Uncertainty）.
+
+<br>
+<br>
+
+<p><img src="/img/oscilloscope_2.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<center><p style="font-size: 18px;"><em>Note</em>: Time for $2T=6.4$ to $6.6$ divisions.</p></center>
+
+<br>
+选取参照点位时，常用点位是波峰和波谷位置，也可以选择pulse的起点和终点作为参照，优先选取方便读数的点位. 如上图，pulse的起点和终点的读数更为准确.
+
+<h3 id="振幅（Amplitude）的测量"><a href="#振幅（Amplitude）的测量" class="headerlink" title="振幅（Amplitude）的测量"></a>振幅（Amplitude）的测量</h3><p>示波器竖直方向代表potential difference (p.d.)，可根据比例关系得到振幅大小. <b><em>The vertical displacement of the spot is proportional to the applied p.d.</em></b></p>
+<div>
+$$
+\text{Amplitude}(V)=\frac{1}{2} \times n \times \text{Scale of Y-gain}
+$$
+</div>
+其中，$n$表示number of divisions between the bottom to the top of the wave.
+<br>
+<br>
+如果用到twin beam oscilloscope，可以比较振幅来得到两个波能量的高低. 因为在波的理论中，振幅与能量成正比. 以下用爱德思真题举例说明.
+<br>
+<br>
+
+<p><img src="/img/oscilloscope_3.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<p><img src="/img/oscilloscope_4.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<br>
+如图所示，左图中的上方波形的振幅明显比右图中的小，说明左图的microphone距离loudspeaker更远，波在空气中传播距离越远，能量越低，振幅越小. 下方的波形是loudspeaker产生的标准波形.
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>示波器的工作原理在A Level考试中考察可能性较低，不再赘述. 考生应该掌握图像信息的获取，计算周期和振幅，相关应用领域还有周期性运动，比如检测简谐运动（SHM）规律.</p>
+]]></content>
+      <categories>
+        <category>物理</category>
       </categories>
   </entry>
 </search>
