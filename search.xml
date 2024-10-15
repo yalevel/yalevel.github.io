@@ -1,36 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>云游指南</title>
-    <url>/admin/guide/</url>
-    <content><![CDATA[<p>欢迎来到A Level Clouds. 本文旨在介绍A Level Clouds的功能，希望能帮助大家快速上手。</p>
-<h2 id="顶部导航栏"><a href="#顶部导航栏" class="headerlink" title="顶部导航栏"></a>顶部导航栏</h2><h3 id="左侧"><a href="#左侧" class="headerlink" title="左侧"></a>左侧</h3><p>点击导航栏的左侧会进入一个全新界面，欢迎探索。</p>
-<h3 id="右侧"><a href="#右侧" class="headerlink" title="右侧"></a>右侧</h3><p>导航栏的右侧包括关于我们、考前模拟（限时开放）、每日一题、往年真题、分类真题和全部文章。</p>
-<div></div>
-
-<p>点击<a href="/about/" target="_blank">关于我们</a>可以浏览关于我们的更多信息。点击<a href="/mock-exams/" target="_blank">考前模拟（限时开放）</a>，可以下载考前模拟卷并查看答案。点击<a href="/daily-practice/" target="_blank">每日一题</a>，可以查看每天更新的一道真题及相关知识点。点击<a href="/past-papers/" target="_blank">往年真题</a>，可以按照考试局与学科查看往年真题，如果你有耐心的话，也可以将鼠标放置于<a href="/past-papers/" target="_blank">往年真题</a>处，它会显示具体学科，点击后就可以直接查看往年真题。点击<a href="/topic-questions/" target="_blank">分类真题</a>，可以按照考试局与学科查看目前平台已有的分类真题资料。点击<a href="/posts/" target="_blank">全部文章</a>，可以按照年份查看所有文章，也可以将鼠标放置于<a href="/posts/" target="_blank">全部文章</a>处，它会显示具体学科，点击后就可以直接查看相关文章。</p>
-<div></div>
-
-<p>除此之外，导航栏的右侧还包括一个重要的搜索功能，可以帮助大家根据关键词搜索具体的文章，节省时间。</p>
-<div class="trm-note warning"><div class="trm-note-title">友情提示</div><p>A Level Clouds在未来<em>也许</em>会上线新的板块或功能，对于主要的板块或功能一般会更新在顶部导航栏的右侧，敬请期待。</p>
-</div>
-
-
-<h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><p><a>任何一篇文章</a>以及<a href="/about/" target="_blank">关于我们</a>页面的最下侧都开启了评论功能。本站倡导知识上的友好交流，但保留审核和删除无关或过激评论的权利。</p>
-<div></div>
-
-<p>如果你留下你的数字QQ邮箱地址，则会使用你的QQ头像发表评论。如果你使用其他邮箱地址，则会自动生成一个头像，但可以前往<a href="https://cravatar.cn">https://cravatar.cn</a>通过邮箱注册并修改头像，评论时，请留下相同的邮箱。</p>
-<div></div>
-
-<p>此外，请谨慎辨别评论信息，带<a>OA</a>标记的评论为本站的官方回复。</p>
-<h2 id="侧栏"><a href="#侧栏" class="headerlink" title="侧栏"></a>侧栏</h2><p>侧栏提供了商务联系的方式。尽管我们提供了站内评论和微信两种交流方式，但我们希望站内评论和微信的交流以知识为主。商务交流请通过邮件，我们会定期查看邮件并回复。</p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>希望每一位浏览A Level Clouds的用户能有一个舒适的体验，并且有所收获。</p>
-]]></content>
-      <categories>
-        <category>云游日常</category>
-      </categories>
-  </entry>
-  <entry>
     <title>三维空间中特征向量（Eigenvector）的第二种计算方法</title>
     <url>/maths/calculation_of_eigenvector/</url>
     <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel FP3考生</p>
@@ -240,101 +210,6 @@ $$
       </categories>
   </entry>
   <entry>
-    <title>碰撞模型：Newton’s Law of Restitution</title>
-    <url>/maths/newton_law_of_restitution/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel M2考生</p>
-<p><i class="far fa-check-circle"></i>AQA FM1考生</p>
-<p><i class="far fa-check-circle"></i>CIE FM考生</p>
-<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><ol>
-<li><p>Conservation of Linear Momentum:</p>
-<div>
-$$
-m_1\mathbf{u}_1+m_2\mathbf{u}_2=m_1\mathbf{v}_1+m_2\mathbf{v}_2.
-$$
-</div>
-</li>
-<li><p>Impulse-Momentum Principle:</p>
-<div>
-$$
-\mathbf{I}=\mathbf{F}t=m\mathbf{v}-m\mathbf{u}.
-$$
-</div></li>
-</ol>
-<p>注意，以上两个物理公式要满足矢量关系，规定好正方向，同向为正，反向为负.</p>
-<ol start="3">
-<li>Newton‘s Law of Restitution (Impact Law):<div>
-$$
-e=\frac{\text{Separation speed}}{\text{Approach speed}}\ \ 0 \leq e \leq 1.
-$$
-</div></li>
-</ol>
-<p>其中，$e&#x3D;0$为非弹性碰撞（Inelastic Collision），即碰撞后相对速度为$0$；$e&#x3D;1$为弹性碰撞（Elastic Collision），即碰撞前后动能相等. 常数$e$可以理解为碰撞后的相对速度与碰撞前的相对速度的比值.</p>
-<div></div>
-<em>相对速度</em>：同向运动，速度大小相减；反向运动，速度大小相加.
-
-<h2 id="建立碰撞模型"><a href="#建立碰撞模型" class="headerlink" title="建立碰撞模型"></a>建立碰撞模型</h2><p>部分题型没有给出碰撞前后的示意图，在题干中也没有明确表示碰撞前或碰撞后物体的运动方向，需要自己建立一个合理的模型.</p>
-<div></div>
-建立模型的重点是标注好碰撞前后各物体其中一种可能的运动方向，然后按照自己设定的模型，首先规定好正方向，列出动量守恒和impact law两个物理方程，联解方程即可得出相关物理量. 不用纠结是否有其他情况，严格按照矢量原则列式，算出来的结果的正负就代表了准确方向. 以下用爱德思（Edexcel）真题举例说明.
-
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>A particle $P$ of mass $2m$ is moving in a straight line with speed $u$ on a smooth horizontal plane. The particle $P$ collides directly with a particle $Q$, of mass $m$, which is moving on the plane along the same straight line as $P$ but in the opposite direction to $P$. Immediately before the collision the speed of $Q$ is $3u$. The coefficient of restitution between $P$ and $Q$ is $e$, where $\displaystyle e&gt;\frac{1}{8}$.</p>
-<div></div>
-Find, in terms of $u$ and $e$,
-<br>
-(i) the speed of $P$ immediately after the collision,
-<br>
-(ii) the speed of $Q$ immediately after the coolision.</div>
-
-<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>根据题意，已知碰撞前两小球运动方向，没有描述碰撞后的结果，所以会有三种可能情况：<br><img src="/img/newton_law_of_restitution_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>现通过前两种情况分析理解.</p>
-<div></div>
-<b>Case (1):</b>
-<br>
-Conservation of Linear Momentum:
-<div>
-$$
-(\rightarrow): 2mu+m(-3u)=2m(-v_P)+mv_Q.
-$$
-</div>
-Impact Law:
-<div>
-$$
-e=\frac{v_P+v_Q}{3u+u}.
-$$
-</div>
-Solving simultaneous equations, we have:
-<div>
-$$
-v_P=\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
-$$
-</div>
-<b>Case (2):</b>
-<br>
-Conservation of Linear Momentum:
-<div>
-$$
-(\rightarrow): 2mu+m(-3u)=2m(v_P)+mv_Q.
-$$
-</div>
-Impact Law:
-<div>
-$$
-e=\frac{v_Q-v_P}{3u+u}.
-$$
-</div>
-Solving simultaneous equations, we have:
-<div>
-$$
-v_P=\textcolor{red}{-}\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
-$$
-</div>
-第一种情况是碰撞后的真实情况，所以得到速度都是正数. 第二种情况中$v_P<0$，说明与假设的方向相反. 而且可以预见，第三种情况算出来$v_P>0$但$v_Q<0$. 但无论是哪一种情况，计算出来的关于$P$和$Q$的速率（Speed）的表达式都是一致的.</div>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>碰撞模型建立是A Level考试中碰撞题型中的基础考法，对矢量表达要求较高，需要理解restitution计算式中的相对速度.</p>
-]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-  </entry>
-  <entry>
     <title>比较数据（Compare Data）</title>
     <url>/maths/compare_data/</url>
     <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel S1考生</p>
@@ -434,6 +309,28 @@ $$
 ]]></content>
       <categories>
         <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>云游指南</title>
+    <url>/admin/guide/</url>
+    <content><![CDATA[<p>欢迎来到A Level Clouds. 本文旨在介绍A Level Clouds的功能，希望能帮助大家快速上手。</p>
+<h2 id="顶部导航栏"><a href="#顶部导航栏" class="headerlink" title="顶部导航栏"></a>顶部导航栏</h2><h3 id="左侧"><a href="#左侧" class="headerlink" title="左侧"></a>左侧</h3><p>点击导航栏的左侧会进入一个全新界面，欢迎探索。</p>
+<h3 id="右侧"><a href="#右侧" class="headerlink" title="右侧"></a>右侧</h3><p>导航栏的右侧包括关于我们、考前模拟（限时开放）、每日一题、往年真题、分类真题和全部文章。</p>
+<div></div>
+
+<p>点击<a href="/about/" target="_blank">关于我们</a>可以浏览关于我们的更多信息。点击<a href="/mock-exams/" target="_blank">考前模拟（限时开放）</a>，可以下载考前模拟卷并查看答案。点击<a href="/daily-practice/" target="_blank">每日一题</a>，可以查看每天更新的一道真题及相关知识点。点击<a href="/past-papers/" target="_blank">往年真题</a>，可以按照考试局与学科查看往年真题，如果你有耐心的话，也可以将鼠标放置于<a href="/past-papers/" target="_blank">往年真题</a>处，它会显示具体学科，点击后就可以直接查看往年真题。点击<a href="/topic-questions/" target="_blank">分类真题</a>，可以按照考试局与学科查看目前平台已有的分类真题资料。点击<a href="/posts/" target="_blank">全部文章</a>，可以按照年份查看所有文章，也可以将鼠标放置于<a href="/posts/" target="_blank">全部文章</a>处，它会显示具体学科，点击后就可以直接查看相关文章。</p>
+<div></div>
+
+<p>除此之外，导航栏的右侧还包括一个重要的搜索功能，可以帮助大家根据关键词搜索具体的文章，节省时间。</p>
+<div class="trm-note warning"><div class="trm-note-title">友情提示</div><p>A Level Clouds在未来<em>也许</em>会上线新的板块或功能，对于主要的板块或功能一般会更新在顶部导航栏的右侧，敬请期待。</p>
+</div>
+
+<h2 id="侧栏"><a href="#侧栏" class="headerlink" title="侧栏"></a>侧栏</h2><p>侧栏提供了联系的方式，包括微信与邮件。但我们希望微信的交流以知识为主，商务交流请通过邮件，我们会定期查看邮件并回复。</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>希望每一位浏览A Level Clouds的用户能有一个舒适的体验，并且有所收获。</p>
+]]></content>
+      <categories>
+        <category>云游日常</category>
       </categories>
   </entry>
   <entry>
@@ -804,131 +701,95 @@ $$
       </categories>
   </entry>
   <entry>
-    <title>分离变量法（Separation of Variables）的常见疑问</title>
-    <url>/maths/separation_of_variables/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel P4考生</p>
-<p><i class="far fa-check-circle"></i>AQA P2考生</p>
-<p><i class="far fa-check-circle"></i>CIE P3考生</p>
-<h2 id="分离变量法"><a href="#分离变量法" class="headerlink" title="分离变量法"></a>分离变量法</h2><p>利用分离变量法求解形如$\displaystyle \frac{\text{d}y}{\text{d}x}&#x3D;f(x)g(y)$的一阶微分方程（First-Order Differential Equation）是三大考试局的必考知识点. 方法的基本步骤为：</p>
-<ol>
-<li><p>分离变量：</p>
+    <title>碰撞模型：Newton’s Law of Restitution</title>
+    <url>/maths/newton_law_of_restitution/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel M2考生</p>
+<p><i class="far fa-check-circle"></i>AQA FM1考生</p>
+<p><i class="far fa-check-circle"></i>CIE FM考生</p>
+<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><ol>
+<li><p>Conservation of Linear Momentum:</p>
 <div>
 $$
-\frac{\text{d}y}{\text{d}x}=f(x)g(y) \Rightarrow \frac{1}{g(y)}\text{d}y=f(x)\text{d}x.
+m_1\mathbf{u}_1+m_2\mathbf{u}_2=m_1\mathbf{v}_1+m_2\mathbf{v}_2.
 $$
 </div>
 </li>
-<li><p>两边同时积分：</p>
+<li><p>Impulse-Momentum Principle:</p>
 <div>
 $$
-\frac{1}{g(y)}\text{d}y=f(x)\text{d}x \Rightarrow \int \frac{1}{g(y)}\text{d}y=\int f(x)\text{d}x.
+\mathbf{I}=\mathbf{F}t=m\mathbf{v}-m\mathbf{u}.
 $$
-</div>
-</li>
-<li><p>计算积分，并在其中一侧加上任意常数项：</p>
-<div>
-$$
-\int \frac{1}{g(y)}\text{d}y=\int f(x)\text{d}x \Rightarrow G(y)=F(x)+C.
-$$
-</div>
-</li>
-<li><p>根据题目要求改写微分方程的通解（General Solution），或根据边界条件（Boundary Condition，也可理解为初始条件）计算微分方程的特解（Particular Solution）.</p>
-</li>
+</div></li>
 </ol>
-<h2 id="常见疑问"><a href="#常见疑问" class="headerlink" title="常见疑问"></a>常见疑问</h2><p>尽管只要熟练掌握分离变量法的基本步骤以及积分计算，解此类微分方程都比较容易. 但教材在介绍分离变量法时会省略较多的步骤，在教学或学习过程中，总会遇到诸多疑问，现整理如下.</p>
-<h3 id="为什么分离变量后，可以两边关于不同的变量同时积分"><a href="#为什么分离变量后，可以两边关于不同的变量同时积分" class="headerlink" title="为什么分离变量后，可以两边关于不同的变量同时积分"></a>为什么分离变量后，可以两边关于不同的变量同时积分</h3><p>事实上，分离变量后两边同时积分的步骤只是方便书写，更完整的步骤应为：</p>
-<div>
+<p>注意，以上两个物理公式要满足矢量关系，规定好正方向，同向为正，反向为负.</p>
+<ol start="3">
+<li>Newton‘s Law of Restitution (Impact Law):<div>
 $$
-\frac{\text{d}y}{\text{d}x}=f(x)g(y) \Rightarrow \frac{1}{g(y)}\frac{\text{d}y}{\text{d}x}=f(x).
+e=\frac{\text{Separation speed}}{\text{Approach speed}}\ \ 0 \leq e \leq 1.
 $$
-</div>
-等式两边同时关于变量$x$积分：
-<div>
-$$
-\frac{1}{g(y)}\frac{\text{d}y}{\text{d}x}=f(x) \Rightarrow \int \frac{1}{g(y)}\frac{\text{d}y}{\text{d}x}\text{d}x=\int f(x)\text{d}x
-$$
-</div>
-化简后即为：
-<div>
-$$
-\int \frac{1}{g(y)}\text{d}y=\int f(x)\text{d}x.
-$$
-</div>
-
-<h3 id="为什么计算积分后，不需要在两侧都加上任意常数项"><a href="#为什么计算积分后，不需要在两侧都加上任意常数项" class="headerlink" title="为什么计算积分后，不需要在两侧都加上任意常数项"></a>为什么计算积分后，不需要在两侧都加上任意常数项</h3><p>因为任意常数加减任意常数依然得到一个任意常数.</p>
-<div>
-$$
-\int \frac{1}{g(y)}\text{d}y=\int f(x)\text{d}x \Rightarrow G(y)+C_1=F(x)+C_2 \Rightarrow G(y)=F(x)+(C_2-C_1)
-$$
-</div>
-其中$C_1$和$C_2$是任意常数. $C_2-C_1$依然是任意常数，可以用任意常数$C$来表示.
-
-<h3 id="为什么可以去掉-ln-x-中的绝对值符号"><a href="#为什么可以去掉-ln-x-中的绝对值符号" class="headerlink" title="为什么可以去掉$\ln|x|$中的绝对值符号"></a>为什么可以去掉$\ln|x|$中的绝对值符号</h3><p>三大考试局官方教材的例题中都有涉及关于$\displaystyle \int \frac{1}{x}\text{d}x$的计算，需要注意的是最后通解中的绝对值符号并不是想去就可以去掉的. </p>
+</div></li>
+</ol>
+<p>其中，$e&#x3D;0$为非弹性碰撞（Inelastic Collision），即碰撞后相对速度为$0$；$e&#x3D;1$为弹性碰撞（Elastic Collision），即碰撞前后动能相等. 常数$e$可以理解为碰撞后的相对速度与碰撞前的相对速度的比值.</p>
 <div></div>
-最简单的一类情况就是，题目给出了变量的取值范围，因此可以直接去掉，比如：当$y>0$时，解微分方程
-<div>
-$$
-\frac{\text{d}y}{\text{d}x}=xy.
-$$
-</div>
-稍显复杂的情况，我们将在下例讨论.
+<em>相对速度</em>：同向运动，速度大小相减；反向运动，速度大小相加.
 
-<h3 id="为什么分离变量时，不需要讨论-g-y-0-的情形"><a href="#为什么分离变量时，不需要讨论-g-y-0-的情形" class="headerlink" title="为什么分离变量时，不需要讨论$g(y)&#x3D;0$的情形"></a>为什么分离变量时，不需要讨论$g(y)&#x3D;0$的情形</h3><p>严格说来，在使用分离变量法时是需要讨论的，但在爱德思（Edexcel）和AQA的教材例题中却未曾提及. 考生不必过于担心，如果题目最终要求计算特解，则基本不需要考虑$g(y)&#x3D;0$的情形；如果题目只是要求计算通解，我们可以通过快速计算，整合通解.</p>
-<p>现以爱德思教材的例题，同时分析：（1）为什么可以去掉绝对值符号；（2）讨论$g(y)&#x3D;0$后，通解会发生什么变化.</p>
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>Find a general solution to the differential equation $\displaystyle (1+x^2)\frac{\text{d}y}{\text{d}x}&#x3D;x\tan y$.</p>
-</div>
+<h2 id="建立碰撞模型"><a href="#建立碰撞模型" class="headerlink" title="建立碰撞模型"></a>建立碰撞模型</h2><p>部分题型没有给出碰撞前后的示意图，在题干中也没有明确表示碰撞前或碰撞后物体的运动方向，需要自己建立一个合理的模型.</p>
+<div></div>
+建立模型的重点是标注好碰撞前后各物体其中一种可能的运动方向，然后按照自己设定的模型，首先规定好正方向，列出动量守恒和impact law两个物理方程，联解方程即可得出相关物理量. 不用纠结是否有其他情况，严格按照矢量原则列式，算出来的结果的正负就代表了准确方向. 以下用爱德思（Edexcel）真题举例说明.
 
-<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>The differential equation becomes</p>
-<div>
-$$
-\frac{\text{d}y}{\text{d}x}=\frac{x}{1+x^2}\tan y.
-$$
-</div>
-If $\tan y \neq 0$:
-<div>
-$$
-\int \frac{1}{\tan y}\text{d}y=\int \frac{x}{1+x^2}\text{d}x.
-$$
-Then we have:
-<div>
-$$
-\begin{aligned}
-\ln|\sin y| &= \frac{1}{2}\ln|1+x^2|+C_1 \\
-\ln|\sin y| &= \frac{1}{2}\ln|1+x^2|+\ln C_2 \ \ (\text{注：$C_2>0$且$\ln C_2$可表示任意常数}) \\
-\ln|\sin y| &= \ln|C_2\sqrt{1+x^2}|\ \ (\text{注：$C_2>0$)} \\
-\sin y &= \pm C_2\sqrt{1+x^2}\ \ (\text{注：$C_2>0$)} \\
-\sin y &= C_3\sqrt{1+x^2}\ \ (\text{注：$\pm C_2$可表示任意非零常数，此时$C_3 \neq 0$)} \\
-\end{aligned}
-$$
-</div>
-If $\tan y=0$, $y=n\pi$, where $n$ is any integer, is also a valid solution. Note that when $y=n\pi$, $\sin y=0=0\sqrt{1+x^2}$.
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>A particle $P$ of mass $2m$ is moving in a straight line with speed $u$ on a smooth horizontal plane. The particle $P$ collides directly with a particle $Q$, of mass $m$, which is moving on the plane along the same straight line as $P$ but in the opposite direction to $P$. Immediately before the collision the speed of $Q$ is $3u$. The coefficient of restitution between $P$ and $Q$ is $e$, where $\displaystyle e&gt;\frac{1}{8}$.</p>
+<div></div>
+Find, in terms of $u$ and $e$,
 <br>
+(i) the speed of $P$ immediately after the collision,
 <br>
-Therefore, the general solution to the differential equation is $\sin y=C\sqrt{1+x^2}$ for all $C$.
-</div></div>
+(ii) the speed of $Q$ immediately after the coolision.</div>
 
-<p>去绝对值符号以及$g(y)&#x3D;0$的情形是需要谨慎讨论的，但一般不是考察重点. 在CIE教材中，有一个关于讨论$g(y)&#x3D;0$的更复杂且有趣的例子.</p>
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>Find a general solution to the differential equation $\displaystyle \frac{\text{d}y}{\text{d}x}&#x3D;-\frac{(x^2+1)y^3}{x^2}$.</p>
-</div>
-
-<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>If $y^3 \neq 0$:</p>
+<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>根据题意，已知碰撞前两小球运动方向，没有描述碰撞后的结果，所以会有三种可能情况：<br><img src="/img/newton_law_of_restitution_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>现通过前两种情况分析理解.</p>
+<div></div>
+<b>Case (1):</b>
+<br>
+Conservation of Linear Momentum:
 <div>
 $$
-\int \frac{1}{y^3}\text{d}y=\int -\frac{x^2+1}{x^2}\text{d}x.
-$$
-Then we have:
-<div>
-$$
--\frac{1}{2y^2}=-x+\frac{1}{x}+C.
+(\rightarrow): 2mu+m(-3u)=2m(-v_P)+mv_Q.
 $$
 </div>
-If $y^3=0$, $y=0$ is also a valid solution.
+Impact Law:
+<div>
+$$
+e=\frac{v_P+v_Q}{3u+u}.
+$$
+</div>
+Solving simultaneous equations, we have:
+<div>
+$$
+v_P=\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
+$$
+</div>
+<b>Case (2):</b>
 <br>
-<br>
-Therefore, the general solution to the differential equation is $\displaystyle -\frac{1}{2y^2}=-x+\frac{1}{x}+C$ or $y=0$.
-</div></div>
+Conservation of Linear Momentum:
+<div>
+$$
+(\rightarrow): 2mu+m(-3u)=2m(v_P)+mv_Q.
+$$
+</div>
+Impact Law:
+<div>
+$$
+e=\frac{v_Q-v_P}{3u+u}.
+$$
+</div>
+Solving simultaneous equations, we have:
+<div>
+$$
+v_P=\textcolor{red}{-}\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
+$$
+</div>
+第一种情况是碰撞后的真实情况，所以得到速度都是正数. 第二种情况中$v_P<0$，说明与假设的方向相反. 而且可以预见，第三种情况算出来$v_P>0$但$v_Q<0$. 但无论是哪一种情况，计算出来的关于$P$和$Q$的速率（Speed）的表达式都是一致的.</div>
 
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>利用分离变量法解一阶微分方程在A Level考试中是一定会考察的知识点. 考生应优先掌握分离变量法的基本步骤，对于学有余力的考生，可以尝试进一步理解分离变量法的细节.</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>碰撞模型建立是A Level考试中碰撞题型中的基础考法，对矢量表达要求较高，需要理解restitution计算式中的相对速度.</p>
 ]]></content>
       <categories>
         <category>数学</category>
@@ -1094,6 +955,137 @@ $$\begin{aligned}
 <p>举个简单的例子，如果我们证明了$f(x) \geq 2$ for all $x$，就一定可以推出$f(x) \geq 2$ for all $x \geq 5$. </p>
 <p>用集合的语言来描述，如果$A \subseteq B$，且命题$p$对于$x \in B$均成立，则命题$p$对于$x \in A$均成立.</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>部分分式的计算在A Level考试中是一定会考察的知识点. 考生应掌握两种计算方法及特殊情况的处理方式. 我们建议考生优先使用代入特值法进行计算.</p>
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>分离变量法（Separation of Variables）的常见疑问</title>
+    <url>/maths/separation_of_variables/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel P4考生</p>
+<p><i class="far fa-check-circle"></i>AQA P2考生</p>
+<p><i class="far fa-check-circle"></i>CIE P3考生</p>
+<h2 id="分离变量法"><a href="#分离变量法" class="headerlink" title="分离变量法"></a>分离变量法</h2><p>利用分离变量法求解形如$\displaystyle \frac{\text{d}y}{\text{d}x}&#x3D;f(x)g(y)$的一阶微分方程（First-Order Differential Equation）是三大考试局的必考知识点. 方法的基本步骤为：</p>
+<ol>
+<li><p>分离变量：</p>
+<div>
+$$
+\frac{\text{d}y}{\text{d}x}=f(x)g(y) \Rightarrow \frac{1}{g(y)}\text{d}y=f(x)\text{d}x.
+$$
+</div>
+</li>
+<li><p>两边同时积分：</p>
+<div>
+$$
+\frac{1}{g(y)}\text{d}y=f(x)\text{d}x \Rightarrow \int \frac{1}{g(y)}\text{d}y=\int f(x)\text{d}x.
+$$
+</div>
+</li>
+<li><p>计算积分，并在其中一侧加上任意常数项：</p>
+<div>
+$$
+\int \frac{1}{g(y)}\text{d}y=\int f(x)\text{d}x \Rightarrow G(y)=F(x)+C.
+$$
+</div>
+</li>
+<li><p>根据题目要求改写微分方程的通解（General Solution），或根据边界条件（Boundary Condition，也可理解为初始条件）计算微分方程的特解（Particular Solution）.</p>
+</li>
+</ol>
+<h2 id="常见疑问"><a href="#常见疑问" class="headerlink" title="常见疑问"></a>常见疑问</h2><p>尽管只要熟练掌握分离变量法的基本步骤以及积分计算，解此类微分方程都比较容易. 但教材在介绍分离变量法时会省略较多的步骤，在教学或学习过程中，总会遇到诸多疑问，现整理如下.</p>
+<h3 id="为什么分离变量后，可以两边关于不同的变量同时积分"><a href="#为什么分离变量后，可以两边关于不同的变量同时积分" class="headerlink" title="为什么分离变量后，可以两边关于不同的变量同时积分"></a>为什么分离变量后，可以两边关于不同的变量同时积分</h3><p>事实上，分离变量后两边同时积分的步骤只是方便书写，更完整的步骤应为：</p>
+<div>
+$$
+\frac{\text{d}y}{\text{d}x}=f(x)g(y) \Rightarrow \frac{1}{g(y)}\frac{\text{d}y}{\text{d}x}=f(x).
+$$
+</div>
+等式两边同时关于变量$x$积分：
+<div>
+$$
+\frac{1}{g(y)}\frac{\text{d}y}{\text{d}x}=f(x) \Rightarrow \int \frac{1}{g(y)}\frac{\text{d}y}{\text{d}x}\text{d}x=\int f(x)\text{d}x
+$$
+</div>
+化简后即为：
+<div>
+$$
+\int \frac{1}{g(y)}\text{d}y=\int f(x)\text{d}x.
+$$
+</div>
+
+<h3 id="为什么计算积分后，不需要在两侧都加上任意常数项"><a href="#为什么计算积分后，不需要在两侧都加上任意常数项" class="headerlink" title="为什么计算积分后，不需要在两侧都加上任意常数项"></a>为什么计算积分后，不需要在两侧都加上任意常数项</h3><p>因为任意常数加减任意常数依然得到一个任意常数.</p>
+<div>
+$$
+\int \frac{1}{g(y)}\text{d}y=\int f(x)\text{d}x \Rightarrow G(y)+C_1=F(x)+C_2 \Rightarrow G(y)=F(x)+(C_2-C_1)
+$$
+</div>
+其中$C_1$和$C_2$是任意常数. $C_2-C_1$依然是任意常数，可以用任意常数$C$来表示.
+
+<h3 id="为什么可以去掉-ln-x-中的绝对值符号"><a href="#为什么可以去掉-ln-x-中的绝对值符号" class="headerlink" title="为什么可以去掉$\ln|x|$中的绝对值符号"></a>为什么可以去掉$\ln|x|$中的绝对值符号</h3><p>三大考试局官方教材的例题中都有涉及关于$\displaystyle \int \frac{1}{x}\text{d}x$的计算，需要注意的是最后通解中的绝对值符号并不是想去就可以去掉的. </p>
+<div></div>
+最简单的一类情况就是，题目给出了变量的取值范围，因此可以直接去掉，比如：当$y>0$时，解微分方程
+<div>
+$$
+\frac{\text{d}y}{\text{d}x}=xy.
+$$
+</div>
+稍显复杂的情况，我们将在下例讨论.
+
+<h3 id="为什么分离变量时，不需要讨论-g-y-0-的情形"><a href="#为什么分离变量时，不需要讨论-g-y-0-的情形" class="headerlink" title="为什么分离变量时，不需要讨论$g(y)&#x3D;0$的情形"></a>为什么分离变量时，不需要讨论$g(y)&#x3D;0$的情形</h3><p>严格说来，在使用分离变量法时是需要讨论的，但在爱德思（Edexcel）和AQA的教材例题中却未曾提及. 考生不必过于担心，如果题目最终要求计算特解，则基本不需要考虑$g(y)&#x3D;0$的情形；如果题目只是要求计算通解，我们可以通过快速计算，整合通解.</p>
+<p>现以爱德思教材的例题，同时分析：（1）为什么可以去掉绝对值符号；（2）讨论$g(y)&#x3D;0$后，通解会发生什么变化.</p>
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>Find a general solution to the differential equation $\displaystyle (1+x^2)\frac{\text{d}y}{\text{d}x}&#x3D;x\tan y$.</p>
+</div>
+
+<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>The differential equation becomes</p>
+<div>
+$$
+\frac{\text{d}y}{\text{d}x}=\frac{x}{1+x^2}\tan y.
+$$
+</div>
+If $\tan y \neq 0$:
+<div>
+$$
+\int \frac{1}{\tan y}\text{d}y=\int \frac{x}{1+x^2}\text{d}x.
+$$
+Then we have:
+<div>
+$$
+\begin{aligned}
+\ln|\sin y| &= \frac{1}{2}\ln|1+x^2|+C_1 \\
+\ln|\sin y| &= \frac{1}{2}\ln|1+x^2|+\ln C_2 \ \ (\text{注：$C_2>0$且$\ln C_2$可表示任意常数}) \\
+\ln|\sin y| &= \ln|C_2\sqrt{1+x^2}|\ \ (\text{注：$C_2>0$)} \\
+\sin y &= \pm C_2\sqrt{1+x^2}\ \ (\text{注：$C_2>0$)} \\
+\sin y &= C_3\sqrt{1+x^2}\ \ (\text{注：$\pm C_2$可表示任意非零常数，此时$C_3 \neq 0$)} \\
+\end{aligned}
+$$
+</div>
+If $\tan y=0$, $y=n\pi$, where $n$ is any integer, is also a valid solution. Note that when $y=n\pi$, $\sin y=0=0\sqrt{1+x^2}$.
+<br>
+<br>
+Therefore, the general solution to the differential equation is $\sin y=C\sqrt{1+x^2}$ for all $C$.
+</div></div>
+
+<p>去绝对值符号以及$g(y)&#x3D;0$的情形是需要谨慎讨论的，但一般不是考察重点. 在CIE教材中，有一个关于讨论$g(y)&#x3D;0$的更复杂且有趣的例子.</p>
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>Find a general solution to the differential equation $\displaystyle \frac{\text{d}y}{\text{d}x}&#x3D;-\frac{(x^2+1)y^3}{x^2}$.</p>
+</div>
+
+<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>If $y^3 \neq 0$:</p>
+<div>
+$$
+\int \frac{1}{y^3}\text{d}y=\int -\frac{x^2+1}{x^2}\text{d}x.
+$$
+Then we have:
+<div>
+$$
+-\frac{1}{2y^2}=-x+\frac{1}{x}+C.
+$$
+</div>
+If $y^3=0$, $y=0$ is also a valid solution.
+<br>
+<br>
+Therefore, the general solution to the differential equation is $\displaystyle -\frac{1}{2y^2}=-x+\frac{1}{x}+C$ or $y=0$.
+</div></div>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>利用分离变量法解一阶微分方程在A Level考试中是一定会考察的知识点. 考生应优先掌握分离变量法的基本步骤，对于学有余力的考生，可以尝试进一步理解分离变量法的细节.</p>
 ]]></content>
       <categories>
         <category>数学</category>
