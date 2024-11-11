@@ -8,23 +8,25 @@
 <meta name="theme-color" content="#317EFB" />
 <meta name="baidu-site-verification" content="codeva-hsDvZaZFYL" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="主要适用对象Edexcel P4考生 AQA P2考生 CIE P3考生 部分分式部分分式是将有理函数（Rational Function）分解成许多次数较低的有理函数和的形式，如：  $$\frac{1}{x(x+1)}&#x3D;\frac{1}{x}-\frac{1}{x+1}.$$   现以例题来复习部分分式的两种方法. Example. Given that $\displaystyle \fra">
+<meta name="description" content="主要适用对象Edexcel FP1考生 AQA FPSM1考生 CIE FP1、FP2考生 前言矩阵是什么？矩阵从何而来？为什么矩阵中的运算及相关定义是那么突然，但却合理？我们相信会有一部分人在学习过程中感到不解，但却又带着这种疑惑接受了既定事实并做对了题目. 我们希望能在这一篇文章中尽可能解释清楚一些在教学中遇到的常见问题，帮助考生进一步理解矩阵. 矩阵矩阵并不是凭空出现的. 解方程是古典代数学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="部分分式（Partial Fraction）的常见疑问">
-<meta property="og:url" content="https://yalevel.github.io/maths/partial_fraction/index.html">
+<meta property="og:title" content="矩阵（Matrix）及其运算">
+<meta property="og:url" content="https://yalevel.github.io/maths/matrix/index.html">
 <meta property="og:site_name" content="A Level Clouds">
-<meta property="og:description" content="主要适用对象Edexcel P4考生 AQA P2考生 CIE P3考生 部分分式部分分式是将有理函数（Rational Function）分解成许多次数较低的有理函数和的形式，如：  $$\frac{1}{x(x+1)}&#x3D;\frac{1}{x}-\frac{1}{x+1}.$$   现以例题来复习部分分式的两种方法. Example. Given that $\displaystyle \fra">
+<meta property="og:description" content="主要适用对象Edexcel FP1考生 AQA FPSM1考生 CIE FP1、FP2考生 前言矩阵是什么？矩阵从何而来？为什么矩阵中的运算及相关定义是那么突然，但却合理？我们相信会有一部分人在学习过程中感到不解，但却又带着这种疑惑接受了既定事实并做对了题目. 我们希望能在这一篇文章中尽可能解释清楚一些在教学中遇到的常见问题，帮助考生进一步理解矩阵. 矩阵矩阵并不是凭空出现的. 解方程是古典代数学">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-10-06T04:30:00.000Z">
-<meta property="article:modified_time" content="2024-10-06T15:20:39.988Z">
+<meta property="og:image" content="https://yalevel.github.io/img/404.jpg">
+<meta property="article:published_time" content="2024-11-07T04:30:00.000Z">
+<meta property="article:modified_time" content="2024-11-09T06:15:31.051Z">
 <meta property="article:author" content="云中君">
 <meta property="article:tag" content="数学; 物理; A-Level; Edexcel; 爱德思; AQA; CIE; 爱德思数学; 爱德思物理; AQA数学; AQA物理; CIE数学; CIE物理">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yalevel.github.io/img/404.jpg">
 
     <meta name="keywords" content="数学; 物理; A-Level; Edexcel; 爱德思; AQA; CIE; 爱德思数学; 爱德思物理; AQA数学; AQA物理; CIE数学; CIE物理">
 
 
-<title >部分分式（Partial Fraction）的常见疑问</title>
+<title >矩阵（Matrix）及其运算</title>
 
 <!-- Favicon -->
 
@@ -67,7 +69,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"yalevel.github.io","author":"云中君","root":"/","typed_text":null,"theme_version":"2.1.15","theme":{"switch":false,"default":"style-light"},"favicon":{"logo":"/img/favicon.png","icon16":"/img/favicon.png","icon32":"/img/favicon.png","appleTouchIcon":"/img/apple-touch-icon.png","webmanifest":null,"visibilitychange":false},"i18n":{"placeholder":"搜索知识...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true},"live_time":{"start_time":"","prefix":"运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner","avatar":false,"delayRange":5000,"speed":80},"search":{"enable":true,"type":"local","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-10-06 23:20:39"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-09 14:15:31"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.15" id="trm-switch-style">
@@ -278,7 +280,7 @@
                             
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            部分分式（Partial Fraction）的常见疑问
+                            矩阵（Matrix）及其运算
                         </h1>
 
                         <!--
@@ -321,7 +323,7 @@
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
-            10/06
+            11/07
         </div>
     </div>
     <div class="col-sm-4">
@@ -339,104 +341,388 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel P4考生</p>
-<p><i class="far fa-check-circle"></i>AQA P2考生</p>
-<p><i class="far fa-check-circle"></i>CIE P3考生</p>
-<h2 id="部分分式"><a href="#部分分式" class="headerlink" title="部分分式"></a>部分分式</h2><p>部分分式是将有理函数（Rational Function）分解成许多次数较低的有理函数和的形式，如：</p>
-<div>
-$$\frac{1}{x(x+1)}=\frac{1}{x}-\frac{1}{x+1}.$$
-</div>
-
-<p>现以例题来复习部分分式的两种方法.</p>
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><div>
-Given that $\displaystyle \frac{6x^2+5x-2}{x(x-1)(2x+1)} \equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}$, find the values of the constants $A$, $B$ and $C$.
-</div></div>
-
-<h2 id="方法一：比较系数法（Equating-Coefficients）"><a href="#方法一：比较系数法（Equating-Coefficients）" class="headerlink" title="方法一：比较系数法（Equating Coefficients）"></a>方法一：比较系数法（Equating Coefficients）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
-<div>
-$$\begin{aligned}
-\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
-\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
-\end{aligned}$$
-</div>
-So
-<div>
-$$\begin{aligned}
-6x^2+5x-2&=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)
-\\&=A(2x^2-x-1)+2Bx^2+Bx+Cx^2-Cx
-\\&=(2A+2B+C)x^2+(-A+B-C)x-A
-\end{aligned}$$
-</div>
-Then we have
+    <h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel FP1考生</p>
+<p><i class="far fa-check-circle"></i>AQA FPSM1考生</p>
+<p><i class="far fa-check-circle"></i>CIE FP1、FP2考生</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>矩阵是什么？矩阵从何而来？为什么矩阵中的运算及相关定义是那么突然，但却合理？我们相信会有一部分人在学习过程中感到不解，但却又带着这种疑惑接受了既定事实并做对了题目. 我们希望能在这一篇文章中尽可能解释清楚一些在教学中遇到的常见问题，帮助考生进一步理解矩阵.</p>
+<h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><p>矩阵并不是凭空出现的. 解方程是古典代数学研究的重要问题，其中$n$个未知量的一次方程构成的方程组称为$n$元线性方程组. 在研究$n$元线性方程组的解法过程中，矩阵的概念就自然而然地出现了：考虑$m$个方程构成的$n$元线性方程组，未知量所对应的系数共$mn$个，常数项共$m$个. 若只考虑未知量系数，则由$mn$个数排成的$m$行、$n$列的一张表称为一个$m \times n$矩阵（又称系数矩阵，Coefficient Matrix）. 若同时考虑未知量系数与常数项，则由$m(n+1)$个数排成的$m$行、$n+1$列的一张表称为$m \times (n+1)$矩阵（又称增广矩阵，Augmented Matrix）. 随着学科的发展，矩阵这一工具也不断发展，这就是后话了.</p>
+<p>说明：增广矩阵的概念仅出现在CIE教材中，可用于解方程组.</p>
+<h2 id="行列式（Determinant）"><a href="#行列式（Determinant）" class="headerlink" title="行列式（Determinant）"></a>行列式（Determinant）</h2><p>尽管在爱德思（Edexcel）、AQA和CIE教材中都是先定义矩阵，再定义行列式，但历史上恰好相反，矩阵正式作为数学中的研究对象是在行列式的研究发展之后. 考虑一个两个方程的二元一次方程组：</p>
 <div>
 $$\begin{cases}
-2A+2B+C=6 \\
--A+B-C=5 \\
--A=-2
+a_{11}x_1+a_{12}x_2=c_1 \\
+a_{21}x_1+a_{22}x_2=c_2
 \end{cases}$$
 </div>
-Solving the simultaneous equations gives $A=2$, $B=3$ and $C=-4$.</div>
-
-<p>比较系数法思路清晰易懂，但计算量偏大且容易出错，我们一般不建议考生使用该方法计算.</p>
-<h2 id="方法二：代入特值法（Substitution）"><a href="#方法二：代入特值法（Substitution）" class="headerlink" title="方法二：代入特值法（Substitution）"></a>方法二：代入特值法（Substitution）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
+上述方程组的解为：
 <div>
 $$\begin{aligned}
-\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
-\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
+x_1=\frac{c_1a_{22}-c_2a_{12}}{a_{11}a_{22}-a_{12}a_{21}},\ x_2=\frac{a_{11}c_2-a_{21}c_1}{a_{11}a_{22}-a_{12}a_{21}}
 \end{aligned}$$
 </div>
-So
-<div>
-$$6x^2+5x-2=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$$
-</div>
-Let $x=1$:
-<div>
-$$6+5-2=0+3B+0 \Rightarrow B=3$$
-</div>
-Let $\displaystyle x=-\frac{1}{2}$:
-<div>
-$$\frac{6}{4}-\frac{5}{2}-2=0+0+\frac{3}{4}C \Rightarrow C=-4$$
-</div>
-Let $x=0$:
-<div>
-$$0+0-2=-A+0+0 \Rightarrow A=2$$
-</div>
-So, $A=2$, $B=3$ and $C=-4$.</div>
 
-<p>代入特值法计算量相对较小，我们一般建议考生使用该方法计算.</p>
-<h2 id="特殊情况的处理方式"><a href="#特殊情况的处理方式" class="headerlink" title="特殊情况的处理方式"></a>特殊情况的处理方式</h2><p>部分分式分解有几种需要注意的特殊情况，需要特殊处理：</p>
-<ol>
-<li><p>假分式（Improper Fraction）需要转为带分式（Mixed Fraction）后对真分式（Proper Fraction）进行部分分式分解.</p>
-</li>
-<li><p>分母中含有重因式（Repeated Factor）需要将重因式拆成两项和，如：</p>
+<p>观察发现，上述方程组有<b><em>唯一</em></b>解当且仅当$a_{11}a_{22}-a_{12}a_{21} \neq 0$. 若$a_{11}a_{22}-a_{12}a_{21}&#x3D;0$，上述方程组<b><em>无解</em></b>或有<b><em>无穷多个</em></b>解.</p>
+<p>为了便于记忆表达式$a_{11}a_{22}-a_{12}a_{21}$，将其记为</p>
+<div>
+$$\begin{vmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{vmatrix}=a_{11}a_{22}-a_{12}a_{21}$$
+</div>
+
+<p>这个表达式称为二阶行列式，也正是上述方程组对应的系数矩阵</p>
+<div>
+$$A=\begin{pmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{pmatrix}$$
+</div>
+
+<p>的行列式，记为$|A|$或$\det(A)$. 因此，上述方程组有<b><em>唯一</em></b>解当且仅当$\det(A) \neq 0$.</p>
+<p>幸运的是，当我们<b><em>妥善定义</em></b>$n$阶行列式后，$n$个方程的$n$元线性方程组也有类似的结论——方程组有唯一解当且仅当$\det(A) \neq 0$.</p>
+<h2 id="矩阵的运算"><a href="#矩阵的运算" class="headerlink" title="矩阵的运算"></a>矩阵的运算</h2><h3 id="矩阵加法"><a href="#矩阵加法" class="headerlink" title="矩阵加法"></a>矩阵加法</h3><p>表格是一种常用的数据可视化方式，表格结构简单，便于浏览和获取信息. 矩阵作为一种表格也具有同样的特点. 考虑三位巫师在2023年上半年与2023年下半年的咒语使用情况，如下表所示：</p>
+<table class="tg" style="text-align:center; margin:auto">
+  <tr>
+    <th style="border: 1.5px solid"></th>
+    <th style="border: 1.5px solid">召唤咒</th>
+    <th style="border: 1.5px solid">悬浮咒</th>
+    <th style="border: 1.5px solid">照明咒</th>
+  </tr>
+  <tr>
+    <td style="border: 1.5px solid">哈利·波特</td>
+    <td style="border: 1.5px solid">5</td>
+    <td style="border: 1.5px solid">3</td>
+    <td style="border: 1.5px solid">1</td>
+  </tr>
+  <tr>
+    <td style="border: 1.5px solid">赫敏·格兰杰</td>
+    <td style="border: 1.5px solid">4</td>
+    <td style="border: 1.5px solid">3</td>
+    <td style="border: 1.5px solid">6</td>
+  </tr>
+  <tr>
+    <td style="border: 1.5px solid">罗恩·韦斯莱</td>
+    <td style="border: 1.5px solid">3</td>
+    <td style="border: 1.5px solid">4</td>
+    <td style="border: 1.5px solid">2</td>
+  </tr>
+</table>
+<br>
+<table class="tg" style="text-align:center; margin:auto">
+  <tr>
+    <th style="border: 1.5px solid"></th>
+    <th style="border: 1.5px solid">召唤咒</th>
+    <th style="border: 1.5px solid">悬浮咒</th>
+    <th style="border: 1.5px solid">照明咒</th>
+  </tr>
+  <tr>
+    <td style="border: 1.5px solid">哈利·波特</td>
+    <td style="border: 1.5px solid">2</td>
+    <td style="border: 1.5px solid">0</td>
+    <td style="border: 1.5px solid">8</td>
+  </tr>
+  <tr>
+    <td style="border: 1.5px solid">赫敏·格兰杰</td>
+    <td style="border: 1.5px solid">6</td>
+    <td style="border: 1.5px solid">5</td>
+    <td style="border: 1.5px solid">11</td>
+  </tr>
+  <tr>
+    <td style="border: 1.5px solid">罗恩·韦斯莱</td>
+    <td style="border: 1.5px solid">0</td>
+    <td style="border: 1.5px solid">3</td>
+    <td style="border: 1.5px solid">2</td>
+  </tr>
+</table>
+<br>
+我们想分析三位巫师在2023年的咒语使用情况，只需要将对应巫师及咒语的使用次数相加即可. 这一过程就是矩阵的加法：
+
+<div>
+$$\begin{pmatrix}
+5 & 3 & 1 \\
+4 & 3 & 6 \\
+3 & 4 & 2
+\end{pmatrix} + \begin{pmatrix}
+2 & 0 & 8 \\
+6 & 5 & 11 \\
+0 & 3 & 2
+\end{pmatrix} = \begin{pmatrix}
+7 & 3 & 9 \\
+10 & 8 & 17 \\
+3 & 7 & 4
+\end{pmatrix}$$
+</div>
+
+<p>只有两个矩阵形状相同（均为$n$行$m$列），矩阵加法才有意义，且是对应位置的元素相加. 不难理解，矩阵加法具有交换律与结合律.</p>
+<h3 id="矩阵数乘"><a href="#矩阵数乘" class="headerlink" title="矩阵数乘"></a>矩阵数乘</h3><p>矩阵数乘也很好理解，比如同步增长的经济问题很自然地引出矩阵的数量乘法运算，$kA$意味着矩阵中的所有元素乘上$k$.</p>
+<h3 id="矩阵乘法"><a href="#矩阵乘法" class="headerlink" title="矩阵乘法"></a>矩阵乘法</h3><p>教材介绍了矩阵乘法的计算规则，我们提供不同的角度去理解矩阵乘法. 首先回到线性方程组：</p>
+<div>
+$$\begin{cases}
+8x_1+2x_2=11 \\
+2x_1+5x_2=9
+\end{cases}$$
+</div>
+
+<p>矩阵可以为上述线性方程组提供一个简便的形式：</p>
+<div>
+$$\begin{pmatrix}
+8 & 2 \\
+2 & 5
+\end{pmatrix}\begin{pmatrix}
+x_1 \\
+x_2
+\end{pmatrix} = \begin{pmatrix}
+11 \\
+9
+\end{pmatrix}$$
+</div>
+
+<p>结合矩阵形式与线性方程组，已经能看出矩阵乘法（$2 \times 2$矩阵与$2 \times 1$向量相乘）的计算规则，但我们需要进一步探究. 考虑下列两组线性方程组：</p>
+<div>
+$$\begin{cases}
+a_{11}x_1+a_{12}x_2=y_1 \\
+a_{21}x_1+a_{22}x_2=y_2
+\end{cases} \ \ \text{与}\ \ \begin{cases}
+b_{11}t_1+b_{12}t_2=x_1 \\
+b_{21}t_1+b_{22}t_2=x_2
+\end{cases}$$
+</div>
+
+<p>矩阵写法为：</p>
+<div>
+$$\begin{pmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{pmatrix}\begin{pmatrix}
+x_1 \\
+x_2
+\end{pmatrix}=\begin{pmatrix}
+y_1 \\
+y_2
+\end{pmatrix} \ \ \text{与}\ \ \begin{pmatrix}
+b_{11} & b_{12} \\
+b_{21} & b_{22}
+\end{pmatrix}\begin{pmatrix}
+t_1 \\
+t_2
+\end{pmatrix}=\begin{pmatrix}
+x_1 \\
+x_2
+\end{pmatrix}$$
+</div>
+
+<p>合并两个方程组后可得：</p>
+<div>
+$$\begin{cases}
+a_{11}(b_{11}t_1+b_{12}t_2)+a_{12}(b_{21}t_1+b_{22}t_2)=y_1 \\
+a_{21}(b_{11}t_1+b_{12}t_2)+a_{22}(b_{21}t_1+b_{22}t_2)=y_2
+\end{cases}$$
+</div>
+
+<p>即：</p>
+<div>
+$$\begin{cases}
+(a_{11}b_{11}+a_{12}b_{21})t_1+(a_{11}b_{12}+a_{12}b_{22})t_2=y_1 \\
+(a_{21}b_{11}+a_{22}b_{21})t_1+(a_{21}b_{12}+a_{22}b_{22})t_2=y_2
+\end{cases}$$
+</div>
+
+<p>同理，矩阵可以变为：</p>
+<div>
+$$\begin{pmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{pmatrix}\begin{pmatrix}
+b_{11} & b_{12} \\
+b_{21} & b_{22}
+\end{pmatrix}\begin{pmatrix}
+t_1 \\
+t_2
+\end{pmatrix}=\begin{pmatrix}
+y_1 \\
+y_2
+\end{pmatrix}$$
+</div>
+
+<p>因此</p>
+<div>
+$$\begin{pmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{pmatrix}\begin{pmatrix}
+b_{11} & b_{12} \\
+b_{21} & b_{22}
+\end{pmatrix}=\begin{pmatrix}
+a_{11}b_{11}+a_{12}b_{21} & a_{11}b_{12}+a_{12}b_{22} \\
+a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{22}b_{22}
+\end{pmatrix}$$
+</div>
+
+<p>也就是我们熟悉的矩阵乘法计算规则.</p>
+<p>我们再来看一个更加直观的几何例子.</p>
+<img class="no-fancybox" src="/img/matrix.png" width="52%" loading="lazy" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'>
+
+<div>
+假设点$P(x, y)$围绕原点$O$<b><em>逆时针旋转</em></b>$\beta$后到点$P'(x', y')$. 假设$OP$长度为$r$，根据三角函数的定义可得
+</div>
+
 <div>
 $$
-\frac{2x+8}{(x+5)^2(x-1)} \equiv \frac{A}{x+5}+\frac{B}{(x+5)^2}+\frac{C}{x-1}
+x=r\cos\alpha \\
+y=r\sin\alpha \\
+x'=r\cos(\alpha+\beta) \\
+y'=r\sin(\alpha+\beta)
 $$
-</div></li>
-</ol>
-<h2 id="拓展：代入特值法的原理"><a href="#拓展：代入特值法的原理" class="headerlink" title="拓展：代入特值法的原理"></a>拓展：代入特值法的原理</h2><p>在教学或学习过程中，我们遇到最多的问题就是：为什么可以代入特殊的值？代入某个值分母为$0$了，为什么可以成立？我们将在这一部分回答这个问题.</p>
-<p>我们还是沿用上例，在计算过程中，我们得到了</p>
-<div>
-$$\begin{aligned}
-\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
-\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
-\end{aligned}$$
-</div>
-因此，$6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$. 恒等于的意思是等式两边的表达式无论其变量（$x$）如何取值，等式两边永远成立. 所以，我们可以代入任意的值去计算$A$、$B$和$C$.
-
-<p>有同学提出，在这个计算中，分母不能为$0$，所以$x$不能取$0$、$1$和$\displaystyle -\frac{1}{2}$.</p>
-<p>事实上，我们在应用代入特值法的逻辑是：</p>
-<div>
-$$\begin{aligned}
-&\ \ \ \ \ 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for all } x
-\\&\Rightarrow 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for } x \neq 0, 1, -\frac{1}{2}
-\end{aligned}$$
 </div>
 
-<p>举个简单的例子，如果我们证明了$f(x) \geq 2$ for all $x$，就一定可以推出$f(x) \geq 2$ for all $x \geq 5$. </p>
-<p>用集合的语言来描述，如果$A \subseteq B$，且命题$p$对于$x \in B$均成立，则命题$p$对于$x \in A$均成立.</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>部分分式的计算在A Level考试中是一定会考察的知识点. 考生应掌握两种计算方法及特殊情况的处理方式. 我们建议考生优先使用代入特值法进行计算.</p>
+<p>根据三角函数相关公式</p>
+<div>
+$$
+x'=r\cos(\alpha+\beta)=r\cos\alpha\cos\beta-r\sin\alpha\sin\beta=x\cos\beta-y\sin\beta \\
+y'=r\sin(\alpha+\beta)=r\sin\alpha\cos\beta+r\cos\alpha\sin\beta=x\sin\beta+y\cos\beta
+$$
+</div>
+
+<p>矩阵写法为：</p>
+<div>
+$$\begin{pmatrix}
+\cos\beta & -\sin\beta \\
+\sin\beta & \cos\beta
+\end{pmatrix}\begin{pmatrix}
+x \\
+y
+\end{pmatrix} = \begin{pmatrix}
+x' \\
+y'
+\end{pmatrix}$$
+</div>
+
+<div>
+因此，矩阵$\displaystyle \begin{pmatrix}
+\cos\beta & -\sin\beta \\
+\sin\beta & \cos\beta
+\end{pmatrix}$用于表示围绕原点$O$逆时针旋转$\beta$——<b><em>anticlockwise rotation through $\beta$ about $O$</em></b>.
+</div>
+
+<div class="trm-note info"><div class="trm-note-title">Surprise!</div><div>
+从这个例子中，我们惊喜地发现矩阵与几何的联系. 在爱德思、AQA与CIE的教材中，我们探讨了线性变换（Linear Transformation），即可以用矩阵表示的变换. 在数学中，线性变换亦可称为线性映射（Linear Mapping）. <b><em>不严谨地说（为了理解）</em></b>，我们可以将矩阵视为一个“函数”，输入点$P$经过“矩阵函数”的作用后得到输出点$P'$：
+$$
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} \xrightarrow[]{\begin{pmatrix}
+\cos\beta & -\sin\beta \\
+\sin\beta & \cos\beta
+\end{pmatrix}} \begin{pmatrix}
+x' \\
+y'
+\end{pmatrix}
+$$
+</div></div>
+
+<div>
+不妨再假设点$P'(x', y')$围绕原点$O$逆时针旋转$\theta$后到点$P''(x'', y'')$. 从点$P$围绕原点$O$逆时针旋转到点$P''$，我们可以从两个角度思考：
+</div>
+<br>
+<div>
+1. 点$P$围绕原点$O$逆时针旋转$\beta+\theta$后到点$P''$.
+</div>
+<br>
+<div>
+2. 点$P$围绕原点$O$逆时针旋转$\beta$后到点$P'$，再由点$P'$围绕原点$O$逆时针旋转$\theta$后到点$P''$.
+</div>
+<br>
+从第一个角度来看，可以用矩阵表示为
+
+<div>
+$$\begin{aligned}
+&\begin{pmatrix}
+\cos(\beta+\theta) & -\sin(\beta+\theta) \\
+\sin(\beta+\theta) & \cos(\beta+\theta)
+\end{pmatrix}\begin{pmatrix}
+x \\
+y
+\end{pmatrix} = \begin{pmatrix}
+x'' \\
+y''
+\end{pmatrix} \\
+\Rightarrow &\begin{pmatrix}
+\cos\beta\cos\theta-\sin\beta\sin\theta & -\sin\beta\cos\theta-\cos\beta\sin\theta \\
+\sin\beta\cos\theta+\cos\beta\sin\theta & \cos\beta\cos\theta-\sin\beta\sin\theta
+\end{pmatrix}\begin{pmatrix}
+x \\
+y
+\end{pmatrix} = \begin{pmatrix}
+x'' \\
+y''
+\end{pmatrix}
+\end{aligned}$$
+</div>
+
+<p>从第二个角度来看，</p>
+<div>
+$$
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} \xrightarrow[]{\begin{pmatrix}
+\cos\beta & -\sin\beta \\
+\sin\beta & \cos\beta
+\end{pmatrix}} \begin{pmatrix}
+x' \\
+y'
+\end{pmatrix} \xrightarrow[]{\begin{pmatrix}
+\cos\theta & -\sin\theta \\
+\sin\theta & \cos\theta
+\end{pmatrix}} \begin{pmatrix}
+x'' \\
+y''
+\end{pmatrix}
+$$
+</div>
+
+<p>可以用矩阵表示为</p>
+<div>
+$$\begin{pmatrix}
+\cos\theta & -\sin\theta \\
+\sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}
+\cos\beta & -\sin\beta \\
+\sin\beta & \cos\beta
+\end{pmatrix}\begin{pmatrix}
+x \\
+y
+\end{pmatrix} = \begin{pmatrix}
+x'' \\
+y''
+\end{pmatrix}$$
+</div>
+
+<p>因此</p>
+<div>
+$$
+\begin{aligned}
+\begin{pmatrix}
+\cos\theta & -\sin\theta \\
+\sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}
+\cos\beta & -\sin\beta \\
+\sin\beta & \cos\beta
+\end{pmatrix}&=\begin{pmatrix}
+\cos\beta\cos\theta-\sin\beta\sin\theta & -\sin\beta\cos\theta-\cos\beta\sin\theta \\
+\sin\beta\cos\theta+\cos\beta\sin\theta & \cos\beta\cos\theta-\sin\beta\sin\theta
+\end{pmatrix} \\
+&=\begin{pmatrix}
+\cos\theta\cos\beta-\sin\theta\sin\beta & -\cos\theta\sin\beta-\sin\theta\cos\beta \\
+\sin\theta\cos\beta+\cos\theta\sin\beta & -\sin\theta\sin\beta+\cos\theta\cos\beta
+\end{pmatrix}
+\end{aligned}
+$$
+</div>
+
+<p>也是我们熟悉的矩阵乘法计算规则.</p>
+<p>根据多个具有实际意义的例子，我们可以<b><em>妥善定义</em></b>矩阵乘法.</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>考生应优先掌握矩阵的基本运算，本文希望能帮助学有余力的考生进一步理解矩阵. 数学概念譬如矩阵并不是凭空出现的，我们观察客观世界的现象，抓住主要特征，抽象出其概念或者建立模型，并进一步深入分析与论证. 矩阵乘法就是一个很好的例子，我们为了解决多个类似问题，抽象出矩阵乘法计算规则，并适用于所有类似问题. 数学是自然且优美的，希望这篇文章能让各位考生感受数学之美，也希望各位考生能在未来保持探索数学的热情.</p>
 
 </article>
     
@@ -452,41 +738,21 @@ $$\begin{aligned}
         </h5>
     </div>
     
+    
         <div class="col-lg-6">
     <div class="trm-older-publications-card trm-scroll-animation trm-active-el">
         <div class="trm-older-publication">
             
-            <a class="trm-op-top trm-anima-link" href="/maths/matrix/">
+            <a class="trm-op-top trm-anima-link" href="/maths/partial_fraction/">
                 <span class="trm-op-cover">
                     <img alt="cover" class="no-fancybox" src="/img/mp.jpg">
                 </span>
-                <h6 class="trm-op-title">矩阵（Matrix）及其运算</h6>
+                <h6 class="trm-op-title">部分分式（Partial Fraction）的常见疑问</h6>
             </a>
             <div class="trm-divider trm-mb-15 trm-mt-20"></div>
             <ul class="trm-card-data trm-label">
-                <li>24/11/07</li>
+                <li>24/10/06</li>
                 <li>12:30</li>
-                <li>数学</li>
-            </ul>
-        </div>
-    </div>
-</div>
-    
-    
-        <div class="col-lg-6">
-    <div class="trm-older-publications-card trm-scroll-animation trm-active-el">
-        <div class="trm-older-publication">
-            
-            <a class="trm-op-top trm-anima-link" href="/maths/inverse_matrix/">
-                <span class="trm-op-cover">
-                    <img alt="cover" class="no-fancybox" src="/img/mp.jpg">
-                </span>
-                <h6 class="trm-op-title">逆矩阵（Inverse Matrix）的常见计算方法</h6>
-            </a>
-            <div class="trm-divider trm-mb-15 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/07/25</li>
-                <li>20:08</li>
                 <li>数学</li>
             </ul>
         </div>

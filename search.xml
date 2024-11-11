@@ -23,412 +23,6 @@
       </categories>
   </entry>
   <entry>
-    <title>三维空间中特征向量（Eigenvector）的第二种计算方法</title>
-    <url>/maths/calculation_of_eigenvector/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel FP3考生</p>
-<p><i class="far fa-check-circle"></i>AQA FP2考生</p>
-<p><i class="far fa-check-circle"></i>CIE FP2考生</p>
-<h2 id="特征向量的计算"><a href="#特征向量的计算" class="headerlink" title="特征向量的计算"></a>特征向量的计算</h2><p>标准计算特征向量的方法是先利用$\det(A-\lambda I)&#x3D;0$计算特征值（Eigenvalue），再利用$A\mathbf{x}&#x3D;\lambda\mathbf{x}$解出特征向量$\mathbf{x}$.</p>
-<p>现以爱德思（Edexcel）教材的例题来复习特征向量的计算.</p>
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>Find the eigenvalues and corresponding eigenvectors of the matrix </p>
-<div>
-$$A=\begin{pmatrix}
-   2 & 1 & -3 \\
-   0 & 2 & 1 \\
-   0 & -4 & -3
-\end{pmatrix}.$$
-</div></div>
-
-<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
-<div>
-$$\begin{aligned}\det(A-\lambda I)&=\begin{vmatrix}
-   2-\lambda & 1 & -3 \\
-   0 & 2-\lambda & 1 \\
-   0 & -4 & -3-\lambda
-\end{vmatrix}
-\\&=(\lambda+2)(\lambda-1)(2-\lambda)
-\\&=0.\end{aligned}$$
-</div>
-Then $\lambda=-2, 1, 2$.
-<br>
-<br>
-To find an eigenvector of $A$ corresponding to the eigenvalue $-2$:
-<div> 
-$$\begin{aligned}
-&\ \ \ \ \ \begin{pmatrix}
-   2 & 1 & -3 \\
-   0 & 2 & 1 \\
-   0 & -4 & -3
-\end{pmatrix}\begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}=-2\begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}
-\\&\Rightarrow \begin{pmatrix}
-   2x+y-3z \\ 2y+z \\ -4y-3z
-\end{pmatrix}=\begin{pmatrix}
-   -2x \\ -2y \\ -2z
-\end{pmatrix}
-\end{aligned}$$
-</div>
-and so
-<div>
-$$\left\{\begin{align}
-  2x+y-3z&=-2x & \\
-  2y+z&=-2y & \\
-  -4y-3z&=-2z &
-\end{align}\right..$$
-</div>
-From $(2)$ and $(3)$: $z=-4y$. Let $y=1$, then $z=-4$. Substituting $y$ and $z$ to $(1)$, we have $\displaystyle x=-3.25$.
-<br>
-<br>
-An eigenvector corresponding to $-2$ is
-<div>
-$$\begin{pmatrix} -3.25 \\ 1 \\ -4 \end{pmatrix}\ \text{or}\ \begin{pmatrix} 13 \\ -4 \\ 16 \end{pmatrix}.$$
-</div>
-Similarly, an eigenvector corresponding to $1$ is
-<div>
-$$\begin{pmatrix} 4 \\ -1 \\ 1 \end{pmatrix}$$
-</div>
-and eigenvector corresponding to $2$ is
-<div>
-$$\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}.$$
-</div></div>
-
-<h2 id="三维空间中特征向量的第二种计算方法"><a href="#三维空间中特征向量的第二种计算方法" class="headerlink" title="三维空间中特征向量的第二种计算方法"></a>三维空间中特征向量的第二种计算方法</h2><p>在三维空间中，叉乘（Cross Product）也可以用于特征向量的计算. 这一方法要求先写出矩阵$A-\lambda I$，在矩阵中找到任意两行，且不成倍数关系（数学上我们称之为线性无关或线性独立，Linear Independent），计算对应行向量的叉乘结果即为特征向量. 以上题为例.</p>
-<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
-<div>
-$$\begin{aligned}\det(A-\lambda I)&=\begin{vmatrix}
-   2-\lambda & 1 & -3 \\
-   0 & 2-\lambda & 1 \\
-   0 & -4 & -3-\lambda
-\end{vmatrix}
-\\&=(\lambda+2)(\lambda-1)(2-\lambda)
-\\&=0.\end{aligned}$$
-</div>
-Then $\lambda=-2, 1, 2$.
-<br>
-<br>
-To find an eigenvector of $A$ corresponding to the eigenvalue $-2$:
-<div>
-$$A-\lambda I=\begin{pmatrix}
-   4 & 1 & -3 \\
-   0 & 4 & 1 \\
-   0 & -4 & -1
-\end{pmatrix}.$$
-</div>
-An eigenvector corresponding to $-2$ is
-<div>
-$$\begin{pmatrix}
-   4 \\ 1 \\ -3
-\end{pmatrix} \times \begin{pmatrix}
-   0 \\ 4 \\ 1
-\end{pmatrix}=\begin{vmatrix}
-   \mathbf{i} & \mathbf{j} & \mathbf{k} \\
-   4 & 1 & -3 \\
-   0 & 4 & 1
-\end{vmatrix}=13\mathbf{i}-4\mathbf{j}+16\mathbf{k}=\begin{pmatrix} 13 \\ -4 \\ 16 \end{pmatrix}.$$
-</div></div>
-
-<div class="trm-note info"><div class="trm-note-title">Exercise.</div><p>尝试利用三维空间中特征向量的第二种方法计算剩余的特征向量.</p>
-</div>
-
-<h2 id="叉乘背后的原理"><a href="#叉乘背后的原理" class="headerlink" title="叉乘背后的原理"></a>叉乘背后的原理</h2><p>我们知道在三维空间中，叉乘用于计算两个向量的共垂向量. 而叉乘用于计算三维空间的特征向量时，很难看出这一性质. 回到第一种方法，在计算特征向量时我们利用：</p>
-<div> 
-$$
-A\mathbf{x}=\lambda\mathbf{x}
-$$
-</div>
-经过变换后我们得到：
-<div> 
-$$
-A\mathbf{x}-\lambda I\mathbf{x}=\mathbf{0}.
-$$
-</div>
-这里为了不涉及过多的数学推导，我们依然用例题来介绍. 上述例子中，我们可以将
-<div> 
-$$
-\begin{pmatrix}
-   2 & 1 & -3 \\
-   0 & 2 & 1 \\
-   0 & -4 & -3
-\end{pmatrix}\begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}=-2\begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}
-$$
-</div>
-转化为
-<div> 
-$$
-\begin{pmatrix}
-   4 & 1 & -3 \\
-   0 & 4 & 1 \\
-   0 & -4 & -1
-\end{pmatrix}\begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}=\begin{pmatrix}
-   0 \\ 0 \\ 0
-\end{pmatrix}
-$$
-</div>
-从而得到
-<div>
-$$\left\{\begin{align*}
-  4x+y-3z&=0 & (\ast) \\
-  4y+z&=0 & (\dagger) \\
-  -4y-z&=0 & (\ddagger)
-\end{align*}\right..$$
-</div>
-观察$(\ast)$和$(\dagger)$式，我们发现
-<div>
-$$
-\begin{pmatrix}
-   4 \\ 1 \\ -3
-\end{pmatrix} \cdot \begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}=\begin{pmatrix}
-   4 \\ 1 \\ -3
-\end{pmatrix} \cdot \mathbf{x}=0
-$$
-</div>
-以及
-<div>
-$$
-\begin{pmatrix}
-   0 \\ 4 \\ 1
-\end{pmatrix} \cdot \begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}=\begin{pmatrix}
-   0 \\ 4 \\ 1
-\end{pmatrix} \cdot \mathbf{x}=0.
-$$
-</div>
-如果两个向量点乘（Scalar Product）为零，则两个向量是垂直的. 
-<br>
-<br>
-从$(\ast)$和$(\dagger)$式，我们很快就能得出$\displaystyle \begin{pmatrix}
-   4 \\ 1 \\ -3
-\end{pmatrix}$和$\displaystyle \begin{pmatrix}
-   0 \\ 4 \\ 1
-\end{pmatrix}$<ins><em>同时</em></ins>垂直于特征向量$\mathbf{x}$. 因此
-<div>
-$$
-\mathbf{x}=\begin{pmatrix}
-   4 \\ 1 \\ -3
-\end{pmatrix} \times \begin{pmatrix}
-   0 \\ 4 \\ 1
-\end{pmatrix}=\begin{pmatrix}
-   13 \\ -4 \\ 16
-\end{pmatrix}.
-$$
-</div>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>特征向量的计算在A Level考试中是一定会考察的知识点. 考生应优先掌握利用$A\mathbf{x}&#x3D;\lambda\mathbf{x}$计算特征向量的方法. 对于学有余力的考生，可以尝试掌握利用叉乘计算三维空间中特征向量的方法.</p>
-]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>比较数据（Compare Data）</title>
-    <url>/maths/compare_data/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel S1考生</p>
-<p><i class="far fa-check-circle"></i>CIE S1考生</p>
-<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><p>比较数据一般从两个角度进行比较：</p>
-<div></div>
-
-<ol>
-<li>集中趋势（Measure of Central Tendency）</li>
-</ol>
-<div></div>
-(1) 常用于比较的指标：中位数（Median）、平均数（Mean）.
-<br>
-(2) 描述模版：比较指标，the average of (something) is higher/lower than that of (something).
-<br>
-
-<ol start="2">
-<li>离散程度（Measure of Spread&#x2F;Variation）</li>
-</ol>
-<div></div>
-(1) 常用于比较的指标： 极差（Range）、四分位距（Interquartile Range/IQR）、方差（Variance）、标准差（Standard Deviation）.
-<br>
-(2) 描述模版：比较指标，(something) is more/less variable (or spread out) than (something).
-<br>
-<br>
-一般我们同时使用中位数和IQR来比较数据，或者同时使用平均数和方差（或标准差）来比较数据. 前者的优点是不容易受到极端值的影响.
-
-<h2 id="比较数据"><a href="#比较数据" class="headerlink" title="比较数据"></a>比较数据</h2><p>集中趋势和离散程度是描述数据分布（Distribution）最常用的两个性质，集中趋势表明数据的平均水平，离散程度表明数据的波动程度. 需要注意的是，波动程度和稳定性是联系在一起的：数据波动程度越大，越不稳定；数据波动程度越小，越稳定. 如果考察到比较数据的题型，一般比较直接，只需要算出指标的准确值并进行比较.</p>
-<div></div>
-但在部分题目中，问法不够明显，这就要求考生理解两个性质以及在现实生活中的意义. 以下用爱德思（Edexcel）真题举例说明.
-
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>At the start of a course, an instructor asked a group of 80 apprentices to estimate the length of a piece of pipe. The error (true length$-$estimated length) was recorded in centimetres. The results are summarised in the box plot below.</p>
-<div></div>
-
-<p><img src="/img/compare_data_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<div></div>
-One month later, the instructor asked the 80 apprentices to estimate the length of a different piece of pipe and recorded their errors. The results are summarised in the table below.
-
-<table class="tg" style="text-align:center; margin:auto; border: 1.5px solid">
-<thead style="border: 1.5px solid">
-  <tr>
-    <th scope="col" width="99" style="border: 1.5px solid">Error ($e$ cm)</th>
-    <th scope="col" width="99" style="border: 1.5px solid">Number of apprentices</th>
-  </tr>
-</thead>
-<tbody>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$-40 \lt e \leq -16$</td>
-    <td style="border: 1.5px solid">2</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$-16 \lt e \leq -8$</td>
-    <td style="border: 1.5px solid">18</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$-8 \lt e \leq 0$</td>
-    <td style="border: 1.5px solid">33</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$0 \lt e \leq 8$</td>
-    <td style="border: 1.5px solid">14</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$8 \lt e \leq 16$</td>
-    <td style="border: 1.5px solid">10</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$16 \lt e \leq 40$</td>
-    <td style="border: 1.5px solid">3</td>
-  </tr>
-</tbody>
-</table>
-
-<p>State, giving reasons, whether or not the apprentices’ ability to estimate the length of a piece of pipe has improved over the first month of the course.</p>
-</div>
-
-<p>本题考察的知识点本质上是比较数据，大部分的考生能够答到中位数更接近$0$，误差减小，所以有提升. 除了集中趋势，还需要考虑波动程度. 波动程度反映的是数据的稳定性，试想一下，如果一组数据的误差是：$-200$、$-100$、$+100$、$+200$，另一组数据的误差是：$-3$、$-2$、$+1$、$+5$，尽管前者的中位数为$0$，但波动程度极大，数据的不稳定会人们怀疑准确性——很有可能前者的猜测比较“幸运”，让最后的平均误差为$0$罢了.</p>
-<div></div>
-因此，本题还需要答到$\text{IQR}$减少，所以有提升.
-
-<h2 id="知识点拓展：稳定性的好处"><a href="#知识点拓展：稳定性的好处" class="headerlink" title="知识点拓展：稳定性的好处"></a>知识点拓展：稳定性的好处</h2><p>在学习离散程度的测量时，我们会将离散程度和稳定性联系在一起，稳定性的提高会提升准确性. 在后续学习中（Edexcel S3；AQA S2；CIE S2），我们会学习概率论中的一个重要定理：中心极限定理（Central Limit Theorem），它指在满足一定条件下，样本均值（Sample Mean）$\overline{X}$的分布近似一个正态分布（Normal Distribution）：</p>
-<div>
-$$
-\overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)
-$$
-</div>
-
-<p>其中$n$是样本大小（Sample Size）. </p>
-<div></div>
-现阶段，如果不能理解何为样本均值的分布，不妨考虑这么一个例子，研究人员想估算全国人民的平均年龄，不停地随机抽样（每次随机抽中$n$个人），每一次随机抽样都可以计算出一个平均年龄，并将这些平均年龄记录下来.
-<div></div>
-平均年龄的数据分布像一个正态分布，而均值是$\mu$（真实的全国人民平均年龄），方差是$\displaystyle \frac{\sigma^2}{n}$（真实的全国人民年龄的方差除以样本大小）. 
-<div></div>
-可以看到，随着样本大小增加，抽样计算出的平均年龄的方差减少，趋近于$0$. 它的好处是，随着样本大小增加，我们单次计算出来的平均年龄会有极大的概率接近真实的平均年龄，也就更加可信.
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>比较数据是A Level考试中的一类考法，多见于爱德思和CIE考试局. 近年来考察可能性偏低，但考生应该掌握比较角度和描述模版. 有意向进一步学习S系列的考生应加深对离散程度的理解.</p>
-]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>碰撞模型：Newton’s Law of Restitution</title>
-    <url>/maths/newton_law_of_restitution/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel M2考生</p>
-<p><i class="far fa-check-circle"></i>AQA FM1考生</p>
-<p><i class="far fa-check-circle"></i>CIE FM考生</p>
-<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><ol>
-<li><p>Conservation of Linear Momentum:</p>
-<div>
-$$
-m_1\mathbf{u}_1+m_2\mathbf{u}_2=m_1\mathbf{v}_1+m_2\mathbf{v}_2.
-$$
-</div>
-</li>
-<li><p>Impulse-Momentum Principle:</p>
-<div>
-$$
-\mathbf{I}=\mathbf{F}t=m\mathbf{v}-m\mathbf{u}.
-$$
-</div></li>
-</ol>
-<p>注意，以上两个物理公式要满足矢量关系，规定好正方向，同向为正，反向为负.</p>
-<ol start="3">
-<li>Newton‘s Law of Restitution (Impact Law):<div>
-$$
-e=\frac{\text{Separation speed}}{\text{Approach speed}}\ \ 0 \leq e \leq 1.
-$$
-</div></li>
-</ol>
-<p>其中，$e&#x3D;0$为非弹性碰撞（Inelastic Collision），即碰撞后相对速度为$0$；$e&#x3D;1$为弹性碰撞（Elastic Collision），即碰撞前后动能相等. 常数$e$可以理解为碰撞后的相对速度与碰撞前的相对速度的比值.</p>
-<div></div>
-<em>相对速度</em>：同向运动，速度大小相减；反向运动，速度大小相加.
-
-<h2 id="建立碰撞模型"><a href="#建立碰撞模型" class="headerlink" title="建立碰撞模型"></a>建立碰撞模型</h2><p>部分题型没有给出碰撞前后的示意图，在题干中也没有明确表示碰撞前或碰撞后物体的运动方向，需要自己建立一个合理的模型.</p>
-<div></div>
-建立模型的重点是标注好碰撞前后各物体其中一种可能的运动方向，然后按照自己设定的模型，首先规定好正方向，列出动量守恒和impact law两个物理方程，联解方程即可得出相关物理量. 不用纠结是否有其他情况，严格按照矢量原则列式，算出来的结果的正负就代表了准确方向. 以下用爱德思（Edexcel）真题举例说明.
-
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>A particle $P$ of mass $2m$ is moving in a straight line with speed $u$ on a smooth horizontal plane. The particle $P$ collides directly with a particle $Q$, of mass $m$, which is moving on the plane along the same straight line as $P$ but in the opposite direction to $P$. Immediately before the collision the speed of $Q$ is $3u$. The coefficient of restitution between $P$ and $Q$ is $e$, where $\displaystyle e&gt;\frac{1}{8}$.</p>
-<div></div>
-Find, in terms of $u$ and $e$,
-<br>
-(i) the speed of $P$ immediately after the collision,
-<br>
-(ii) the speed of $Q$ immediately after the coolision.</div>
-
-<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>根据题意，已知碰撞前两小球运动方向，没有描述碰撞后的结果，所以会有三种可能情况：<br><img src="/img/newton_law_of_restitution_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>现通过前两种情况分析理解.</p>
-<div></div>
-<b>Case (1):</b>
-<br>
-Conservation of Linear Momentum:
-<div>
-$$
-(\rightarrow): 2mu+m(-3u)=2m(-v_P)+mv_Q.
-$$
-</div>
-Impact Law:
-<div>
-$$
-e=\frac{v_P+v_Q}{3u+u}.
-$$
-</div>
-Solving simultaneous equations, we have:
-<div>
-$$
-v_P=\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
-$$
-</div>
-<b>Case (2):</b>
-<br>
-Conservation of Linear Momentum:
-<div>
-$$
-(\rightarrow): 2mu+m(-3u)=2m(v_P)+mv_Q.
-$$
-</div>
-Impact Law:
-<div>
-$$
-e=\frac{v_Q-v_P}{3u+u}.
-$$
-</div>
-Solving simultaneous equations, we have:
-<div>
-$$
-v_P=\textcolor{red}{-}\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
-$$
-</div>
-第一种情况是碰撞后的真实情况，所以得到速度都是正数. 第二种情况中$v_P<0$，说明与假设的方向相反. 而且可以预见，第三种情况算出来$v_P>0$但$v_Q<0$. 但无论是哪一种情况，计算出来的关于$P$和$Q$的速率（Speed）的表达式都是一致的.</div>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>碰撞模型建立是A Level考试中碰撞题型中的基础考法，对矢量表达要求较高，需要理解restitution计算式中的相对速度.</p>
-]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-  </entry>
-  <entry>
     <title>逆矩阵（Inverse Matrix）的常见计算方法</title>
     <url>/maths/inverse_matrix/</url>
     <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel FP1、FP3考生</p>
@@ -796,109 +390,858 @@ $$
       </categories>
   </entry>
   <entry>
-    <title>部分分式（Partial Fraction）的常见疑问</title>
-    <url>/maths/partial_fraction/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel P4考生</p>
-<p><i class="far fa-check-circle"></i>AQA P2考生</p>
-<p><i class="far fa-check-circle"></i>CIE P3考生</p>
-<h2 id="部分分式"><a href="#部分分式" class="headerlink" title="部分分式"></a>部分分式</h2><p>部分分式是将有理函数（Rational Function）分解成许多次数较低的有理函数和的形式，如：</p>
+    <title>三维空间中特征向量（Eigenvector）的第二种计算方法</title>
+    <url>/maths/calculation_of_eigenvector/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel FP3考生</p>
+<p><i class="far fa-check-circle"></i>AQA FP2考生</p>
+<p><i class="far fa-check-circle"></i>CIE FP2考生</p>
+<h2 id="特征向量的计算"><a href="#特征向量的计算" class="headerlink" title="特征向量的计算"></a>特征向量的计算</h2><p>标准计算特征向量的方法是先利用$\det(A-\lambda I)&#x3D;0$计算特征值（Eigenvalue），再利用$A\mathbf{x}&#x3D;\lambda\mathbf{x}$解出特征向量$\mathbf{x}$.</p>
+<p>现以爱德思（Edexcel）教材的例题来复习特征向量的计算.</p>
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>Find the eigenvalues and corresponding eigenvectors of the matrix </p>
 <div>
-$$\frac{1}{x(x+1)}=\frac{1}{x}-\frac{1}{x+1}.$$
-</div>
-
-<p>现以例题来复习部分分式的两种方法.</p>
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><div>
-Given that $\displaystyle \frac{6x^2+5x-2}{x(x-1)(2x+1)} \equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}$, find the values of the constants $A$, $B$ and $C$.
+$$A=\begin{pmatrix}
+   2 & 1 & -3 \\
+   0 & 2 & 1 \\
+   0 & -4 & -3
+\end{pmatrix}.$$
 </div></div>
 
-<h2 id="方法一：比较系数法（Equating-Coefficients）"><a href="#方法一：比较系数法（Equating-Coefficients）" class="headerlink" title="方法一：比较系数法（Equating Coefficients）"></a>方法一：比较系数法（Equating Coefficients）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
+<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
 <div>
+$$\begin{aligned}\det(A-\lambda I)&=\begin{vmatrix}
+   2-\lambda & 1 & -3 \\
+   0 & 2-\lambda & 1 \\
+   0 & -4 & -3-\lambda
+\end{vmatrix}
+\\&=(\lambda+2)(\lambda-1)(2-\lambda)
+\\&=0.\end{aligned}$$
+</div>
+Then $\lambda=-2, 1, 2$.
+<br>
+<br>
+To find an eigenvector of $A$ corresponding to the eigenvalue $-2$:
+<div> 
 $$\begin{aligned}
-\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
-\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
+&\ \ \ \ \ \begin{pmatrix}
+   2 & 1 & -3 \\
+   0 & 2 & 1 \\
+   0 & -4 & -3
+\end{pmatrix}\begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}=-2\begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}
+\\&\Rightarrow \begin{pmatrix}
+   2x+y-3z \\ 2y+z \\ -4y-3z
+\end{pmatrix}=\begin{pmatrix}
+   -2x \\ -2y \\ -2z
+\end{pmatrix}
 \end{aligned}$$
 </div>
-So
+and so
 <div>
-$$\begin{aligned}
-6x^2+5x-2&=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)
-\\&=A(2x^2-x-1)+2Bx^2+Bx+Cx^2-Cx
-\\&=(2A+2B+C)x^2+(-A+B-C)x-A
-\end{aligned}$$
+$$\left\{\begin{align}
+  2x+y-3z&=-2x & \\
+  2y+z&=-2y & \\
+  -4y-3z&=-2z &
+\end{align}\right..$$
 </div>
-Then we have
+From $(2)$ and $(3)$: $z=-4y$. Let $y=1$, then $z=-4$. Substituting $y$ and $z$ to $(1)$, we have $\displaystyle x=-3.25$.
+<br>
+<br>
+An eigenvector corresponding to $-2$ is
 <div>
-$$\begin{cases}
-2A+2B+C=6 \\
--A+B-C=5 \\
--A=-2
-\end{cases}$$
+$$\begin{pmatrix} -3.25 \\ 1 \\ -4 \end{pmatrix}\ \text{or}\ \begin{pmatrix} 13 \\ -4 \\ 16 \end{pmatrix}.$$
 </div>
-Solving the simultaneous equations gives $A=2$, $B=3$ and $C=-4$.</div>
+Similarly, an eigenvector corresponding to $1$ is
+<div>
+$$\begin{pmatrix} 4 \\ -1 \\ 1 \end{pmatrix}$$
+</div>
+and eigenvector corresponding to $2$ is
+<div>
+$$\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}.$$
+</div></div>
 
-<p>比较系数法思路清晰易懂，但计算量偏大且容易出错，我们一般不建议考生使用该方法计算.</p>
-<h2 id="方法二：代入特值法（Substitution）"><a href="#方法二：代入特值法（Substitution）" class="headerlink" title="方法二：代入特值法（Substitution）"></a>方法二：代入特值法（Substitution）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
+<h2 id="三维空间中特征向量的第二种计算方法"><a href="#三维空间中特征向量的第二种计算方法" class="headerlink" title="三维空间中特征向量的第二种计算方法"></a>三维空间中特征向量的第二种计算方法</h2><p>在三维空间中，叉乘（Cross Product）也可以用于特征向量的计算. 这一方法要求先写出矩阵$A-\lambda I$，在矩阵中找到任意两行，且不成倍数关系（数学上我们称之为线性无关或线性独立，Linear Independent），计算对应行向量的叉乘结果即为特征向量. 以上题为例.</p>
+<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
 <div>
-$$\begin{aligned}
-\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
-\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
-\end{aligned}$$
+$$\begin{aligned}\det(A-\lambda I)&=\begin{vmatrix}
+   2-\lambda & 1 & -3 \\
+   0 & 2-\lambda & 1 \\
+   0 & -4 & -3-\lambda
+\end{vmatrix}
+\\&=(\lambda+2)(\lambda-1)(2-\lambda)
+\\&=0.\end{aligned}$$
 </div>
-So
+Then $\lambda=-2, 1, 2$.
+<br>
+<br>
+To find an eigenvector of $A$ corresponding to the eigenvalue $-2$:
 <div>
-$$6x^2+5x-2=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$$
+$$A-\lambda I=\begin{pmatrix}
+   4 & 1 & -3 \\
+   0 & 4 & 1 \\
+   0 & -4 & -1
+\end{pmatrix}.$$
 </div>
-Let $x=1$:
+An eigenvector corresponding to $-2$ is
 <div>
-$$6+5-2=0+3B+0 \Rightarrow B=3$$
-</div>
-Let $\displaystyle x=-\frac{1}{2}$:
-<div>
-$$\frac{6}{4}-\frac{5}{2}-2=0+0+\frac{3}{4}C \Rightarrow C=-4$$
-</div>
-Let $x=0$:
-<div>
-$$0+0-2=-A+0+0 \Rightarrow A=2$$
-</div>
-So, $A=2$, $B=3$ and $C=-4$.</div>
+$$\begin{pmatrix}
+   4 \\ 1 \\ -3
+\end{pmatrix} \times \begin{pmatrix}
+   0 \\ 4 \\ 1
+\end{pmatrix}=\begin{vmatrix}
+   \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+   4 & 1 & -3 \\
+   0 & 4 & 1
+\end{vmatrix}=13\mathbf{i}-4\mathbf{j}+16\mathbf{k}=\begin{pmatrix} 13 \\ -4 \\ 16 \end{pmatrix}.$$
+</div></div>
 
-<p>代入特值法计算量相对较小，我们一般建议考生使用该方法计算.</p>
-<h2 id="特殊情况的处理方式"><a href="#特殊情况的处理方式" class="headerlink" title="特殊情况的处理方式"></a>特殊情况的处理方式</h2><p>部分分式分解有几种需要注意的特殊情况，需要特殊处理：</p>
-<ol>
-<li><p>假分式（Improper Fraction）需要转为带分式（Mixed Fraction）后对真分式（Proper Fraction）进行部分分式分解.</p>
-</li>
-<li><p>分母中含有重因式（Repeated Factor）需要将重因式拆成两项和，如：</p>
+<div class="trm-note info"><div class="trm-note-title">Exercise.</div><p>尝试利用三维空间中特征向量的第二种方法计算剩余的特征向量.</p>
+</div>
+
+<h2 id="叉乘背后的原理"><a href="#叉乘背后的原理" class="headerlink" title="叉乘背后的原理"></a>叉乘背后的原理</h2><p>我们知道在三维空间中，叉乘用于计算两个向量的共垂向量. 而叉乘用于计算三维空间的特征向量时，很难看出这一性质. 回到第一种方法，在计算特征向量时我们利用：</p>
+<div> 
+$$
+A\mathbf{x}=\lambda\mathbf{x}
+$$
+</div>
+经过变换后我们得到：
+<div> 
+$$
+A\mathbf{x}-\lambda I\mathbf{x}=\mathbf{0}.
+$$
+</div>
+这里为了不涉及过多的数学推导，我们依然用例题来介绍. 上述例子中，我们可以将
+<div> 
+$$
+\begin{pmatrix}
+   2 & 1 & -3 \\
+   0 & 2 & 1 \\
+   0 & -4 & -3
+\end{pmatrix}\begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}=-2\begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}
+$$
+</div>
+转化为
+<div> 
+$$
+\begin{pmatrix}
+   4 & 1 & -3 \\
+   0 & 4 & 1 \\
+   0 & -4 & -1
+\end{pmatrix}\begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}=\begin{pmatrix}
+   0 \\ 0 \\ 0
+\end{pmatrix}
+$$
+</div>
+从而得到
+<div>
+$$\left\{\begin{align*}
+  4x+y-3z&=0 & (\ast) \\
+  4y+z&=0 & (\dagger) \\
+  -4y-z&=0 & (\ddagger)
+\end{align*}\right..$$
+</div>
+观察$(\ast)$和$(\dagger)$式，我们发现
 <div>
 $$
-\frac{2x+8}{(x+5)^2(x-1)} \equiv \frac{A}{x+5}+\frac{B}{(x+5)^2}+\frac{C}{x-1}
+\begin{pmatrix}
+   4 \\ 1 \\ -3
+\end{pmatrix} \cdot \begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}=\begin{pmatrix}
+   4 \\ 1 \\ -3
+\end{pmatrix} \cdot \mathbf{x}=0
 $$
-</div></li>
-</ol>
-<h2 id="拓展：代入特值法的原理"><a href="#拓展：代入特值法的原理" class="headerlink" title="拓展：代入特值法的原理"></a>拓展：代入特值法的原理</h2><p>在教学或学习过程中，我们遇到最多的问题就是：为什么可以代入特殊的值？代入某个值分母为$0$了，为什么可以成立？我们将在这一部分回答这个问题.</p>
-<p>我们还是沿用上例，在计算过程中，我们得到了</p>
-<div>
-$$\begin{aligned}
-\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
-\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
-\end{aligned}$$
 </div>
-因此，$6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$. 恒等于的意思是等式两边的表达式无论其变量（$x$）如何取值，等式两边永远成立. 所以，我们可以代入任意的值去计算$A$、$B$和$C$.
-
-<p>有同学提出，在这个计算中，分母不能为$0$，所以$x$不能取$0$、$1$和$\displaystyle -\frac{1}{2}$.</p>
-<p>事实上，我们在应用代入特值法的逻辑是：</p>
+以及
 <div>
-$$\begin{aligned}
-&\ \ \ \ \ 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for all } x
-\\&\Rightarrow 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for } x \neq 0, 1, -\frac{1}{2}
-\end{aligned}$$
+$$
+\begin{pmatrix}
+   0 \\ 4 \\ 1
+\end{pmatrix} \cdot \begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}=\begin{pmatrix}
+   0 \\ 4 \\ 1
+\end{pmatrix} \cdot \mathbf{x}=0.
+$$
+</div>
+如果两个向量点乘（Scalar Product）为零，则两个向量是垂直的. 
+<br>
+<br>
+从$(\ast)$和$(\dagger)$式，我们很快就能得出$\displaystyle \begin{pmatrix}
+   4 \\ 1 \\ -3
+\end{pmatrix}$和$\displaystyle \begin{pmatrix}
+   0 \\ 4 \\ 1
+\end{pmatrix}$<ins><em>同时</em></ins>垂直于特征向量$\mathbf{x}$. 因此
+<div>
+$$
+\mathbf{x}=\begin{pmatrix}
+   4 \\ 1 \\ -3
+\end{pmatrix} \times \begin{pmatrix}
+   0 \\ 4 \\ 1
+\end{pmatrix}=\begin{pmatrix}
+   13 \\ -4 \\ 16
+\end{pmatrix}.
+$$
 </div>
 
-<p>举个简单的例子，如果我们证明了$f(x) \geq 2$ for all $x$，就一定可以推出$f(x) \geq 2$ for all $x \geq 5$. </p>
-<p>用集合的语言来描述，如果$A \subseteq B$，且命题$p$对于$x \in B$均成立，则命题$p$对于$x \in A$均成立.</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>部分分式的计算在A Level考试中是一定会考察的知识点. 考生应掌握两种计算方法及特殊情况的处理方式. 我们建议考生优先使用代入特值法进行计算.</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>特征向量的计算在A Level考试中是一定会考察的知识点. 考生应优先掌握利用$A\mathbf{x}&#x3D;\lambda\mathbf{x}$计算特征向量的方法. 对于学有余力的考生，可以尝试掌握利用叉乘计算三维空间中特征向量的方法.</p>
 ]]></content>
       <categories>
         <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>矩阵（Matrix）及其运算</title>
+    <url>/maths/matrix/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel FP1考生</p>
+<p><i class="far fa-check-circle"></i>AQA FPSM1考生</p>
+<p><i class="far fa-check-circle"></i>CIE FP1、FP2考生</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>矩阵是什么？矩阵从何而来？为什么矩阵中的运算及相关定义是那么突然，但却合理？我们相信会有一部分人在学习过程中感到不解，但却又带着这种疑惑接受了既定事实并做对了题目. 我们希望能在这一篇文章中尽可能解释清楚一些在教学中遇到的常见问题，帮助考生进一步理解矩阵.</p>
+<h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><p>矩阵并不是凭空出现的. 解方程是古典代数学研究的重要问题，其中$n$个未知量的一次方程构成的方程组称为$n$元线性方程组. 在研究$n$元线性方程组的解法过程中，矩阵的概念就自然而然地出现了：考虑$m$个方程构成的$n$元线性方程组，未知量所对应的系数共$mn$个，常数项共$m$个. 若只考虑未知量系数，则由$mn$个数排成的$m$行、$n$列的一张表称为一个$m \times n$矩阵（又称系数矩阵，Coefficient Matrix）. 若同时考虑未知量系数与常数项，则由$m(n+1)$个数排成的$m$行、$n+1$列的一张表称为$m \times (n+1)$矩阵（又称增广矩阵，Augmented Matrix）. 随着学科的发展，矩阵这一工具也不断发展，这就是后话了.</p>
+<p>说明：增广矩阵的概念仅出现在CIE教材中，可用于解方程组.</p>
+<h2 id="行列式（Determinant）"><a href="#行列式（Determinant）" class="headerlink" title="行列式（Determinant）"></a>行列式（Determinant）</h2><p>尽管在爱德思（Edexcel）、AQA和CIE教材中都是先定义矩阵，再定义行列式，但历史上恰好相反，矩阵正式作为数学中的研究对象是在行列式的研究发展之后. 考虑一个两个方程的二元一次方程组：</p>
+<div>
+$$\begin{cases}
+a_{11}x_1+a_{12}x_2=c_1 \\
+a_{21}x_1+a_{22}x_2=c_2
+\end{cases}$$
+</div>
+上述方程组的解为：
+<div>
+$$\begin{aligned}
+x_1=\frac{c_1a_{22}-c_2a_{12}}{a_{11}a_{22}-a_{12}a_{21}},\ x_2=\frac{a_{11}c_2-a_{21}c_1}{a_{11}a_{22}-a_{12}a_{21}}
+\end{aligned}$$
+</div>
+
+<p>观察发现，上述方程组有<b><em>唯一</em></b>解当且仅当$a_{11}a_{22}-a_{12}a_{21} \neq 0$. 若$a_{11}a_{22}-a_{12}a_{21}&#x3D;0$，上述方程组<b><em>无解</em></b>或有<b><em>无穷多个</em></b>解.</p>
+<p>为了便于记忆表达式$a_{11}a_{22}-a_{12}a_{21}$，将其记为</p>
+<div>
+$$\begin{vmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{vmatrix}=a_{11}a_{22}-a_{12}a_{21}$$
+</div>
+
+<p>这个表达式称为二阶行列式，也正是上述方程组对应的系数矩阵</p>
+<div>
+$$A=\begin{pmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{pmatrix}$$
+</div>
+
+<p>的行列式，记为$|A|$或$\det(A)$. 因此，上述方程组有<b><em>唯一</em></b>解当且仅当$\det(A) \neq 0$.</p>
+<p>幸运的是，当我们<b><em>妥善定义</em></b>$n$阶行列式后，$n$个方程的$n$元线性方程组也有类似的结论——方程组有唯一解当且仅当$\det(A) \neq 0$.</p>
+<h2 id="矩阵的运算"><a href="#矩阵的运算" class="headerlink" title="矩阵的运算"></a>矩阵的运算</h2><h3 id="矩阵加法"><a href="#矩阵加法" class="headerlink" title="矩阵加法"></a>矩阵加法</h3><p>表格是一种常用的数据可视化方式，表格结构简单，便于浏览和获取信息. 矩阵作为一种表格也具有同样的特点. 考虑三位巫师在2023年上半年与2023年下半年的咒语使用情况，如下表所示：</p>
+<table class="tg" style="text-align:center; margin:auto">
+  <tr>
+    <th style="border: 1.5px solid"></th>
+    <th style="border: 1.5px solid">召唤咒</th>
+    <th style="border: 1.5px solid">悬浮咒</th>
+    <th style="border: 1.5px solid">照明咒</th>
+  </tr>
+  <tr>
+    <td style="border: 1.5px solid">哈利·波特</td>
+    <td style="border: 1.5px solid">5</td>
+    <td style="border: 1.5px solid">3</td>
+    <td style="border: 1.5px solid">1</td>
+  </tr>
+  <tr>
+    <td style="border: 1.5px solid">赫敏·格兰杰</td>
+    <td style="border: 1.5px solid">4</td>
+    <td style="border: 1.5px solid">3</td>
+    <td style="border: 1.5px solid">6</td>
+  </tr>
+  <tr>
+    <td style="border: 1.5px solid">罗恩·韦斯莱</td>
+    <td style="border: 1.5px solid">3</td>
+    <td style="border: 1.5px solid">4</td>
+    <td style="border: 1.5px solid">2</td>
+  </tr>
+</table>
+<br>
+<table class="tg" style="text-align:center; margin:auto">
+  <tr>
+    <th style="border: 1.5px solid"></th>
+    <th style="border: 1.5px solid">召唤咒</th>
+    <th style="border: 1.5px solid">悬浮咒</th>
+    <th style="border: 1.5px solid">照明咒</th>
+  </tr>
+  <tr>
+    <td style="border: 1.5px solid">哈利·波特</td>
+    <td style="border: 1.5px solid">2</td>
+    <td style="border: 1.5px solid">0</td>
+    <td style="border: 1.5px solid">8</td>
+  </tr>
+  <tr>
+    <td style="border: 1.5px solid">赫敏·格兰杰</td>
+    <td style="border: 1.5px solid">6</td>
+    <td style="border: 1.5px solid">5</td>
+    <td style="border: 1.5px solid">11</td>
+  </tr>
+  <tr>
+    <td style="border: 1.5px solid">罗恩·韦斯莱</td>
+    <td style="border: 1.5px solid">0</td>
+    <td style="border: 1.5px solid">3</td>
+    <td style="border: 1.5px solid">2</td>
+  </tr>
+</table>
+<br>
+我们想分析三位巫师在2023年的咒语使用情况，只需要将对应巫师及咒语的使用次数相加即可. 这一过程就是矩阵的加法：
+
+<div>
+$$\begin{pmatrix}
+5 & 3 & 1 \\
+4 & 3 & 6 \\
+3 & 4 & 2
+\end{pmatrix} + \begin{pmatrix}
+2 & 0 & 8 \\
+6 & 5 & 11 \\
+0 & 3 & 2
+\end{pmatrix} = \begin{pmatrix}
+7 & 3 & 9 \\
+10 & 8 & 17 \\
+3 & 7 & 4
+\end{pmatrix}$$
+</div>
+
+<p>只有两个矩阵形状相同（均为$n$行$m$列），矩阵加法才有意义，且是对应位置的元素相加. 不难理解，矩阵加法具有交换律与结合律.</p>
+<h3 id="矩阵数乘"><a href="#矩阵数乘" class="headerlink" title="矩阵数乘"></a>矩阵数乘</h3><p>矩阵数乘也很好理解，比如同步增长的经济问题很自然地引出矩阵的数量乘法运算，$kA$意味着矩阵中的所有元素乘上$k$.</p>
+<h3 id="矩阵乘法"><a href="#矩阵乘法" class="headerlink" title="矩阵乘法"></a>矩阵乘法</h3><p>教材介绍了矩阵乘法的计算规则，我们提供不同的角度去理解矩阵乘法. 首先回到线性方程组：</p>
+<div>
+$$\begin{cases}
+8x_1+2x_2=11 \\
+2x_1+5x_2=9
+\end{cases}$$
+</div>
+
+<p>矩阵可以为上述线性方程组提供一个简便的形式：</p>
+<div>
+$$\begin{pmatrix}
+8 & 2 \\
+2 & 5
+\end{pmatrix}\begin{pmatrix}
+x_1 \\
+x_2
+\end{pmatrix} = \begin{pmatrix}
+11 \\
+9
+\end{pmatrix}$$
+</div>
+
+<p>结合矩阵形式与线性方程组，已经能看出矩阵乘法（$2 \times 2$矩阵与$2 \times 1$向量相乘）的计算规则，但我们需要进一步探究. 考虑下列两组线性方程组：</p>
+<div>
+$$\begin{cases}
+a_{11}x_1+a_{12}x_2=y_1 \\
+a_{21}x_1+a_{22}x_2=y_2
+\end{cases} \ \ \text{与}\ \ \begin{cases}
+b_{11}t_1+b_{12}t_2=x_1 \\
+b_{21}t_1+b_{22}t_2=x_2
+\end{cases}$$
+</div>
+
+<p>矩阵写法为：</p>
+<div>
+$$\begin{pmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{pmatrix}\begin{pmatrix}
+x_1 \\
+x_2
+\end{pmatrix}=\begin{pmatrix}
+y_1 \\
+y_2
+\end{pmatrix} \ \ \text{与}\ \ \begin{pmatrix}
+b_{11} & b_{12} \\
+b_{21} & b_{22}
+\end{pmatrix}\begin{pmatrix}
+t_1 \\
+t_2
+\end{pmatrix}=\begin{pmatrix}
+x_1 \\
+x_2
+\end{pmatrix}$$
+</div>
+
+<p>合并两个方程组后可得：</p>
+<div>
+$$\begin{cases}
+a_{11}(b_{11}t_1+b_{12}t_2)+a_{12}(b_{21}t_1+b_{22}t_2)=y_1 \\
+a_{21}(b_{11}t_1+b_{12}t_2)+a_{22}(b_{21}t_1+b_{22}t_2)=y_2
+\end{cases}$$
+</div>
+
+<p>即：</p>
+<div>
+$$\begin{cases}
+(a_{11}b_{11}+a_{12}b_{21})t_1+(a_{11}b_{12}+a_{12}b_{22})t_2=y_1 \\
+(a_{21}b_{11}+a_{22}b_{21})t_1+(a_{21}b_{12}+a_{22}b_{22})t_2=y_2
+\end{cases}$$
+</div>
+
+<p>同理，矩阵可以变为：</p>
+<div>
+$$\begin{pmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{pmatrix}\begin{pmatrix}
+b_{11} & b_{12} \\
+b_{21} & b_{22}
+\end{pmatrix}\begin{pmatrix}
+t_1 \\
+t_2
+\end{pmatrix}=\begin{pmatrix}
+y_1 \\
+y_2
+\end{pmatrix}$$
+</div>
+
+<p>因此</p>
+<div>
+$$\begin{pmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{pmatrix}\begin{pmatrix}
+b_{11} & b_{12} \\
+b_{21} & b_{22}
+\end{pmatrix}=\begin{pmatrix}
+a_{11}b_{11}+a_{12}b_{21} & a_{11}b_{12}+a_{12}b_{22} \\
+a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{22}b_{22}
+\end{pmatrix}$$
+</div>
+
+<p>也就是我们熟悉的矩阵乘法计算规则.</p>
+<p>我们再来看一个更加直观的几何例子.</p>
+<img class="no-fancybox" src="/img/matrix.png" width="52%" loading="lazy" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'>
+
+<div>
+假设点$P(x, y)$围绕原点$O$<b><em>逆时针旋转</em></b>$\beta$后到点$P'(x', y')$. 假设$OP$长度为$r$，根据三角函数的定义可得
+</div>
+
+<div>
+$$
+x=r\cos\alpha \\
+y=r\sin\alpha \\
+x'=r\cos(\alpha+\beta) \\
+y'=r\sin(\alpha+\beta)
+$$
+</div>
+
+<p>根据三角函数相关公式</p>
+<div>
+$$
+x'=r\cos(\alpha+\beta)=r\cos\alpha\cos\beta-r\sin\alpha\sin\beta=x\cos\beta-y\sin\beta \\
+y'=r\sin(\alpha+\beta)=r\sin\alpha\cos\beta+r\cos\alpha\sin\beta=x\sin\beta+y\cos\beta
+$$
+</div>
+
+<p>矩阵写法为：</p>
+<div>
+$$\begin{pmatrix}
+\cos\beta & -\sin\beta \\
+\sin\beta & \cos\beta
+\end{pmatrix}\begin{pmatrix}
+x \\
+y
+\end{pmatrix} = \begin{pmatrix}
+x' \\
+y'
+\end{pmatrix}$$
+</div>
+
+<div>
+因此，矩阵$\displaystyle \begin{pmatrix}
+\cos\beta & -\sin\beta \\
+\sin\beta & \cos\beta
+\end{pmatrix}$用于表示围绕原点$O$逆时针旋转$\beta$——<b><em>anticlockwise rotation through $\beta$ about $O$</em></b>.
+</div>
+
+<div class="trm-note info"><div class="trm-note-title">Surprise!</div><div>
+从这个例子中，我们惊喜地发现矩阵与几何的联系. 在爱德思、AQA与CIE的教材中，我们探讨了线性变换（Linear Transformation），即可以用矩阵表示的变换. 在数学中，线性变换亦可称为线性映射（Linear Mapping）. <b><em>不严谨地说（为了理解）</em></b>，我们可以将矩阵视为一个“函数”，输入点$P$经过“矩阵函数”的作用后得到输出点$P'$：
+$$
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} \xrightarrow[]{\begin{pmatrix}
+\cos\beta & -\sin\beta \\
+\sin\beta & \cos\beta
+\end{pmatrix}} \begin{pmatrix}
+x' \\
+y'
+\end{pmatrix}
+$$
+</div></div>
+
+<div>
+不妨再假设点$P'(x', y')$围绕原点$O$逆时针旋转$\theta$后到点$P''(x'', y'')$. 从点$P$围绕原点$O$逆时针旋转到点$P''$，我们可以从两个角度思考：
+</div>
+<br>
+<div>
+1. 点$P$围绕原点$O$逆时针旋转$\beta+\theta$后到点$P''$.
+</div>
+<br>
+<div>
+2. 点$P$围绕原点$O$逆时针旋转$\beta$后到点$P'$，再由点$P'$围绕原点$O$逆时针旋转$\theta$后到点$P''$.
+</div>
+<br>
+从第一个角度来看，可以用矩阵表示为
+
+<div>
+$$\begin{aligned}
+&\begin{pmatrix}
+\cos(\beta+\theta) & -\sin(\beta+\theta) \\
+\sin(\beta+\theta) & \cos(\beta+\theta)
+\end{pmatrix}\begin{pmatrix}
+x \\
+y
+\end{pmatrix} = \begin{pmatrix}
+x'' \\
+y''
+\end{pmatrix} \\
+\Rightarrow &\begin{pmatrix}
+\cos\beta\cos\theta-\sin\beta\sin\theta & -\sin\beta\cos\theta-\cos\beta\sin\theta \\
+\sin\beta\cos\theta+\cos\beta\sin\theta & \cos\beta\cos\theta-\sin\beta\sin\theta
+\end{pmatrix}\begin{pmatrix}
+x \\
+y
+\end{pmatrix} = \begin{pmatrix}
+x'' \\
+y''
+\end{pmatrix}
+\end{aligned}$$
+</div>
+
+<p>从第二个角度来看，</p>
+<div>
+$$
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} \xrightarrow[]{\begin{pmatrix}
+\cos\beta & -\sin\beta \\
+\sin\beta & \cos\beta
+\end{pmatrix}} \begin{pmatrix}
+x' \\
+y'
+\end{pmatrix} \xrightarrow[]{\begin{pmatrix}
+\cos\theta & -\sin\theta \\
+\sin\theta & \cos\theta
+\end{pmatrix}} \begin{pmatrix}
+x'' \\
+y''
+\end{pmatrix}
+$$
+</div>
+
+<p>可以用矩阵表示为</p>
+<div>
+$$\begin{pmatrix}
+\cos\theta & -\sin\theta \\
+\sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}
+\cos\beta & -\sin\beta \\
+\sin\beta & \cos\beta
+\end{pmatrix}\begin{pmatrix}
+x \\
+y
+\end{pmatrix} = \begin{pmatrix}
+x'' \\
+y''
+\end{pmatrix}$$
+</div>
+
+<p>因此</p>
+<div>
+$$
+\begin{aligned}
+\begin{pmatrix}
+\cos\theta & -\sin\theta \\
+\sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}
+\cos\beta & -\sin\beta \\
+\sin\beta & \cos\beta
+\end{pmatrix}&=\begin{pmatrix}
+\cos\beta\cos\theta-\sin\beta\sin\theta & -\sin\beta\cos\theta-\cos\beta\sin\theta \\
+\sin\beta\cos\theta+\cos\beta\sin\theta & \cos\beta\cos\theta-\sin\beta\sin\theta
+\end{pmatrix} \\
+&=\begin{pmatrix}
+\cos\theta\cos\beta-\sin\theta\sin\beta & -\cos\theta\sin\beta-\sin\theta\cos\beta \\
+\sin\theta\cos\beta+\cos\theta\sin\beta & -\sin\theta\sin\beta+\cos\theta\cos\beta
+\end{pmatrix}
+\end{aligned}
+$$
+</div>
+
+<p>也是我们熟悉的矩阵乘法计算规则.</p>
+<p>根据多个具有实际意义的例子，我们可以<b><em>妥善定义</em></b>矩阵乘法.</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>考生应优先掌握矩阵的基本运算，本文希望能帮助学有余力的考生进一步理解矩阵. 数学概念譬如矩阵并不是凭空出现的，我们观察客观世界的现象，抓住主要特征，抽象出其概念或者建立模型，并进一步深入分析与论证. 矩阵乘法就是一个很好的例子，我们为了解决多个类似问题，抽象出矩阵乘法计算规则，并适用于所有类似问题. 数学是自然且优美的，希望这篇文章能让各位考生感受数学之美，也希望各位考生能在未来保持探索数学的热情.</p>
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>比较数据（Compare Data）</title>
+    <url>/maths/compare_data/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel S1考生</p>
+<p><i class="far fa-check-circle"></i>CIE S1考生</p>
+<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><p>比较数据一般从两个角度进行比较：</p>
+<div></div>
+
+<ol>
+<li>集中趋势（Measure of Central Tendency）</li>
+</ol>
+<div></div>
+(1) 常用于比较的指标：中位数（Median）、平均数（Mean）.
+<br>
+(2) 描述模版：比较指标，the average of (something) is higher/lower than that of (something).
+<br>
+
+<ol start="2">
+<li>离散程度（Measure of Spread&#x2F;Variation）</li>
+</ol>
+<div></div>
+(1) 常用于比较的指标： 极差（Range）、四分位距（Interquartile Range/IQR）、方差（Variance）、标准差（Standard Deviation）.
+<br>
+(2) 描述模版：比较指标，(something) is more/less variable (or spread out) than (something).
+<br>
+<br>
+一般我们同时使用中位数和IQR来比较数据，或者同时使用平均数和方差（或标准差）来比较数据. 前者的优点是不容易受到极端值的影响.
+
+<h2 id="比较数据"><a href="#比较数据" class="headerlink" title="比较数据"></a>比较数据</h2><p>集中趋势和离散程度是描述数据分布（Distribution）最常用的两个性质，集中趋势表明数据的平均水平，离散程度表明数据的波动程度. 需要注意的是，波动程度和稳定性是联系在一起的：数据波动程度越大，越不稳定；数据波动程度越小，越稳定. 如果考察到比较数据的题型，一般比较直接，只需要算出指标的准确值并进行比较.</p>
+<div></div>
+但在部分题目中，问法不够明显，这就要求考生理解两个性质以及在现实生活中的意义. 以下用爱德思（Edexcel）真题举例说明.
+
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>At the start of a course, an instructor asked a group of 80 apprentices to estimate the length of a piece of pipe. The error (true length$-$estimated length) was recorded in centimetres. The results are summarised in the box plot below.</p>
+<div></div>
+
+<p><img src="/img/compare_data_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<div></div>
+One month later, the instructor asked the 80 apprentices to estimate the length of a different piece of pipe and recorded their errors. The results are summarised in the table below.
+
+<table class="tg" style="text-align:center; margin:auto; border: 1.5px solid">
+<thead style="border: 1.5px solid">
+  <tr>
+    <th scope="col" width="99" style="border: 1.5px solid">Error ($e$ cm)</th>
+    <th scope="col" width="99" style="border: 1.5px solid">Number of apprentices</th>
+  </tr>
+</thead>
+<tbody>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$-40 \lt e \leq -16$</td>
+    <td style="border: 1.5px solid">2</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$-16 \lt e \leq -8$</td>
+    <td style="border: 1.5px solid">18</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$-8 \lt e \leq 0$</td>
+    <td style="border: 1.5px solid">33</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$0 \lt e \leq 8$</td>
+    <td style="border: 1.5px solid">14</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$8 \lt e \leq 16$</td>
+    <td style="border: 1.5px solid">10</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$16 \lt e \leq 40$</td>
+    <td style="border: 1.5px solid">3</td>
+  </tr>
+</tbody>
+</table>
+
+<p>State, giving reasons, whether or not the apprentices’ ability to estimate the length of a piece of pipe has improved over the first month of the course.</p>
+</div>
+
+<p>本题考察的知识点本质上是比较数据，大部分的考生能够答到中位数更接近$0$，误差减小，所以有提升. 除了集中趋势，还需要考虑波动程度. 波动程度反映的是数据的稳定性，试想一下，如果一组数据的误差是：$-200$、$-100$、$+100$、$+200$，另一组数据的误差是：$-3$、$-2$、$+1$、$+5$，尽管前者的中位数为$0$，但波动程度极大，数据的不稳定会人们怀疑准确性——很有可能前者的猜测比较“幸运”，让最后的平均误差为$0$罢了.</p>
+<div></div>
+因此，本题还需要答到$\text{IQR}$减少，所以有提升.
+
+<h2 id="知识点拓展：稳定性的好处"><a href="#知识点拓展：稳定性的好处" class="headerlink" title="知识点拓展：稳定性的好处"></a>知识点拓展：稳定性的好处</h2><p>在学习离散程度的测量时，我们会将离散程度和稳定性联系在一起，稳定性的提高会提升准确性. 在后续学习中（Edexcel S3；AQA S2；CIE S2），我们会学习概率论中的一个重要定理：中心极限定理（Central Limit Theorem），它指在满足一定条件下，样本均值（Sample Mean）$\overline{X}$的分布近似一个正态分布（Normal Distribution）：</p>
+<div>
+$$
+\overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)
+$$
+</div>
+
+<p>其中$n$是样本大小（Sample Size）. </p>
+<div></div>
+现阶段，如果不能理解何为样本均值的分布，不妨考虑这么一个例子，研究人员想估算全国人民的平均年龄，不停地随机抽样（每次随机抽中$n$个人），每一次随机抽样都可以计算出一个平均年龄，并将这些平均年龄记录下来.
+<div></div>
+平均年龄的数据分布像一个正态分布，而均值是$\mu$（真实的全国人民平均年龄），方差是$\displaystyle \frac{\sigma^2}{n}$（真实的全国人民年龄的方差除以样本大小）. 
+<div></div>
+可以看到，随着样本大小增加，抽样计算出的平均年龄的方差减少，趋近于$0$. 它的好处是，随着样本大小增加，我们单次计算出来的平均年龄会有极大的概率接近真实的平均年龄，也就更加可信.
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>比较数据是A Level考试中的一类考法，多见于爱德思和CIE考试局. 近年来考察可能性偏低，但考生应该掌握比较角度和描述模版. 有意向进一步学习S系列的考生应加深对离散程度的理解.</p>
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>碰撞模型：Newton’s Law of Restitution</title>
+    <url>/maths/newton_law_of_restitution/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel M2考生</p>
+<p><i class="far fa-check-circle"></i>AQA FM1考生</p>
+<p><i class="far fa-check-circle"></i>CIE FM考生</p>
+<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><ol>
+<li><p>Conservation of Linear Momentum:</p>
+<div>
+$$
+m_1\mathbf{u}_1+m_2\mathbf{u}_2=m_1\mathbf{v}_1+m_2\mathbf{v}_2.
+$$
+</div>
+</li>
+<li><p>Impulse-Momentum Principle:</p>
+<div>
+$$
+\mathbf{I}=\mathbf{F}t=m\mathbf{v}-m\mathbf{u}.
+$$
+</div></li>
+</ol>
+<p>注意，以上两个物理公式要满足矢量关系，规定好正方向，同向为正，反向为负.</p>
+<ol start="3">
+<li>Newton‘s Law of Restitution (Impact Law):<div>
+$$
+e=\frac{\text{Separation speed}}{\text{Approach speed}}\ \ 0 \leq e \leq 1.
+$$
+</div></li>
+</ol>
+<p>其中，$e&#x3D;0$为非弹性碰撞（Inelastic Collision），即碰撞后相对速度为$0$；$e&#x3D;1$为弹性碰撞（Elastic Collision），即碰撞前后动能相等. 常数$e$可以理解为碰撞后的相对速度与碰撞前的相对速度的比值.</p>
+<div></div>
+<em>相对速度</em>：同向运动，速度大小相减；反向运动，速度大小相加.
+
+<h2 id="建立碰撞模型"><a href="#建立碰撞模型" class="headerlink" title="建立碰撞模型"></a>建立碰撞模型</h2><p>部分题型没有给出碰撞前后的示意图，在题干中也没有明确表示碰撞前或碰撞后物体的运动方向，需要自己建立一个合理的模型.</p>
+<div></div>
+建立模型的重点是标注好碰撞前后各物体其中一种可能的运动方向，然后按照自己设定的模型，首先规定好正方向，列出动量守恒和impact law两个物理方程，联解方程即可得出相关物理量. 不用纠结是否有其他情况，严格按照矢量原则列式，算出来的结果的正负就代表了准确方向. 以下用爱德思（Edexcel）真题举例说明.
+
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>A particle $P$ of mass $2m$ is moving in a straight line with speed $u$ on a smooth horizontal plane. The particle $P$ collides directly with a particle $Q$, of mass $m$, which is moving on the plane along the same straight line as $P$ but in the opposite direction to $P$. Immediately before the collision the speed of $Q$ is $3u$. The coefficient of restitution between $P$ and $Q$ is $e$, where $\displaystyle e&gt;\frac{1}{8}$.</p>
+<div></div>
+Find, in terms of $u$ and $e$,
+<br>
+(i) the speed of $P$ immediately after the collision,
+<br>
+(ii) the speed of $Q$ immediately after the coolision.</div>
+
+<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>根据题意，已知碰撞前两小球运动方向，没有描述碰撞后的结果，所以会有三种可能情况：<br><img src="/img/newton_law_of_restitution_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>现通过前两种情况分析理解.</p>
+<div></div>
+<b>Case (1):</b>
+<br>
+Conservation of Linear Momentum:
+<div>
+$$
+(\rightarrow): 2mu+m(-3u)=2m(-v_P)+mv_Q.
+$$
+</div>
+Impact Law:
+<div>
+$$
+e=\frac{v_P+v_Q}{3u+u}.
+$$
+</div>
+Solving simultaneous equations, we have:
+<div>
+$$
+v_P=\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
+$$
+</div>
+<b>Case (2):</b>
+<br>
+Conservation of Linear Momentum:
+<div>
+$$
+(\rightarrow): 2mu+m(-3u)=2m(v_P)+mv_Q.
+$$
+</div>
+Impact Law:
+<div>
+$$
+e=\frac{v_Q-v_P}{3u+u}.
+$$
+</div>
+Solving simultaneous equations, we have:
+<div>
+$$
+v_P=\textcolor{red}{-}\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
+$$
+</div>
+第一种情况是碰撞后的真实情况，所以得到速度都是正数. 第二种情况中$v_P<0$，说明与假设的方向相反. 而且可以预见，第三种情况算出来$v_P>0$但$v_Q<0$. 但无论是哪一种情况，计算出来的关于$P$和$Q$的速率（Speed）的表达式都是一致的.</div>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>碰撞模型建立是A Level考试中碰撞题型中的基础考法，对矢量表达要求较高，需要理解restitution计算式中的相对速度.</p>
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>示波器（Oscilloscope）的使用</title>
+    <url>/physics/oscilloscope/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel U2和U5考生</p>
+<p><i class="far fa-check-circle"></i>AQA U2考生</p>
+<p><i class="far fa-check-circle"></i>CIE AS阶段考生</p>
+<h2 id="示波器结构"><a href="#示波器结构" class="headerlink" title="示波器结构"></a>示波器结构</h2><p><img src="/img/oscilloscope_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<h3 id="水平方向"><a href="#水平方向" class="headerlink" title="水平方向"></a>水平方向</h3><p>可缩放，通过调节<code>time base</code>旋钮（单位：<code>s/div</code>）控制单元格水平方向时间数值，使得至少一个完整的波形周期显示出来.</p>
+<h3 id="竖直方向"><a href="#竖直方向" class="headerlink" title="竖直方向"></a>竖直方向</h3><p>可缩放，通过调节<code>Y-gain/Y-sensitivity</code>旋钮（单位：<code>V/div</code>）控制单元格竖直方向电压数值，使得完成的波形（波峰及波谷）显示出来.</p>
+<h2 id="主要考察知识点：示波器的读数和实验应用"><a href="#主要考察知识点：示波器的读数和实验应用" class="headerlink" title="主要考察知识点：示波器的读数和实验应用"></a>主要考察知识点：示波器的读数和实验应用</h2><h3 id="周期（Period）的测量"><a href="#周期（Period）的测量" class="headerlink" title="周期（Period）的测量"></a>周期（Period）的测量</h3><p>示波器水平方向代表时间长度，可以通过以下公式算出这段时间:</p>
+<div>
+$$
+\text{Time}(s)=n \times \text{Scale of time base}
+$$
+</div>
+其中，$n$表示number of divisions of one complete wave.
+<br>
+<br>
+如果示波器屏幕上显示了若干个周期，可以求出总时间再除以完整波形数量$N$算出周期：
+<div>
+$$
+T(s)=\frac{\text{Total time}}{N}.
+$$
+</div>
+类似于求平均值，能有效的减小误差（Reduce Percentage Uncertainty）.
+
+<br>
+<br>
+
+<p><img src="/img/oscilloscope_2.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<center><p style="font-size: 18px;"><em>Note</em>: Time for $2T=6.4$ to $6.6$ divisions.</p></center>
+
+<br>
+选取参照点位时，常用点位是波峰和波谷位置，也可以选择pulse的起点和终点作为参照，优先选取方便读数的点位. 如上图，pulse的起点和终点的读数更为准确.
+
+<h3 id="振幅（Amplitude）的测量"><a href="#振幅（Amplitude）的测量" class="headerlink" title="振幅（Amplitude）的测量"></a>振幅（Amplitude）的测量</h3><p>示波器竖直方向代表potential difference (p.d.)，可根据比例关系得到振幅大小. <b><em>The vertical displacement of the spot is proportional to the applied p.d.</em></b></p>
+<div>
+$$
+\text{Amplitude}(V)=\frac{1}{2} \times n \times \text{Scale of Y-gain}
+$$
+</div>
+其中，$n$表示number of divisions between the bottom to the top of the wave.
+<br>
+<br>
+如果用到twin beam oscilloscope，可以比较振幅来得到两个波能量的高低. 因为在波的理论中，振幅与能量成正比. 以下用爱德思真题举例说明.
+<br>
+<br>
+
+<p><img src="/img/oscilloscope_3.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<p><img src="/img/oscilloscope_4.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<br>
+如图所示，左图中的上方波形的振幅明显比右图中的小，说明左图的microphone距离loudspeaker更远，波在空气中传播距离越远，能量越低，振幅越小. 下方的波形是loudspeaker产生的标准波形.
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>示波器的工作原理在A Level考试中考察可能性较低，不再赘述. 考生应该掌握图像信息的获取，计算周期和振幅，相关应用领域还有周期性运动，比如检测简谐运动（SHM）规律.</p>
+]]></content>
+      <categories>
+        <category>物理</category>
       </categories>
   </entry>
   <entry>
@@ -1033,62 +1376,109 @@ Therefore, the general solution to the differential equation is $\displaystyle -
       </categories>
   </entry>
   <entry>
-    <title>示波器（Oscilloscope）的使用</title>
-    <url>/physics/oscilloscope/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel U2和U5考生</p>
-<p><i class="far fa-check-circle"></i>AQA U2考生</p>
-<p><i class="far fa-check-circle"></i>CIE AS阶段考生</p>
-<h2 id="示波器结构"><a href="#示波器结构" class="headerlink" title="示波器结构"></a>示波器结构</h2><p><img src="/img/oscilloscope_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<h3 id="水平方向"><a href="#水平方向" class="headerlink" title="水平方向"></a>水平方向</h3><p>可缩放，通过调节<code>time base</code>旋钮（单位：<code>s/div</code>）控制单元格水平方向时间数值，使得至少一个完整的波形周期显示出来.</p>
-<h3 id="竖直方向"><a href="#竖直方向" class="headerlink" title="竖直方向"></a>竖直方向</h3><p>可缩放，通过调节<code>Y-gain/Y-sensitivity</code>旋钮（单位：<code>V/div</code>）控制单元格竖直方向电压数值，使得完成的波形（波峰及波谷）显示出来.</p>
-<h2 id="主要考察知识点：示波器的读数和实验应用"><a href="#主要考察知识点：示波器的读数和实验应用" class="headerlink" title="主要考察知识点：示波器的读数和实验应用"></a>主要考察知识点：示波器的读数和实验应用</h2><h3 id="周期（Period）的测量"><a href="#周期（Period）的测量" class="headerlink" title="周期（Period）的测量"></a>周期（Period）的测量</h3><p>示波器水平方向代表时间长度，可以通过以下公式算出这段时间:</p>
+    <title>部分分式（Partial Fraction）的常见疑问</title>
+    <url>/maths/partial_fraction/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel P4考生</p>
+<p><i class="far fa-check-circle"></i>AQA P2考生</p>
+<p><i class="far fa-check-circle"></i>CIE P3考生</p>
+<h2 id="部分分式"><a href="#部分分式" class="headerlink" title="部分分式"></a>部分分式</h2><p>部分分式是将有理函数（Rational Function）分解成许多次数较低的有理函数和的形式，如：</p>
+<div>
+$$\frac{1}{x(x+1)}=\frac{1}{x}-\frac{1}{x+1}.$$
+</div>
+
+<p>现以例题来复习部分分式的两种方法.</p>
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><div>
+Given that $\displaystyle \frac{6x^2+5x-2}{x(x-1)(2x+1)} \equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}$, find the values of the constants $A$, $B$ and $C$.
+</div></div>
+
+<h2 id="方法一：比较系数法（Equating-Coefficients）"><a href="#方法一：比较系数法（Equating-Coefficients）" class="headerlink" title="方法一：比较系数法（Equating Coefficients）"></a>方法一：比较系数法（Equating Coefficients）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
+<div>
+$$\begin{aligned}
+\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
+\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
+\end{aligned}$$
+</div>
+So
+<div>
+$$\begin{aligned}
+6x^2+5x-2&=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)
+\\&=A(2x^2-x-1)+2Bx^2+Bx+Cx^2-Cx
+\\&=(2A+2B+C)x^2+(-A+B-C)x-A
+\end{aligned}$$
+</div>
+Then we have
+<div>
+$$\begin{cases}
+2A+2B+C=6 \\
+-A+B-C=5 \\
+-A=-2
+\end{cases}$$
+</div>
+Solving the simultaneous equations gives $A=2$, $B=3$ and $C=-4$.</div>
+
+<p>比较系数法思路清晰易懂，但计算量偏大且容易出错，我们一般不建议考生使用该方法计算.</p>
+<h2 id="方法二：代入特值法（Substitution）"><a href="#方法二：代入特值法（Substitution）" class="headerlink" title="方法二：代入特值法（Substitution）"></a>方法二：代入特值法（Substitution）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
+<div>
+$$\begin{aligned}
+\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
+\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
+\end{aligned}$$
+</div>
+So
+<div>
+$$6x^2+5x-2=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$$
+</div>
+Let $x=1$:
+<div>
+$$6+5-2=0+3B+0 \Rightarrow B=3$$
+</div>
+Let $\displaystyle x=-\frac{1}{2}$:
+<div>
+$$\frac{6}{4}-\frac{5}{2}-2=0+0+\frac{3}{4}C \Rightarrow C=-4$$
+</div>
+Let $x=0$:
+<div>
+$$0+0-2=-A+0+0 \Rightarrow A=2$$
+</div>
+So, $A=2$, $B=3$ and $C=-4$.</div>
+
+<p>代入特值法计算量相对较小，我们一般建议考生使用该方法计算.</p>
+<h2 id="特殊情况的处理方式"><a href="#特殊情况的处理方式" class="headerlink" title="特殊情况的处理方式"></a>特殊情况的处理方式</h2><p>部分分式分解有几种需要注意的特殊情况，需要特殊处理：</p>
+<ol>
+<li><p>假分式（Improper Fraction）需要转为带分式（Mixed Fraction）后对真分式（Proper Fraction）进行部分分式分解.</p>
+</li>
+<li><p>分母中含有重因式（Repeated Factor）需要将重因式拆成两项和，如：</p>
 <div>
 $$
-\text{Time}(s)=n \times \text{Scale of time base}
+\frac{2x+8}{(x+5)^2(x-1)} \equiv \frac{A}{x+5}+\frac{B}{(x+5)^2}+\frac{C}{x-1}
 $$
-</div>
-其中，$n$表示number of divisions of one complete wave.
-<br>
-<br>
-如果示波器屏幕上显示了若干个周期，可以求出总时间再除以完整波形数量$N$算出周期：
+</div></li>
+</ol>
+<h2 id="拓展：代入特值法的原理"><a href="#拓展：代入特值法的原理" class="headerlink" title="拓展：代入特值法的原理"></a>拓展：代入特值法的原理</h2><p>在教学或学习过程中，我们遇到最多的问题就是：为什么可以代入特殊的值？代入某个值分母为$0$了，为什么可以成立？我们将在这一部分回答这个问题.</p>
+<p>我们还是沿用上例，在计算过程中，我们得到了</p>
 <div>
-$$
-T(s)=\frac{\text{Total time}}{N}.
-$$
+$$\begin{aligned}
+\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
+\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
+\end{aligned}$$
 </div>
-类似于求平均值，能有效的减小误差（Reduce Percentage Uncertainty）.
+因此，$6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$. 恒等于的意思是等式两边的表达式无论其变量（$x$）如何取值，等式两边永远成立. 所以，我们可以代入任意的值去计算$A$、$B$和$C$.
 
-<br>
-<br>
-
-<p><img src="/img/oscilloscope_2.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<center><p style="font-size: 18px;"><em>Note</em>: Time for $2T=6.4$ to $6.6$ divisions.</p></center>
-
-<br>
-选取参照点位时，常用点位是波峰和波谷位置，也可以选择pulse的起点和终点作为参照，优先选取方便读数的点位. 如上图，pulse的起点和终点的读数更为准确.
-
-<h3 id="振幅（Amplitude）的测量"><a href="#振幅（Amplitude）的测量" class="headerlink" title="振幅（Amplitude）的测量"></a>振幅（Amplitude）的测量</h3><p>示波器竖直方向代表potential difference (p.d.)，可根据比例关系得到振幅大小. <b><em>The vertical displacement of the spot is proportional to the applied p.d.</em></b></p>
+<p>有同学提出，在这个计算中，分母不能为$0$，所以$x$不能取$0$、$1$和$\displaystyle -\frac{1}{2}$.</p>
+<p>事实上，我们在应用代入特值法的逻辑是：</p>
 <div>
-$$
-\text{Amplitude}(V)=\frac{1}{2} \times n \times \text{Scale of Y-gain}
-$$
+$$\begin{aligned}
+&\ \ \ \ \ 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for all } x
+\\&\Rightarrow 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for } x \neq 0, 1, -\frac{1}{2}
+\end{aligned}$$
 </div>
-其中，$n$表示number of divisions between the bottom to the top of the wave.
-<br>
-<br>
-如果用到twin beam oscilloscope，可以比较振幅来得到两个波能量的高低. 因为在波的理论中，振幅与能量成正比. 以下用爱德思真题举例说明.
-<br>
-<br>
 
-<p><img src="/img/oscilloscope_3.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<p><img src="/img/oscilloscope_4.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<br>
-如图所示，左图中的上方波形的振幅明显比右图中的小，说明左图的microphone距离loudspeaker更远，波在空气中传播距离越远，能量越低，振幅越小. 下方的波形是loudspeaker产生的标准波形.
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>示波器的工作原理在A Level考试中考察可能性较低，不再赘述. 考生应该掌握图像信息的获取，计算周期和振幅，相关应用领域还有周期性运动，比如检测简谐运动（SHM）规律.</p>
+<p>举个简单的例子，如果我们证明了$f(x) \geq 2$ for all $x$，就一定可以推出$f(x) \geq 2$ for all $x \geq 5$. </p>
+<p>用集合的语言来描述，如果$A \subseteq B$，且命题$p$对于$x \in B$均成立，则命题$p$对于$x \in A$均成立.</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>部分分式的计算在A Level考试中是一定会考察的知识点. 考生应掌握两种计算方法及特殊情况的处理方式. 我们建议考生优先使用代入特值法进行计算.</p>
 ]]></content>
       <categories>
-        <category>物理</category>
+        <category>数学</category>
       </categories>
   </entry>
 </search>
