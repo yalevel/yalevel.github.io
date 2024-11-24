@@ -1,6 +1,317 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>三维空间中特征向量（Eigenvector）的第二种计算方法</title>
+    <url>/maths/calculation_of_eigenvector/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel FP3考生</p>
+<p><i class="far fa-check-circle"></i>AQA FP2考生</p>
+<p><i class="far fa-check-circle"></i>CIE FP2考生</p>
+<h2 id="特征向量的计算"><a href="#特征向量的计算" class="headerlink" title="特征向量的计算"></a>特征向量的计算</h2><p>标准计算特征向量的方法是先利用$\det(A-\lambda I)&#x3D;0$计算特征值（Eigenvalue），再利用$A\mathbf{x}&#x3D;\lambda\mathbf{x}$解出特征向量$\mathbf{x}$.</p>
+<p>现以爱德思（Edexcel）教材的例题来复习特征向量的计算.</p>
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>Find the eigenvalues and corresponding eigenvectors of the matrix </p>
+<div>
+$$A=\begin{pmatrix}
+   2 & 1 & -3 \\
+   0 & 2 & 1 \\
+   0 & -4 & -3
+\end{pmatrix}.$$
+</div></div>
+
+<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
+<div>
+$$\begin{aligned}\det(A-\lambda I)&=\begin{vmatrix}
+   2-\lambda & 1 & -3 \\
+   0 & 2-\lambda & 1 \\
+   0 & -4 & -3-\lambda
+\end{vmatrix}
+\\&=(\lambda+2)(\lambda-1)(2-\lambda)
+\\&=0.\end{aligned}$$
+</div>
+Then $\lambda=-2, 1, 2$.
+<br>
+<br>
+To find an eigenvector of $A$ corresponding to the eigenvalue $-2$:
+<div> 
+$$\begin{aligned}
+&\ \ \ \ \ \begin{pmatrix}
+   2 & 1 & -3 \\
+   0 & 2 & 1 \\
+   0 & -4 & -3
+\end{pmatrix}\begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}=-2\begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}
+\\&\Rightarrow \begin{pmatrix}
+   2x+y-3z \\ 2y+z \\ -4y-3z
+\end{pmatrix}=\begin{pmatrix}
+   -2x \\ -2y \\ -2z
+\end{pmatrix}
+\end{aligned}$$
+</div>
+and so
+<div>
+$$\left\{\begin{align}
+  2x+y-3z&=-2x & \\
+  2y+z&=-2y & \\
+  -4y-3z&=-2z &
+\end{align}\right..$$
+</div>
+From $(2)$ and $(3)$: $z=-4y$. Let $y=1$, then $z=-4$. Substituting $y$ and $z$ to $(1)$, we have $\displaystyle x=-3.25$.
+<br>
+<br>
+An eigenvector corresponding to $-2$ is
+<div>
+$$\begin{pmatrix} -3.25 \\ 1 \\ -4 \end{pmatrix}\ \text{or}\ \begin{pmatrix} 13 \\ -4 \\ 16 \end{pmatrix}.$$
+</div>
+Similarly, an eigenvector corresponding to $1$ is
+<div>
+$$\begin{pmatrix} 4 \\ -1 \\ 1 \end{pmatrix}$$
+</div>
+and eigenvector corresponding to $2$ is
+<div>
+$$\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}.$$
+</div></div>
+
+<h2 id="三维空间中特征向量的第二种计算方法"><a href="#三维空间中特征向量的第二种计算方法" class="headerlink" title="三维空间中特征向量的第二种计算方法"></a>三维空间中特征向量的第二种计算方法</h2><p>在三维空间中，叉乘（Cross Product）也可以用于特征向量的计算. 这一方法要求先写出矩阵$A-\lambda I$，在矩阵中找到任意两行，且不成倍数关系（数学上我们称之为线性无关或线性独立，Linear Independent），计算对应行向量的叉乘结果即为特征向量. 以上题为例.</p>
+<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
+<div>
+$$\begin{aligned}\det(A-\lambda I)&=\begin{vmatrix}
+   2-\lambda & 1 & -3 \\
+   0 & 2-\lambda & 1 \\
+   0 & -4 & -3-\lambda
+\end{vmatrix}
+\\&=(\lambda+2)(\lambda-1)(2-\lambda)
+\\&=0.\end{aligned}$$
+</div>
+Then $\lambda=-2, 1, 2$.
+<br>
+<br>
+To find an eigenvector of $A$ corresponding to the eigenvalue $-2$:
+<div>
+$$A-\lambda I=\begin{pmatrix}
+   4 & 1 & -3 \\
+   0 & 4 & 1 \\
+   0 & -4 & -1
+\end{pmatrix}.$$
+</div>
+An eigenvector corresponding to $-2$ is
+<div>
+$$\begin{pmatrix}
+   4 \\ 1 \\ -3
+\end{pmatrix} \times \begin{pmatrix}
+   0 \\ 4 \\ 1
+\end{pmatrix}=\begin{vmatrix}
+   \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+   4 & 1 & -3 \\
+   0 & 4 & 1
+\end{vmatrix}=13\mathbf{i}-4\mathbf{j}+16\mathbf{k}=\begin{pmatrix} 13 \\ -4 \\ 16 \end{pmatrix}.$$
+</div></div>
+
+<div class="trm-note info"><div class="trm-note-title">Exercise.</div><p>尝试利用三维空间中特征向量的第二种方法计算剩余的特征向量.</p>
+</div>
+
+<h2 id="叉乘背后的原理"><a href="#叉乘背后的原理" class="headerlink" title="叉乘背后的原理"></a>叉乘背后的原理</h2><p>我们知道在三维空间中，叉乘用于计算两个向量的共垂向量. 而叉乘用于计算三维空间的特征向量时，很难看出这一性质. 回到第一种方法，在计算特征向量时我们利用：</p>
+<div> 
+$$
+A\mathbf{x}=\lambda\mathbf{x}
+$$
+</div>
+经过变换后我们得到：
+<div> 
+$$
+A\mathbf{x}-\lambda I\mathbf{x}=\mathbf{0}.
+$$
+</div>
+这里为了不涉及过多的数学推导，我们依然用例题来介绍. 上述例子中，我们可以将
+<div> 
+$$
+\begin{pmatrix}
+   2 & 1 & -3 \\
+   0 & 2 & 1 \\
+   0 & -4 & -3
+\end{pmatrix}\begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}=-2\begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}
+$$
+</div>
+转化为
+<div> 
+$$
+\begin{pmatrix}
+   4 & 1 & -3 \\
+   0 & 4 & 1 \\
+   0 & -4 & -1
+\end{pmatrix}\begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}=\begin{pmatrix}
+   0 \\ 0 \\ 0
+\end{pmatrix}
+$$
+</div>
+从而得到
+<div>
+$$\left\{\begin{align*}
+  4x+y-3z&=0 & (\ast) \\
+  4y+z&=0 & (\dagger) \\
+  -4y-z&=0 & (\ddagger)
+\end{align*}\right..$$
+</div>
+观察$(\ast)$和$(\dagger)$式，我们发现
+<div>
+$$
+\begin{pmatrix}
+   4 \\ 1 \\ -3
+\end{pmatrix} \cdot \begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}=\begin{pmatrix}
+   4 \\ 1 \\ -3
+\end{pmatrix} \cdot \mathbf{x}=0
+$$
+</div>
+以及
+<div>
+$$
+\begin{pmatrix}
+   0 \\ 4 \\ 1
+\end{pmatrix} \cdot \begin{pmatrix}
+   x \\ y \\ z
+\end{pmatrix}=\begin{pmatrix}
+   0 \\ 4 \\ 1
+\end{pmatrix} \cdot \mathbf{x}=0.
+$$
+</div>
+如果两个向量点乘（Scalar Product）为零，则两个向量是垂直的. 
+<br>
+<br>
+从$(\ast)$和$(\dagger)$式，我们很快就能得出$\displaystyle \begin{pmatrix}
+   4 \\ 1 \\ -3
+\end{pmatrix}$和$\displaystyle \begin{pmatrix}
+   0 \\ 4 \\ 1
+\end{pmatrix}$<ins><em>同时</em></ins>垂直于特征向量$\mathbf{x}$. 因此
+<div>
+$$
+\mathbf{x}=\begin{pmatrix}
+   4 \\ 1 \\ -3
+\end{pmatrix} \times \begin{pmatrix}
+   0 \\ 4 \\ 1
+\end{pmatrix}=\begin{pmatrix}
+   13 \\ -4 \\ 16
+\end{pmatrix}.
+$$
+</div>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>特征向量的计算在A Level考试中是一定会考察的知识点. 考生应优先掌握利用$A\mathbf{x}&#x3D;\lambda\mathbf{x}$计算特征向量的方法. 对于学有余力的考生，可以尝试掌握利用叉乘计算三维空间中特征向量的方法.</p>
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>比较数据（Compare Data）</title>
+    <url>/maths/compare_data/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel S1考生</p>
+<p><i class="far fa-check-circle"></i>CIE S1考生</p>
+<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><p>比较数据一般从两个角度进行比较：</p>
+<div></div>
+
+<ol>
+<li>集中趋势（Measure of Central Tendency）</li>
+</ol>
+<div></div>
+(1) 常用于比较的指标：中位数（Median）、平均数（Mean）.
+<br>
+(2) 描述模版：比较指标，the average of (something) is higher/lower than that of (something).
+<br>
+
+<ol start="2">
+<li>离散程度（Measure of Spread&#x2F;Variation）</li>
+</ol>
+<div></div>
+(1) 常用于比较的指标： 极差（Range）、四分位距（Interquartile Range/IQR）、方差（Variance）、标准差（Standard Deviation）.
+<br>
+(2) 描述模版：比较指标，(something) is more/less variable (or spread out) than (something).
+<br>
+<br>
+一般我们同时使用中位数和IQR来比较数据，或者同时使用平均数和方差（或标准差）来比较数据. 前者的优点是不容易受到极端值的影响.
+
+<h2 id="比较数据"><a href="#比较数据" class="headerlink" title="比较数据"></a>比较数据</h2><p>集中趋势和离散程度是描述数据分布（Distribution）最常用的两个性质，集中趋势表明数据的平均水平，离散程度表明数据的波动程度. 需要注意的是，波动程度和稳定性是联系在一起的：数据波动程度越大，越不稳定；数据波动程度越小，越稳定. 如果考察到比较数据的题型，一般比较直接，只需要算出指标的准确值并进行比较.</p>
+<div></div>
+但在部分题目中，问法不够明显，这就要求考生理解两个性质以及在现实生活中的意义. 以下用爱德思（Edexcel）真题举例说明.
+
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>At the start of a course, an instructor asked a group of 80 apprentices to estimate the length of a piece of pipe. The error (true length$-$estimated length) was recorded in centimetres. The results are summarised in the box plot below.</p>
+<div></div>
+
+<p><img src="/img/compare_data_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<div></div>
+One month later, the instructor asked the 80 apprentices to estimate the length of a different piece of pipe and recorded their errors. The results are summarised in the table below.
+
+<table class="tg" style="text-align:center; margin:auto; border: 1.5px solid">
+<thead style="border: 1.5px solid">
+  <tr>
+    <th scope="col" width="99" style="border: 1.5px solid">Error ($e$ cm)</th>
+    <th scope="col" width="99" style="border: 1.5px solid">Number of apprentices</th>
+  </tr>
+</thead>
+<tbody>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$-40 \lt e \leq -16$</td>
+    <td style="border: 1.5px solid">2</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$-16 \lt e \leq -8$</td>
+    <td style="border: 1.5px solid">18</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$-8 \lt e \leq 0$</td>
+    <td style="border: 1.5px solid">33</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$0 \lt e \leq 8$</td>
+    <td style="border: 1.5px solid">14</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$8 \lt e \leq 16$</td>
+    <td style="border: 1.5px solid">10</td>
+  </tr>
+  <tr style="border: 1.5px solid">
+    <td style="border: 1.5px solid">$16 \lt e \leq 40$</td>
+    <td style="border: 1.5px solid">3</td>
+  </tr>
+</tbody>
+</table>
+
+<p>State, giving reasons, whether or not the apprentices’ ability to estimate the length of a piece of pipe has improved over the first month of the course.</p>
+</div>
+
+<p>本题考察的知识点本质上是比较数据，大部分的考生能够答到中位数更接近$0$，误差减小，所以有提升. 除了集中趋势，还需要考虑波动程度. 波动程度反映的是数据的稳定性，试想一下，如果一组数据的误差是：$-200$、$-100$、$+100$、$+200$，另一组数据的误差是：$-3$、$-2$、$+1$、$+5$，尽管前者的中位数为$0$，但波动程度极大，数据的不稳定会人们怀疑准确性——很有可能前者的猜测比较“幸运”，让最后的平均误差为$0$罢了.</p>
+<div></div>
+因此，本题还需要答到$\text{IQR}$减少，所以有提升.
+
+<h2 id="知识点拓展：稳定性的好处"><a href="#知识点拓展：稳定性的好处" class="headerlink" title="知识点拓展：稳定性的好处"></a>知识点拓展：稳定性的好处</h2><p>在学习离散程度的测量时，我们会将离散程度和稳定性联系在一起，稳定性的提高会提升准确性. 在后续学习中（Edexcel S3；AQA S2；CIE S2），我们会学习概率论中的一个重要定理：中心极限定理（Central Limit Theorem），它指在满足一定条件下，样本均值（Sample Mean）$\overline{X}$的分布近似一个正态分布（Normal Distribution）：</p>
+<div>
+$$
+\overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)
+$$
+</div>
+
+<p>其中$n$是样本大小（Sample Size）. </p>
+<div></div>
+现阶段，如果不能理解何为样本均值的分布，不妨考虑这么一个例子，研究人员想估算全国人民的平均年龄，不停地随机抽样（每次随机抽中$n$个人），每一次随机抽样都可以计算出一个平均年龄，并将这些平均年龄记录下来.
+<div></div>
+平均年龄的数据分布像一个正态分布，而均值是$\mu$（真实的全国人民平均年龄），方差是$\displaystyle \frac{\sigma^2}{n}$（真实的全国人民年龄的方差除以样本大小）. 
+<div></div>
+可以看到，随着样本大小增加，抽样计算出的平均年龄的方差减少，趋近于$0$. 它的好处是，随着样本大小增加，我们单次计算出来的平均年龄会有极大的概率接近真实的平均年龄，也就更加可信.
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>比较数据是A Level考试中的一类考法，多见于爱德思和CIE考试局. 近年来考察可能性偏低，但考生应该掌握比较角度和描述模版. 有意向进一步学习S系列的考生应加深对离散程度的理解.</p>
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
     <title>云游指南</title>
     <url>/admin/guide/</url>
     <content><![CDATA[<p>欢迎来到A Level Clouds. 本文旨在介绍A Level Clouds的功能，希望能帮助大家快速上手。</p>
@@ -384,215 +695,6 @@ $$
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>逆矩阵的计算在A Level考试中是一定会考察的知识点. 考生应该掌握$2 \times 2$矩阵的逆矩阵计算公式. </p>
 <p>对于Edexcel FP3、AQA FP2考生，我们推荐使用cofactor matrix计算$3 \times 3$矩阵的逆矩阵，这就要求考生对每一个步骤都非常熟悉. 对于CIE FP1考生，row operation方法计算量偏大，也可以考虑掌握cofactor matrix方法计算$3 \times 3$矩阵的逆矩阵. </p>
 <p>对于CIE FP2考生，Cayley-Hamilton theorem是必须掌握的方法，需要考生对定理描述以及推导过程非常熟悉.</p>
-]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>三维空间中特征向量（Eigenvector）的第二种计算方法</title>
-    <url>/maths/calculation_of_eigenvector/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel FP3考生</p>
-<p><i class="far fa-check-circle"></i>AQA FP2考生</p>
-<p><i class="far fa-check-circle"></i>CIE FP2考生</p>
-<h2 id="特征向量的计算"><a href="#特征向量的计算" class="headerlink" title="特征向量的计算"></a>特征向量的计算</h2><p>标准计算特征向量的方法是先利用$\det(A-\lambda I)&#x3D;0$计算特征值（Eigenvalue），再利用$A\mathbf{x}&#x3D;\lambda\mathbf{x}$解出特征向量$\mathbf{x}$.</p>
-<p>现以爱德思（Edexcel）教材的例题来复习特征向量的计算.</p>
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>Find the eigenvalues and corresponding eigenvectors of the matrix </p>
-<div>
-$$A=\begin{pmatrix}
-   2 & 1 & -3 \\
-   0 & 2 & 1 \\
-   0 & -4 & -3
-\end{pmatrix}.$$
-</div></div>
-
-<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
-<div>
-$$\begin{aligned}\det(A-\lambda I)&=\begin{vmatrix}
-   2-\lambda & 1 & -3 \\
-   0 & 2-\lambda & 1 \\
-   0 & -4 & -3-\lambda
-\end{vmatrix}
-\\&=(\lambda+2)(\lambda-1)(2-\lambda)
-\\&=0.\end{aligned}$$
-</div>
-Then $\lambda=-2, 1, 2$.
-<br>
-<br>
-To find an eigenvector of $A$ corresponding to the eigenvalue $-2$:
-<div> 
-$$\begin{aligned}
-&\ \ \ \ \ \begin{pmatrix}
-   2 & 1 & -3 \\
-   0 & 2 & 1 \\
-   0 & -4 & -3
-\end{pmatrix}\begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}=-2\begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}
-\\&\Rightarrow \begin{pmatrix}
-   2x+y-3z \\ 2y+z \\ -4y-3z
-\end{pmatrix}=\begin{pmatrix}
-   -2x \\ -2y \\ -2z
-\end{pmatrix}
-\end{aligned}$$
-</div>
-and so
-<div>
-$$\left\{\begin{align}
-  2x+y-3z&=-2x & \\
-  2y+z&=-2y & \\
-  -4y-3z&=-2z &
-\end{align}\right..$$
-</div>
-From $(2)$ and $(3)$: $z=-4y$. Let $y=1$, then $z=-4$. Substituting $y$ and $z$ to $(1)$, we have $\displaystyle x=-3.25$.
-<br>
-<br>
-An eigenvector corresponding to $-2$ is
-<div>
-$$\begin{pmatrix} -3.25 \\ 1 \\ -4 \end{pmatrix}\ \text{or}\ \begin{pmatrix} 13 \\ -4 \\ 16 \end{pmatrix}.$$
-</div>
-Similarly, an eigenvector corresponding to $1$ is
-<div>
-$$\begin{pmatrix} 4 \\ -1 \\ 1 \end{pmatrix}$$
-</div>
-and eigenvector corresponding to $2$ is
-<div>
-$$\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}.$$
-</div></div>
-
-<h2 id="三维空间中特征向量的第二种计算方法"><a href="#三维空间中特征向量的第二种计算方法" class="headerlink" title="三维空间中特征向量的第二种计算方法"></a>三维空间中特征向量的第二种计算方法</h2><p>在三维空间中，叉乘（Cross Product）也可以用于特征向量的计算. 这一方法要求先写出矩阵$A-\lambda I$，在矩阵中找到任意两行，且不成倍数关系（数学上我们称之为线性无关或线性独立，Linear Independent），计算对应行向量的叉乘结果即为特征向量. 以上题为例.</p>
-<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
-<div>
-$$\begin{aligned}\det(A-\lambda I)&=\begin{vmatrix}
-   2-\lambda & 1 & -3 \\
-   0 & 2-\lambda & 1 \\
-   0 & -4 & -3-\lambda
-\end{vmatrix}
-\\&=(\lambda+2)(\lambda-1)(2-\lambda)
-\\&=0.\end{aligned}$$
-</div>
-Then $\lambda=-2, 1, 2$.
-<br>
-<br>
-To find an eigenvector of $A$ corresponding to the eigenvalue $-2$:
-<div>
-$$A-\lambda I=\begin{pmatrix}
-   4 & 1 & -3 \\
-   0 & 4 & 1 \\
-   0 & -4 & -1
-\end{pmatrix}.$$
-</div>
-An eigenvector corresponding to $-2$ is
-<div>
-$$\begin{pmatrix}
-   4 \\ 1 \\ -3
-\end{pmatrix} \times \begin{pmatrix}
-   0 \\ 4 \\ 1
-\end{pmatrix}=\begin{vmatrix}
-   \mathbf{i} & \mathbf{j} & \mathbf{k} \\
-   4 & 1 & -3 \\
-   0 & 4 & 1
-\end{vmatrix}=13\mathbf{i}-4\mathbf{j}+16\mathbf{k}=\begin{pmatrix} 13 \\ -4 \\ 16 \end{pmatrix}.$$
-</div></div>
-
-<div class="trm-note info"><div class="trm-note-title">Exercise.</div><p>尝试利用三维空间中特征向量的第二种方法计算剩余的特征向量.</p>
-</div>
-
-<h2 id="叉乘背后的原理"><a href="#叉乘背后的原理" class="headerlink" title="叉乘背后的原理"></a>叉乘背后的原理</h2><p>我们知道在三维空间中，叉乘用于计算两个向量的共垂向量. 而叉乘用于计算三维空间的特征向量时，很难看出这一性质. 回到第一种方法，在计算特征向量时我们利用：</p>
-<div> 
-$$
-A\mathbf{x}=\lambda\mathbf{x}
-$$
-</div>
-经过变换后我们得到：
-<div> 
-$$
-A\mathbf{x}-\lambda I\mathbf{x}=\mathbf{0}.
-$$
-</div>
-这里为了不涉及过多的数学推导，我们依然用例题来介绍. 上述例子中，我们可以将
-<div> 
-$$
-\begin{pmatrix}
-   2 & 1 & -3 \\
-   0 & 2 & 1 \\
-   0 & -4 & -3
-\end{pmatrix}\begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}=-2\begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}
-$$
-</div>
-转化为
-<div> 
-$$
-\begin{pmatrix}
-   4 & 1 & -3 \\
-   0 & 4 & 1 \\
-   0 & -4 & -1
-\end{pmatrix}\begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}=\begin{pmatrix}
-   0 \\ 0 \\ 0
-\end{pmatrix}
-$$
-</div>
-从而得到
-<div>
-$$\left\{\begin{align*}
-  4x+y-3z&=0 & (\ast) \\
-  4y+z&=0 & (\dagger) \\
-  -4y-z&=0 & (\ddagger)
-\end{align*}\right..$$
-</div>
-观察$(\ast)$和$(\dagger)$式，我们发现
-<div>
-$$
-\begin{pmatrix}
-   4 \\ 1 \\ -3
-\end{pmatrix} \cdot \begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}=\begin{pmatrix}
-   4 \\ 1 \\ -3
-\end{pmatrix} \cdot \mathbf{x}=0
-$$
-</div>
-以及
-<div>
-$$
-\begin{pmatrix}
-   0 \\ 4 \\ 1
-\end{pmatrix} \cdot \begin{pmatrix}
-   x \\ y \\ z
-\end{pmatrix}=\begin{pmatrix}
-   0 \\ 4 \\ 1
-\end{pmatrix} \cdot \mathbf{x}=0.
-$$
-</div>
-如果两个向量点乘（Scalar Product）为零，则两个向量是垂直的. 
-<br>
-<br>
-从$(\ast)$和$(\dagger)$式，我们很快就能得出$\displaystyle \begin{pmatrix}
-   4 \\ 1 \\ -3
-\end{pmatrix}$和$\displaystyle \begin{pmatrix}
-   0 \\ 4 \\ 1
-\end{pmatrix}$<ins><em>同时</em></ins>垂直于特征向量$\mathbf{x}$. 因此
-<div>
-$$
-\mathbf{x}=\begin{pmatrix}
-   4 \\ 1 \\ -3
-\end{pmatrix} \times \begin{pmatrix}
-   0 \\ 4 \\ 1
-\end{pmatrix}=\begin{pmatrix}
-   13 \\ -4 \\ 16
-\end{pmatrix}.
-$$
-</div>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>特征向量的计算在A Level考试中是一定会考察的知识点. 考生应优先掌握利用$A\mathbf{x}&#x3D;\lambda\mathbf{x}$计算特征向量的方法. 对于学有余力的考生，可以尝试掌握利用叉乘计算三维空间中特征向量的方法.</p>
 ]]></content>
       <categories>
         <category>数学</category>
@@ -989,108 +1091,6 @@ $$
       </categories>
   </entry>
   <entry>
-    <title>比较数据（Compare Data）</title>
-    <url>/maths/compare_data/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel S1考生</p>
-<p><i class="far fa-check-circle"></i>CIE S1考生</p>
-<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><p>比较数据一般从两个角度进行比较：</p>
-<div></div>
-
-<ol>
-<li>集中趋势（Measure of Central Tendency）</li>
-</ol>
-<div></div>
-(1) 常用于比较的指标：中位数（Median）、平均数（Mean）.
-<br>
-(2) 描述模版：比较指标，the average of (something) is higher/lower than that of (something).
-<br>
-
-<ol start="2">
-<li>离散程度（Measure of Spread&#x2F;Variation）</li>
-</ol>
-<div></div>
-(1) 常用于比较的指标： 极差（Range）、四分位距（Interquartile Range/IQR）、方差（Variance）、标准差（Standard Deviation）.
-<br>
-(2) 描述模版：比较指标，(something) is more/less variable (or spread out) than (something).
-<br>
-<br>
-一般我们同时使用中位数和IQR来比较数据，或者同时使用平均数和方差（或标准差）来比较数据. 前者的优点是不容易受到极端值的影响.
-
-<h2 id="比较数据"><a href="#比较数据" class="headerlink" title="比较数据"></a>比较数据</h2><p>集中趋势和离散程度是描述数据分布（Distribution）最常用的两个性质，集中趋势表明数据的平均水平，离散程度表明数据的波动程度. 需要注意的是，波动程度和稳定性是联系在一起的：数据波动程度越大，越不稳定；数据波动程度越小，越稳定. 如果考察到比较数据的题型，一般比较直接，只需要算出指标的准确值并进行比较.</p>
-<div></div>
-但在部分题目中，问法不够明显，这就要求考生理解两个性质以及在现实生活中的意义. 以下用爱德思（Edexcel）真题举例说明.
-
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>At the start of a course, an instructor asked a group of 80 apprentices to estimate the length of a piece of pipe. The error (true length$-$estimated length) was recorded in centimetres. The results are summarised in the box plot below.</p>
-<div></div>
-
-<p><img src="/img/compare_data_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<div></div>
-One month later, the instructor asked the 80 apprentices to estimate the length of a different piece of pipe and recorded their errors. The results are summarised in the table below.
-
-<table class="tg" style="text-align:center; margin:auto; border: 1.5px solid">
-<thead style="border: 1.5px solid">
-  <tr>
-    <th scope="col" width="99" style="border: 1.5px solid">Error ($e$ cm)</th>
-    <th scope="col" width="99" style="border: 1.5px solid">Number of apprentices</th>
-  </tr>
-</thead>
-<tbody>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$-40 \lt e \leq -16$</td>
-    <td style="border: 1.5px solid">2</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$-16 \lt e \leq -8$</td>
-    <td style="border: 1.5px solid">18</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$-8 \lt e \leq 0$</td>
-    <td style="border: 1.5px solid">33</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$0 \lt e \leq 8$</td>
-    <td style="border: 1.5px solid">14</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$8 \lt e \leq 16$</td>
-    <td style="border: 1.5px solid">10</td>
-  </tr>
-  <tr style="border: 1.5px solid">
-    <td style="border: 1.5px solid">$16 \lt e \leq 40$</td>
-    <td style="border: 1.5px solid">3</td>
-  </tr>
-</tbody>
-</table>
-
-<p>State, giving reasons, whether or not the apprentices’ ability to estimate the length of a piece of pipe has improved over the first month of the course.</p>
-</div>
-
-<p>本题考察的知识点本质上是比较数据，大部分的考生能够答到中位数更接近$0$，误差减小，所以有提升. 除了集中趋势，还需要考虑波动程度. 波动程度反映的是数据的稳定性，试想一下，如果一组数据的误差是：$-200$、$-100$、$+100$、$+200$，另一组数据的误差是：$-3$、$-2$、$+1$、$+5$，尽管前者的中位数为$0$，但波动程度极大，数据的不稳定会人们怀疑准确性——很有可能前者的猜测比较“幸运”，让最后的平均误差为$0$罢了.</p>
-<div></div>
-因此，本题还需要答到$\text{IQR}$减少，所以有提升.
-
-<h2 id="知识点拓展：稳定性的好处"><a href="#知识点拓展：稳定性的好处" class="headerlink" title="知识点拓展：稳定性的好处"></a>知识点拓展：稳定性的好处</h2><p>在学习离散程度的测量时，我们会将离散程度和稳定性联系在一起，稳定性的提高会提升准确性. 在后续学习中（Edexcel S3；AQA S2；CIE S2），我们会学习概率论中的一个重要定理：中心极限定理（Central Limit Theorem），它指在满足一定条件下，样本均值（Sample Mean）$\overline{X}$的分布近似一个正态分布（Normal Distribution）：</p>
-<div>
-$$
-\overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)
-$$
-</div>
-
-<p>其中$n$是样本大小（Sample Size）. </p>
-<div></div>
-现阶段，如果不能理解何为样本均值的分布，不妨考虑这么一个例子，研究人员想估算全国人民的平均年龄，不停地随机抽样（每次随机抽中$n$个人），每一次随机抽样都可以计算出一个平均年龄，并将这些平均年龄记录下来.
-<div></div>
-平均年龄的数据分布像一个正态分布，而均值是$\mu$（真实的全国人民平均年龄），方差是$\displaystyle \frac{\sigma^2}{n}$（真实的全国人民年龄的方差除以样本大小）. 
-<div></div>
-可以看到，随着样本大小增加，抽样计算出的平均年龄的方差减少，趋近于$0$. 它的好处是，随着样本大小增加，我们单次计算出来的平均年龄会有极大的概率接近真实的平均年龄，也就更加可信.
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>比较数据是A Level考试中的一类考法，多见于爱德思和CIE考试局. 近年来考察可能性偏低，但考生应该掌握比较角度和描述模版. 有意向进一步学习S系列的考生应加深对离散程度的理解.</p>
-]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-  </entry>
-  <entry>
     <title>碰撞模型：Newton’s Law of Restitution</title>
     <url>/maths/newton_law_of_restitution/</url>
     <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel M2考生</p>
@@ -1180,6 +1180,112 @@ $$
 第一种情况是碰撞后的真实情况，所以得到速度都是正数. 第二种情况中$v_P<0$，说明与假设的方向相反. 而且可以预见，第三种情况算出来$v_P>0$但$v_Q<0$. 但无论是哪一种情况，计算出来的关于$P$和$Q$的速率（Speed）的表达式都是一致的.</div>
 
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>碰撞模型建立是A Level考试中碰撞题型中的基础考法，对矢量表达要求较高，需要理解restitution计算式中的相对速度.</p>
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>部分分式（Partial Fraction）的常见疑问</title>
+    <url>/maths/partial_fraction/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel P4考生</p>
+<p><i class="far fa-check-circle"></i>AQA P2考生</p>
+<p><i class="far fa-check-circle"></i>CIE P3考生</p>
+<h2 id="部分分式"><a href="#部分分式" class="headerlink" title="部分分式"></a>部分分式</h2><p>部分分式是将有理函数（Rational Function）分解成许多次数较低的有理函数和的形式，如：</p>
+<div>
+$$\frac{1}{x(x+1)}=\frac{1}{x}-\frac{1}{x+1}.$$
+</div>
+
+<p>现以例题来复习部分分式的两种方法.</p>
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><div>
+Given that $\displaystyle \frac{6x^2+5x-2}{x(x-1)(2x+1)} \equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}$, find the values of the constants $A$, $B$ and $C$.
+</div></div>
+
+<h2 id="方法一：比较系数法（Equating-Coefficients）"><a href="#方法一：比较系数法（Equating-Coefficients）" class="headerlink" title="方法一：比较系数法（Equating Coefficients）"></a>方法一：比较系数法（Equating Coefficients）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
+<div>
+$$\begin{aligned}
+\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
+\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
+\end{aligned}$$
+</div>
+So
+<div>
+$$\begin{aligned}
+6x^2+5x-2&=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)
+\\&=A(2x^2-x-1)+2Bx^2+Bx+Cx^2-Cx
+\\&=(2A+2B+C)x^2+(-A+B-C)x-A
+\end{aligned}$$
+</div>
+Then we have
+<div>
+$$\begin{cases}
+2A+2B+C=6 \\
+-A+B-C=5 \\
+-A=-2
+\end{cases}$$
+</div>
+Solving the simultaneous equations gives $A=2$, $B=3$ and $C=-4$.</div>
+
+<p>比较系数法思路清晰易懂，但计算量偏大且容易出错，我们一般不建议考生使用该方法计算.</p>
+<h2 id="方法二：代入特值法（Substitution）"><a href="#方法二：代入特值法（Substitution）" class="headerlink" title="方法二：代入特值法（Substitution）"></a>方法二：代入特值法（Substitution）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
+<div>
+$$\begin{aligned}
+\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
+\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
+\end{aligned}$$
+</div>
+So
+<div>
+$$6x^2+5x-2=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$$
+</div>
+Let $x=1$:
+<div>
+$$6+5-2=0+3B+0 \Rightarrow B=3$$
+</div>
+Let $\displaystyle x=-\frac{1}{2}$:
+<div>
+$$\frac{6}{4}-\frac{5}{2}-2=0+0+\frac{3}{4}C \Rightarrow C=-4$$
+</div>
+Let $x=0$:
+<div>
+$$0+0-2=-A+0+0 \Rightarrow A=2$$
+</div>
+So, $A=2$, $B=3$ and $C=-4$.</div>
+
+<p>代入特值法计算量相对较小，我们一般建议考生使用该方法计算.</p>
+<h2 id="特殊情况的处理方式"><a href="#特殊情况的处理方式" class="headerlink" title="特殊情况的处理方式"></a>特殊情况的处理方式</h2><p>部分分式分解有几种需要注意的特殊情况，需要特殊处理：</p>
+<ol>
+<li><p>假分式（Improper Fraction）需要转为带分式（Mixed Fraction）后对真分式（Proper Fraction）进行部分分式分解.</p>
+</li>
+<li><p>分母中含有重因式（Repeated Factor）需要将重因式拆成两项和，如：</p>
+<div>
+$$
+\frac{2x+8}{(x+5)^2(x-1)} \equiv \frac{A}{x+5}+\frac{B}{(x+5)^2}+\frac{C}{x-1}
+$$
+</div></li>
+</ol>
+<h2 id="拓展：代入特值法的原理"><a href="#拓展：代入特值法的原理" class="headerlink" title="拓展：代入特值法的原理"></a>拓展：代入特值法的原理</h2><p>在教学或学习过程中，我们遇到最多的问题就是：为什么可以代入特殊的值？代入某个值分母为$0$了，为什么可以成立？我们将在这一部分回答这个问题.</p>
+<p>我们还是沿用上例，在计算过程中，我们得到了</p>
+<div>
+$$\begin{aligned}
+\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
+\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
+\end{aligned}$$
+</div>
+因此，$6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$. 恒等于的意思是等式两边的表达式无论其变量（$x$）如何取值，等式两边永远成立. 所以，我们可以代入任意的值去计算$A$、$B$和$C$.
+
+<p>有同学提出，在这个计算中，分母不能为$0$，所以$x$不能取$0$、$1$和$\displaystyle -\frac{1}{2}$.</p>
+<p>事实上，我们在应用代入特值法的逻辑是：</p>
+<div>
+$$\begin{aligned}
+&\ \ \ \ \ 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for all } x
+\\&\Rightarrow 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for } x \neq 0, 1, -\frac{1}{2}
+\end{aligned}$$
+</div>
+
+<p>举个简单的例子，如果我们证明了$f(x) \geq 2$ for all $x$，就一定可以推出$f(x) \geq 2$ for all $x \geq 5$. </p>
+<p>用集合的语言来描述，如果$A \subseteq B$，且命题$p$对于$x \in B$均成立，则命题$p$对于$x \in A$均成立.</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>部分分式的计算在A Level考试中是一定会考察的知识点. 考生应掌握两种计算方法及特殊情况的处理方式. 我们建议考生优先使用代入特值法进行计算.</p>
 ]]></content>
       <categories>
         <category>数学</category>
@@ -1370,112 +1476,6 @@ Therefore, the general solution to the differential equation is $\displaystyle -
 </div></div>
 
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>利用分离变量法解一阶微分方程在A Level考试中是一定会考察的知识点. 考生应优先掌握分离变量法的基本步骤，对于学有余力的考生，可以尝试进一步理解分离变量法的细节.</p>
-]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>部分分式（Partial Fraction）的常见疑问</title>
-    <url>/maths/partial_fraction/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel P4考生</p>
-<p><i class="far fa-check-circle"></i>AQA P2考生</p>
-<p><i class="far fa-check-circle"></i>CIE P3考生</p>
-<h2 id="部分分式"><a href="#部分分式" class="headerlink" title="部分分式"></a>部分分式</h2><p>部分分式是将有理函数（Rational Function）分解成许多次数较低的有理函数和的形式，如：</p>
-<div>
-$$\frac{1}{x(x+1)}=\frac{1}{x}-\frac{1}{x+1}.$$
-</div>
-
-<p>现以例题来复习部分分式的两种方法.</p>
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><div>
-Given that $\displaystyle \frac{6x^2+5x-2}{x(x-1)(2x+1)} \equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}$, find the values of the constants $A$, $B$ and $C$.
-</div></div>
-
-<h2 id="方法一：比较系数法（Equating-Coefficients）"><a href="#方法一：比较系数法（Equating-Coefficients）" class="headerlink" title="方法一：比较系数法（Equating Coefficients）"></a>方法一：比较系数法（Equating Coefficients）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
-<div>
-$$\begin{aligned}
-\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
-\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
-\end{aligned}$$
-</div>
-So
-<div>
-$$\begin{aligned}
-6x^2+5x-2&=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)
-\\&=A(2x^2-x-1)+2Bx^2+Bx+Cx^2-Cx
-\\&=(2A+2B+C)x^2+(-A+B-C)x-A
-\end{aligned}$$
-</div>
-Then we have
-<div>
-$$\begin{cases}
-2A+2B+C=6 \\
--A+B-C=5 \\
--A=-2
-\end{cases}$$
-</div>
-Solving the simultaneous equations gives $A=2$, $B=3$ and $C=-4$.</div>
-
-<p>比较系数法思路清晰易懂，但计算量偏大且容易出错，我们一般不建议考生使用该方法计算.</p>
-<h2 id="方法二：代入特值法（Substitution）"><a href="#方法二：代入特值法（Substitution）" class="headerlink" title="方法二：代入特值法（Substitution）"></a>方法二：代入特值法（Substitution）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
-<div>
-$$\begin{aligned}
-\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
-\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
-\end{aligned}$$
-</div>
-So
-<div>
-$$6x^2+5x-2=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$$
-</div>
-Let $x=1$:
-<div>
-$$6+5-2=0+3B+0 \Rightarrow B=3$$
-</div>
-Let $\displaystyle x=-\frac{1}{2}$:
-<div>
-$$\frac{6}{4}-\frac{5}{2}-2=0+0+\frac{3}{4}C \Rightarrow C=-4$$
-</div>
-Let $x=0$:
-<div>
-$$0+0-2=-A+0+0 \Rightarrow A=2$$
-</div>
-So, $A=2$, $B=3$ and $C=-4$.</div>
-
-<p>代入特值法计算量相对较小，我们一般建议考生使用该方法计算.</p>
-<h2 id="特殊情况的处理方式"><a href="#特殊情况的处理方式" class="headerlink" title="特殊情况的处理方式"></a>特殊情况的处理方式</h2><p>部分分式分解有几种需要注意的特殊情况，需要特殊处理：</p>
-<ol>
-<li><p>假分式（Improper Fraction）需要转为带分式（Mixed Fraction）后对真分式（Proper Fraction）进行部分分式分解.</p>
-</li>
-<li><p>分母中含有重因式（Repeated Factor）需要将重因式拆成两项和，如：</p>
-<div>
-$$
-\frac{2x+8}{(x+5)^2(x-1)} \equiv \frac{A}{x+5}+\frac{B}{(x+5)^2}+\frac{C}{x-1}
-$$
-</div></li>
-</ol>
-<h2 id="拓展：代入特值法的原理"><a href="#拓展：代入特值法的原理" class="headerlink" title="拓展：代入特值法的原理"></a>拓展：代入特值法的原理</h2><p>在教学或学习过程中，我们遇到最多的问题就是：为什么可以代入特殊的值？代入某个值分母为$0$了，为什么可以成立？我们将在这一部分回答这个问题.</p>
-<p>我们还是沿用上例，在计算过程中，我们得到了</p>
-<div>
-$$\begin{aligned}
-\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
-\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
-\end{aligned}$$
-</div>
-因此，$6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$. 恒等于的意思是等式两边的表达式无论其变量（$x$）如何取值，等式两边永远成立. 所以，我们可以代入任意的值去计算$A$、$B$和$C$.
-
-<p>有同学提出，在这个计算中，分母不能为$0$，所以$x$不能取$0$、$1$和$\displaystyle -\frac{1}{2}$.</p>
-<p>事实上，我们在应用代入特值法的逻辑是：</p>
-<div>
-$$\begin{aligned}
-&\ \ \ \ \ 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for all } x
-\\&\Rightarrow 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for } x \neq 0, 1, -\frac{1}{2}
-\end{aligned}$$
-</div>
-
-<p>举个简单的例子，如果我们证明了$f(x) \geq 2$ for all $x$，就一定可以推出$f(x) \geq 2$ for all $x \geq 5$. </p>
-<p>用集合的语言来描述，如果$A \subseteq B$，且命题$p$对于$x \in B$均成立，则命题$p$对于$x \in A$均成立.</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>部分分式的计算在A Level考试中是一定会考察的知识点. 考生应掌握两种计算方法及特殊情况的处理方式. 我们建议考生优先使用代入特值法进行计算.</p>
 ]]></content>
       <categories>
         <category>数学</category>
