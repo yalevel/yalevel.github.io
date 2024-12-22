@@ -312,6 +312,28 @@ $$
       </categories>
   </entry>
   <entry>
+    <title>云游指南</title>
+    <url>/admin/guide/</url>
+    <content><![CDATA[<p>欢迎来到A Level Clouds. 本文旨在介绍A Level Clouds的功能，希望能帮助大家快速上手。</p>
+<h2 id="顶部导航栏"><a href="#顶部导航栏" class="headerlink" title="顶部导航栏"></a>顶部导航栏</h2><h3 id="左侧"><a href="#左侧" class="headerlink" title="左侧"></a>左侧</h3><p>点击导航栏的左侧会进入一个全新界面，欢迎探索。</p>
+<h3 id="右侧"><a href="#右侧" class="headerlink" title="右侧"></a>右侧</h3><p>导航栏的右侧包括关于我们、考前模拟（限时开放）、每日一题、往年真题、分类真题和全部文章。</p>
+<div></div>
+
+<p>点击<a href="/about/" target="_blank">关于我们</a>可以浏览关于我们的更多信息。点击<a>考前模拟（限时开放，目前已关闭）</a>，可以下载考前模拟卷并查看答案。点击<a href="/daily-practice/" target="_blank">每日一题</a>，可以查看每天更新的一道真题及相关知识点。点击<a href="/past-papers/" target="_blank">往年真题</a>，可以按照考试局与学科查看往年真题，如果你有耐心的话，也可以将鼠标放置于<a href="/past-papers/" target="_blank">往年真题</a>处，它会显示具体学科，点击后就可以直接查看往年真题。点击<a href="/topic-questions/" target="_blank">分类真题</a>，可以按照考试局与学科查看目前平台已有的分类真题资料。点击<a href="/posts/" target="_blank">全部文章</a>，可以按照年份查看所有文章，也可以将鼠标放置于<a href="/posts/" target="_blank">全部文章</a>处，它会显示具体学科，点击后就可以直接查看相关文章。</p>
+<div></div>
+
+<p>除此之外，导航栏的右侧还包括一个重要的搜索功能，可以帮助大家根据关键词搜索具体的文章，节省时间。</p>
+<div class="trm-note warning"><div class="trm-note-title">友情提示</div><p>A Level Clouds在未来<em>也许</em>会上线新的板块或功能，对于主要的板块或功能一般会更新在顶部导航栏的右侧，敬请期待。</p>
+</div>
+
+<h2 id="侧栏"><a href="#侧栏" class="headerlink" title="侧栏"></a>侧栏</h2><p>侧栏提供了联系的方式，包括微信与邮件。但我们希望微信的交流以知识为主，商务交流请通过邮件，我们会定期查看邮件并回复。</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>希望每一位浏览A Level Clouds的用户能有一个舒适的体验，并且有所收获。</p>
+]]></content>
+      <categories>
+        <category>云游日常</category>
+      </categories>
+  </entry>
+  <entry>
     <title>逆矩阵（Inverse Matrix）的常见计算方法</title>
     <url>/maths/inverse_matrix/</url>
     <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel FP1、FP3考生</p>
@@ -673,6 +695,101 @@ $$
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>逆矩阵的计算在A Level考试中是一定会考察的知识点. 考生应该掌握$2 \times 2$矩阵的逆矩阵计算公式. </p>
 <p>对于Edexcel FP3、AQA FP2考生，我们推荐使用cofactor matrix计算$3 \times 3$矩阵的逆矩阵，这就要求考生对每一个步骤都非常熟悉. 对于CIE FP1考生，row operation方法计算量偏大，也可以考虑掌握cofactor matrix方法计算$3 \times 3$矩阵的逆矩阵. </p>
 <p>对于CIE FP2考生，Cayley-Hamilton theorem是必须掌握的方法，需要考生对定理描述以及推导过程非常熟悉.</p>
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>碰撞模型：Newton’s Law of Restitution</title>
+    <url>/maths/newton_law_of_restitution/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel M2考生</p>
+<p><i class="far fa-check-circle"></i>AQA FM1考生</p>
+<p><i class="far fa-check-circle"></i>CIE FM考生</p>
+<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><ol>
+<li><p>Conservation of Linear Momentum:</p>
+<div>
+$$
+m_1\mathbf{u}_1+m_2\mathbf{u}_2=m_1\mathbf{v}_1+m_2\mathbf{v}_2.
+$$
+</div>
+</li>
+<li><p>Impulse-Momentum Principle:</p>
+<div>
+$$
+\mathbf{I}=\mathbf{F}t=m\mathbf{v}-m\mathbf{u}.
+$$
+</div></li>
+</ol>
+<p>注意，以上两个物理公式要满足矢量关系，规定好正方向，同向为正，反向为负.</p>
+<ol start="3">
+<li>Newton‘s Law of Restitution (Impact Law):<div>
+$$
+e=\frac{\text{Separation speed}}{\text{Approach speed}}\ \ 0 \leq e \leq 1.
+$$
+</div></li>
+</ol>
+<p>其中，$e&#x3D;0$为非弹性碰撞（Inelastic Collision），即碰撞后相对速度为$0$；$e&#x3D;1$为弹性碰撞（Elastic Collision），即碰撞前后动能相等. 常数$e$可以理解为碰撞后的相对速度与碰撞前的相对速度的比值.</p>
+<div></div>
+<em>相对速度</em>：同向运动，速度大小相减；反向运动，速度大小相加.
+
+<h2 id="建立碰撞模型"><a href="#建立碰撞模型" class="headerlink" title="建立碰撞模型"></a>建立碰撞模型</h2><p>部分题型没有给出碰撞前后的示意图，在题干中也没有明确表示碰撞前或碰撞后物体的运动方向，需要自己建立一个合理的模型.</p>
+<div></div>
+建立模型的重点是标注好碰撞前后各物体其中一种可能的运动方向，然后按照自己设定的模型，首先规定好正方向，列出动量守恒和impact law两个物理方程，联解方程即可得出相关物理量. 不用纠结是否有其他情况，严格按照矢量原则列式，算出来的结果的正负就代表了准确方向. 以下用爱德思（Edexcel）真题举例说明.
+
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>A particle $P$ of mass $2m$ is moving in a straight line with speed $u$ on a smooth horizontal plane. The particle $P$ collides directly with a particle $Q$, of mass $m$, which is moving on the plane along the same straight line as $P$ but in the opposite direction to $P$. Immediately before the collision the speed of $Q$ is $3u$. The coefficient of restitution between $P$ and $Q$ is $e$, where $\displaystyle e&gt;\frac{1}{8}$.</p>
+<div></div>
+Find, in terms of $u$ and $e$,
+<br>
+(i) the speed of $P$ immediately after the collision,
+<br>
+(ii) the speed of $Q$ immediately after the coolision.</div>
+
+<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>根据题意，已知碰撞前两小球运动方向，没有描述碰撞后的结果，所以会有三种可能情况：<br><img src="/img/newton_law_of_restitution_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>现通过前两种情况分析理解.</p>
+<div></div>
+<b>Case (1):</b>
+<br>
+Conservation of Linear Momentum:
+<div>
+$$
+(\rightarrow): 2mu+m(-3u)=2m(-v_P)+mv_Q.
+$$
+</div>
+Impact Law:
+<div>
+$$
+e=\frac{v_P+v_Q}{3u+u}.
+$$
+</div>
+Solving simultaneous equations, we have:
+<div>
+$$
+v_P=\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
+$$
+</div>
+<b>Case (2):</b>
+<br>
+Conservation of Linear Momentum:
+<div>
+$$
+(\rightarrow): 2mu+m(-3u)=2m(v_P)+mv_Q.
+$$
+</div>
+Impact Law:
+<div>
+$$
+e=\frac{v_Q-v_P}{3u+u}.
+$$
+</div>
+Solving simultaneous equations, we have:
+<div>
+$$
+v_P=\textcolor{red}{-}\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
+$$
+</div>
+第一种情况是碰撞后的真实情况，所以得到速度都是正数. 第二种情况中$v_P<0$，说明与假设的方向相反. 而且可以预见，第三种情况算出来$v_P>0$但$v_Q<0$. 但无论是哪一种情况，计算出来的关于$P$和$Q$的速率（Speed）的表达式都是一致的.</div>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>碰撞模型建立是A Level考试中碰撞题型中的基础考法，对矢量表达要求较高，需要理解restitution计算式中的相对速度.</p>
 ]]></content>
       <categories>
         <category>数学</category>
@@ -1069,123 +1186,6 @@ $$
       </categories>
   </entry>
   <entry>
-    <title>云游指南</title>
-    <url>/admin/guide/</url>
-    <content><![CDATA[<p>欢迎来到A Level Clouds. 本文旨在介绍A Level Clouds的功能，希望能帮助大家快速上手。</p>
-<h2 id="顶部导航栏"><a href="#顶部导航栏" class="headerlink" title="顶部导航栏"></a>顶部导航栏</h2><h3 id="左侧"><a href="#左侧" class="headerlink" title="左侧"></a>左侧</h3><p>点击导航栏的左侧会进入一个全新界面，欢迎探索。</p>
-<h3 id="右侧"><a href="#右侧" class="headerlink" title="右侧"></a>右侧</h3><p>导航栏的右侧包括关于我们、考前模拟（限时开放）、每日一题、往年真题、分类真题和全部文章。</p>
-<div></div>
-
-<p>点击<a href="/about/" target="_blank">关于我们</a>可以浏览关于我们的更多信息。点击<a>考前模拟（限时开放，目前已关闭）</a>，可以下载考前模拟卷并查看答案。点击<a href="/daily-practice/" target="_blank">每日一题</a>，可以查看每天更新的一道真题及相关知识点。点击<a href="/past-papers/" target="_blank">往年真题</a>，可以按照考试局与学科查看往年真题，如果你有耐心的话，也可以将鼠标放置于<a href="/past-papers/" target="_blank">往年真题</a>处，它会显示具体学科，点击后就可以直接查看往年真题。点击<a href="/topic-questions/" target="_blank">分类真题</a>，可以按照考试局与学科查看目前平台已有的分类真题资料。点击<a href="/posts/" target="_blank">全部文章</a>，可以按照年份查看所有文章，也可以将鼠标放置于<a href="/posts/" target="_blank">全部文章</a>处，它会显示具体学科，点击后就可以直接查看相关文章。</p>
-<div></div>
-
-<p>除此之外，导航栏的右侧还包括一个重要的搜索功能，可以帮助大家根据关键词搜索具体的文章，节省时间。</p>
-<div class="trm-note warning"><div class="trm-note-title">友情提示</div><p>A Level Clouds在未来<em>也许</em>会上线新的板块或功能，对于主要的板块或功能一般会更新在顶部导航栏的右侧，敬请期待。</p>
-</div>
-
-<h2 id="侧栏"><a href="#侧栏" class="headerlink" title="侧栏"></a>侧栏</h2><p>侧栏提供了联系的方式，包括微信与邮件。但我们希望微信的交流以知识为主，商务交流请通过邮件，我们会定期查看邮件并回复。</p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>希望每一位浏览A Level Clouds的用户能有一个舒适的体验，并且有所收获。</p>
-]]></content>
-      <categories>
-        <category>云游日常</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>碰撞模型：Newton’s Law of Restitution</title>
-    <url>/maths/newton_law_of_restitution/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel M2考生</p>
-<p><i class="far fa-check-circle"></i>AQA FM1考生</p>
-<p><i class="far fa-check-circle"></i>CIE FM考生</p>
-<h2 id="知识点介绍"><a href="#知识点介绍" class="headerlink" title="知识点介绍"></a>知识点介绍</h2><ol>
-<li><p>Conservation of Linear Momentum:</p>
-<div>
-$$
-m_1\mathbf{u}_1+m_2\mathbf{u}_2=m_1\mathbf{v}_1+m_2\mathbf{v}_2.
-$$
-</div>
-</li>
-<li><p>Impulse-Momentum Principle:</p>
-<div>
-$$
-\mathbf{I}=\mathbf{F}t=m\mathbf{v}-m\mathbf{u}.
-$$
-</div></li>
-</ol>
-<p>注意，以上两个物理公式要满足矢量关系，规定好正方向，同向为正，反向为负.</p>
-<ol start="3">
-<li>Newton‘s Law of Restitution (Impact Law):<div>
-$$
-e=\frac{\text{Separation speed}}{\text{Approach speed}}\ \ 0 \leq e \leq 1.
-$$
-</div></li>
-</ol>
-<p>其中，$e&#x3D;0$为非弹性碰撞（Inelastic Collision），即碰撞后相对速度为$0$；$e&#x3D;1$为弹性碰撞（Elastic Collision），即碰撞前后动能相等. 常数$e$可以理解为碰撞后的相对速度与碰撞前的相对速度的比值.</p>
-<div></div>
-<em>相对速度</em>：同向运动，速度大小相减；反向运动，速度大小相加.
-
-<h2 id="建立碰撞模型"><a href="#建立碰撞模型" class="headerlink" title="建立碰撞模型"></a>建立碰撞模型</h2><p>部分题型没有给出碰撞前后的示意图，在题干中也没有明确表示碰撞前或碰撞后物体的运动方向，需要自己建立一个合理的模型.</p>
-<div></div>
-建立模型的重点是标注好碰撞前后各物体其中一种可能的运动方向，然后按照自己设定的模型，首先规定好正方向，列出动量守恒和impact law两个物理方程，联解方程即可得出相关物理量. 不用纠结是否有其他情况，严格按照矢量原则列式，算出来的结果的正负就代表了准确方向. 以下用爱德思（Edexcel）真题举例说明.
-
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><p>A particle $P$ of mass $2m$ is moving in a straight line with speed $u$ on a smooth horizontal plane. The particle $P$ collides directly with a particle $Q$, of mass $m$, which is moving on the plane along the same straight line as $P$ but in the opposite direction to $P$. Immediately before the collision the speed of $Q$ is $3u$. The coefficient of restitution between $P$ and $Q$ is $e$, where $\displaystyle e&gt;\frac{1}{8}$.</p>
-<div></div>
-Find, in terms of $u$ and $e$,
-<br>
-(i) the speed of $P$ immediately after the collision,
-<br>
-(ii) the speed of $Q$ immediately after the coolision.</div>
-
-<div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>根据题意，已知碰撞前两小球运动方向，没有描述碰撞后的结果，所以会有三种可能情况：<br><img src="/img/newton_law_of_restitution_1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>现通过前两种情况分析理解.</p>
-<div></div>
-<b>Case (1):</b>
-<br>
-Conservation of Linear Momentum:
-<div>
-$$
-(\rightarrow): 2mu+m(-3u)=2m(-v_P)+mv_Q.
-$$
-</div>
-Impact Law:
-<div>
-$$
-e=\frac{v_P+v_Q}{3u+u}.
-$$
-</div>
-Solving simultaneous equations, we have:
-<div>
-$$
-v_P=\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
-$$
-</div>
-<b>Case (2):</b>
-<br>
-Conservation of Linear Momentum:
-<div>
-$$
-(\rightarrow): 2mu+m(-3u)=2m(v_P)+mv_Q.
-$$
-</div>
-Impact Law:
-<div>
-$$
-e=\frac{v_Q-v_P}{3u+u}.
-$$
-</div>
-Solving simultaneous equations, we have:
-<div>
-$$
-v_P=\textcolor{red}{-}\frac{u(1+4e)}{3}\ \text{and}\ v_Q=\frac{u(8e-1)}{3}.
-$$
-</div>
-第一种情况是碰撞后的真实情况，所以得到速度都是正数. 第二种情况中$v_P<0$，说明与假设的方向相反. 而且可以预见，第三种情况算出来$v_P>0$但$v_Q<0$. 但无论是哪一种情况，计算出来的关于$P$和$Q$的速率（Speed）的表达式都是一致的.</div>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>碰撞模型建立是A Level考试中碰撞题型中的基础考法，对矢量表达要求较高，需要理解restitution计算式中的相对速度.</p>
-]]></content>
-      <categories>
-        <category>数学</category>
-      </categories>
-  </entry>
-  <entry>
     <title>示波器（Oscilloscope）的使用</title>
     <url>/physics/oscilloscope/</url>
     <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel U2和U5考生</p>
@@ -1242,112 +1242,6 @@ $$
 ]]></content>
       <categories>
         <category>物理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>部分分式（Partial Fraction）的常见疑问</title>
-    <url>/maths/partial_fraction/</url>
-    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel P4考生</p>
-<p><i class="far fa-check-circle"></i>AQA P2考生</p>
-<p><i class="far fa-check-circle"></i>CIE P3考生</p>
-<h2 id="部分分式"><a href="#部分分式" class="headerlink" title="部分分式"></a>部分分式</h2><p>部分分式是将有理函数（Rational Function）分解成许多次数较低的有理函数和的形式，如：</p>
-<div>
-$$\frac{1}{x(x+1)}=\frac{1}{x}-\frac{1}{x+1}.$$
-</div>
-
-<p>现以例题来复习部分分式的两种方法.</p>
-<div class="trm-note tip"><div class="trm-note-title">Example.</div><div>
-Given that $\displaystyle \frac{6x^2+5x-2}{x(x-1)(2x+1)} \equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}$, find the values of the constants $A$, $B$ and $C$.
-</div></div>
-
-<h2 id="方法一：比较系数法（Equating-Coefficients）"><a href="#方法一：比较系数法（Equating-Coefficients）" class="headerlink" title="方法一：比较系数法（Equating Coefficients）"></a>方法一：比较系数法（Equating Coefficients）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
-<div>
-$$\begin{aligned}
-\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
-\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
-\end{aligned}$$
-</div>
-So
-<div>
-$$\begin{aligned}
-6x^2+5x-2&=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)
-\\&=A(2x^2-x-1)+2Bx^2+Bx+Cx^2-Cx
-\\&=(2A+2B+C)x^2+(-A+B-C)x-A
-\end{aligned}$$
-</div>
-Then we have
-<div>
-$$\begin{cases}
-2A+2B+C=6 \\
--A+B-C=5 \\
--A=-2
-\end{cases}$$
-</div>
-Solving the simultaneous equations gives $A=2$, $B=3$ and $C=-4$.</div>
-
-<p>比较系数法思路清晰易懂，但计算量偏大且容易出错，我们一般不建议考生使用该方法计算.</p>
-<h2 id="方法二：代入特值法（Substitution）"><a href="#方法二：代入特值法（Substitution）" class="headerlink" title="方法二：代入特值法（Substitution）"></a>方法二：代入特值法（Substitution）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
-<div>
-$$\begin{aligned}
-\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
-\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
-\end{aligned}$$
-</div>
-So
-<div>
-$$6x^2+5x-2=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$$
-</div>
-Let $x=1$:
-<div>
-$$6+5-2=0+3B+0 \Rightarrow B=3$$
-</div>
-Let $\displaystyle x=-\frac{1}{2}$:
-<div>
-$$\frac{6}{4}-\frac{5}{2}-2=0+0+\frac{3}{4}C \Rightarrow C=-4$$
-</div>
-Let $x=0$:
-<div>
-$$0+0-2=-A+0+0 \Rightarrow A=2$$
-</div>
-So, $A=2$, $B=3$ and $C=-4$.</div>
-
-<p>代入特值法计算量相对较小，我们一般建议考生使用该方法计算.</p>
-<h2 id="特殊情况的处理方式"><a href="#特殊情况的处理方式" class="headerlink" title="特殊情况的处理方式"></a>特殊情况的处理方式</h2><p>部分分式分解有几种需要注意的特殊情况，需要特殊处理：</p>
-<ol>
-<li><p>假分式（Improper Fraction）需要转为带分式（Mixed Fraction）后对真分式（Proper Fraction）进行部分分式分解.</p>
-</li>
-<li><p>分母中含有重因式（Repeated Factor）需要将重因式拆成两项和，如：</p>
-<div>
-$$
-\frac{2x+8}{(x+5)^2(x-1)} \equiv \frac{A}{x+5}+\frac{B}{(x+5)^2}+\frac{C}{x-1}
-$$
-</div></li>
-</ol>
-<h2 id="拓展：代入特值法的原理"><a href="#拓展：代入特值法的原理" class="headerlink" title="拓展：代入特值法的原理"></a>拓展：代入特值法的原理</h2><p>在教学或学习过程中，我们遇到最多的问题就是：为什么可以代入特殊的值？代入某个值分母为$0$了，为什么可以成立？我们将在这一部分回答这个问题.</p>
-<p>我们还是沿用上例，在计算过程中，我们得到了</p>
-<div>
-$$\begin{aligned}
-\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
-\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
-\end{aligned}$$
-</div>
-因此，$6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$. 恒等于的意思是等式两边的表达式无论其变量（$x$）如何取值，等式两边永远成立. 所以，我们可以代入任意的值去计算$A$、$B$和$C$.
-
-<p>有同学提出，在这个计算中，分母不能为$0$，所以$x$不能取$0$、$1$和$\displaystyle -\frac{1}{2}$.</p>
-<p>事实上，我们在应用代入特值法的逻辑是：</p>
-<div>
-$$\begin{aligned}
-&\ \ \ \ \ 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for all } x
-\\&\Rightarrow 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for } x \neq 0, 1, -\frac{1}{2}
-\end{aligned}$$
-</div>
-
-<p>举个简单的例子，如果我们证明了$f(x) \geq 2$ for all $x$，就一定可以推出$f(x) \geq 2$ for all $x \geq 5$. </p>
-<p>用集合的语言来描述，如果$A \subseteq B$，且命题$p$对于$x \in B$均成立，则命题$p$对于$x \in A$均成立.</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>部分分式的计算在A Level考试中是一定会考察的知识点. 考生应掌握两种计算方法及特殊情况的处理方式. 我们建议考生优先使用代入特值法进行计算.</p>
-]]></content>
-      <categories>
-        <category>数学</category>
       </categories>
   </entry>
   <entry>
@@ -1476,6 +1370,112 @@ Therefore, the general solution to the differential equation is $\displaystyle -
 </div></div>
 
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>利用分离变量法解一阶微分方程在A Level考试中是一定会考察的知识点. 考生应优先掌握分离变量法的基本步骤，对于学有余力的考生，可以尝试进一步理解分离变量法的细节.</p>
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>部分分式（Partial Fraction）的常见疑问</title>
+    <url>/maths/partial_fraction/</url>
+    <content><![CDATA[<h2 id="主要适用对象"><a href="#主要适用对象" class="headerlink" title="主要适用对象"></a>主要适用对象</h2><p><i class="far fa-check-circle"></i>Edexcel P4考生</p>
+<p><i class="far fa-check-circle"></i>AQA P2考生</p>
+<p><i class="far fa-check-circle"></i>CIE P3考生</p>
+<h2 id="部分分式"><a href="#部分分式" class="headerlink" title="部分分式"></a>部分分式</h2><p>部分分式是将有理函数（Rational Function）分解成许多次数较低的有理函数和的形式，如：</p>
+<div>
+$$\frac{1}{x(x+1)}=\frac{1}{x}-\frac{1}{x+1}.$$
+</div>
+
+<p>现以例题来复习部分分式的两种方法.</p>
+<div class="trm-note tip"><div class="trm-note-title">Example.</div><div>
+Given that $\displaystyle \frac{6x^2+5x-2}{x(x-1)(2x+1)} \equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}$, find the values of the constants $A$, $B$ and $C$.
+</div></div>
+
+<h2 id="方法一：比较系数法（Equating-Coefficients）"><a href="#方法一：比较系数法（Equating-Coefficients）" class="headerlink" title="方法一：比较系数法（Equating Coefficients）"></a>方法一：比较系数法（Equating Coefficients）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
+<div>
+$$\begin{aligned}
+\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
+\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
+\end{aligned}$$
+</div>
+So
+<div>
+$$\begin{aligned}
+6x^2+5x-2&=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)
+\\&=A(2x^2-x-1)+2Bx^2+Bx+Cx^2-Cx
+\\&=(2A+2B+C)x^2+(-A+B-C)x-A
+\end{aligned}$$
+</div>
+Then we have
+<div>
+$$\begin{cases}
+2A+2B+C=6 \\
+-A+B-C=5 \\
+-A=-2
+\end{cases}$$
+</div>
+Solving the simultaneous equations gives $A=2$, $B=3$ and $C=-4$.</div>
+
+<p>比较系数法思路清晰易懂，但计算量偏大且容易出错，我们一般不建议考生使用该方法计算.</p>
+<h2 id="方法二：代入特值法（Substitution）"><a href="#方法二：代入特值法（Substitution）" class="headerlink" title="方法二：代入特值法（Substitution）"></a>方法二：代入特值法（Substitution）</h2><div class="trm-note warning"><div class="trm-note-title">Solution.</div><p>Let </p>
+<div>
+$$\begin{aligned}
+\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
+\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
+\end{aligned}$$
+</div>
+So
+<div>
+$$6x^2+5x-2=A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$$
+</div>
+Let $x=1$:
+<div>
+$$6+5-2=0+3B+0 \Rightarrow B=3$$
+</div>
+Let $\displaystyle x=-\frac{1}{2}$:
+<div>
+$$\frac{6}{4}-\frac{5}{2}-2=0+0+\frac{3}{4}C \Rightarrow C=-4$$
+</div>
+Let $x=0$:
+<div>
+$$0+0-2=-A+0+0 \Rightarrow A=2$$
+</div>
+So, $A=2$, $B=3$ and $C=-4$.</div>
+
+<p>代入特值法计算量相对较小，我们一般建议考生使用该方法计算.</p>
+<h2 id="特殊情况的处理方式"><a href="#特殊情况的处理方式" class="headerlink" title="特殊情况的处理方式"></a>特殊情况的处理方式</h2><p>部分分式分解有几种需要注意的特殊情况，需要特殊处理：</p>
+<ol>
+<li><p>假分式（Improper Fraction）需要转为带分式（Mixed Fraction）后对真分式（Proper Fraction）进行部分分式分解.</p>
+</li>
+<li><p>分母中含有重因式（Repeated Factor）需要将重因式拆成两项和，如：</p>
+<div>
+$$
+\frac{2x+8}{(x+5)^2(x-1)} \equiv \frac{A}{x+5}+\frac{B}{(x+5)^2}+\frac{C}{x-1}
+$$
+</div></li>
+</ol>
+<h2 id="拓展：代入特值法的原理"><a href="#拓展：代入特值法的原理" class="headerlink" title="拓展：代入特值法的原理"></a>拓展：代入特值法的原理</h2><p>在教学或学习过程中，我们遇到最多的问题就是：为什么可以代入特殊的值？代入某个值分母为$0$了，为什么可以成立？我们将在这一部分回答这个问题.</p>
+<p>我们还是沿用上例，在计算过程中，我们得到了</p>
+<div>
+$$\begin{aligned}
+\frac{6x^2+5x-2}{x(x-1)(2x+1)} &\equiv \frac{A}{x}+\frac{B}{x-1}+\frac{C}{2x+1}
+\\&\equiv \frac{A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)}{x(x-1)(2x+1)}
+\end{aligned}$$
+</div>
+因此，$6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)$. 恒等于的意思是等式两边的表达式无论其变量（$x$）如何取值，等式两边永远成立. 所以，我们可以代入任意的值去计算$A$、$B$和$C$.
+
+<p>有同学提出，在这个计算中，分母不能为$0$，所以$x$不能取$0$、$1$和$\displaystyle -\frac{1}{2}$.</p>
+<p>事实上，我们在应用代入特值法的逻辑是：</p>
+<div>
+$$\begin{aligned}
+&\ \ \ \ \ 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for all } x
+\\&\Rightarrow 6x^2+5x-2 \equiv A(x-1)(2x+1)+Bx(2x+1)+Cx(x-1)\ \text{for } x \neq 0, 1, -\frac{1}{2}
+\end{aligned}$$
+</div>
+
+<p>举个简单的例子，如果我们证明了$f(x) \geq 2$ for all $x$，就一定可以推出$f(x) \geq 2$ for all $x \geq 5$. </p>
+<p>用集合的语言来描述，如果$A \subseteq B$，且命题$p$对于$x \in B$均成立，则命题$p$对于$x \in A$均成立.</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>部分分式的计算在A Level考试中是一定会考察的知识点. 考生应掌握两种计算方法及特殊情况的处理方式. 我们建议考生优先使用代入特值法进行计算.</p>
 ]]></content>
       <categories>
         <category>数学</category>
