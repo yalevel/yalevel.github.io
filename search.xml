@@ -312,22 +312,10 @@ $$
       </categories>
   </entry>
   <entry>
-    <title>云游指南</title>
-    <url>/admin/guide/</url>
-    <content><![CDATA[<p>欢迎来到A Level Clouds. 本文旨在介绍A Level Clouds的功能，希望能帮助大家快速上手。</p>
-<h2 id="顶部导航栏"><a href="#顶部导航栏" class="headerlink" title="顶部导航栏"></a>顶部导航栏</h2><h3 id="左侧"><a href="#左侧" class="headerlink" title="左侧"></a>左侧</h3><p>点击导航栏的左侧会进入一个全新界面，欢迎探索。</p>
-<h3 id="右侧"><a href="#右侧" class="headerlink" title="右侧"></a>右侧</h3><p>导航栏的右侧包括关于我们、考前模拟（限时开放）、每日一题、往年真题、分类真题和全部文章。</p>
-<div></div>
-
-<p>点击<a href="/about/" target="_blank">关于我们</a>可以浏览关于我们的更多信息。点击<a>考前模拟（限时开放，目前已关闭）</a>，可以下载考前模拟卷并查看答案。点击<a href="/daily-practice/" target="_blank">每日一题</a>，可以查看每天更新的一道真题及相关知识点。点击<a href="/past-papers/" target="_blank">往年真题</a>，可以按照考试局与学科查看往年真题，如果你有耐心的话，也可以将鼠标放置于<a href="/past-papers/" target="_blank">往年真题</a>处，它会显示具体学科，点击后就可以直接查看往年真题。点击<a href="/topic-questions/" target="_blank">分类真题</a>，可以按照考试局与学科查看目前平台已有的分类真题资料。点击<a href="/posts/" target="_blank">全部文章</a>，可以按照年份查看所有文章，也可以将鼠标放置于<a href="/posts/" target="_blank">全部文章</a>处，它会显示具体学科，点击后就可以直接查看相关文章。</p>
-<div></div>
-
-<p>除此之外，导航栏的右侧还包括一个重要的搜索功能，可以帮助大家根据关键词搜索具体的文章，节省时间。</p>
-<div class="trm-note warning"><div class="trm-note-title">友情提示</div><p>A Level Clouds在未来<em>也许</em>会上线新的板块或功能，对于主要的板块或功能一般会更新在顶部导航栏的右侧，敬请期待。</p>
-</div>
-
-<h2 id="侧栏"><a href="#侧栏" class="headerlink" title="侧栏"></a>侧栏</h2><p>侧栏提供了联系的方式，包括微信与邮件。但我们希望微信的交流以知识为主，商务交流请通过邮件，我们会定期查看邮件并回复。</p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>希望每一位浏览A Level Clouds的用户能有一个舒适的体验，并且有所收获。</p>
+    <title>教学演示功能上新</title>
+    <url>/admin/demo/</url>
+    <content><![CDATA[<p>A Level Clouds全新上线<a href="/demo/" target="_blank">教学演示</a>功能。我们尝试用Python搭建与A-Level课程紧密关联的动态模型，将抽象理论转化为可交互的动态模型，欢迎各位体验与反馈。</p>
+<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>由于本团队编程能力有限，当前上线的教学演示功能在复杂场景实现、高阶交互设计等方面仍存在明显不足，许多更贴合实际教学需求的模型短期内无法完成开发，敬请各位老师与同学谅解。</p>
 ]]></content>
       <categories>
         <category>云游日常</category>
@@ -698,6 +686,28 @@ $$
 ]]></content>
       <categories>
         <category>数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>云游指南</title>
+    <url>/admin/guide/</url>
+    <content><![CDATA[<p>欢迎来到A Level Clouds. 本文旨在介绍A Level Clouds的功能，希望能帮助大家快速上手。</p>
+<h2 id="顶部导航栏"><a href="#顶部导航栏" class="headerlink" title="顶部导航栏"></a>顶部导航栏</h2><h3 id="左侧"><a href="#左侧" class="headerlink" title="左侧"></a>左侧</h3><p>点击导航栏的左侧会进入一个全新界面，欢迎探索。</p>
+<h3 id="右侧"><a href="#右侧" class="headerlink" title="右侧"></a>右侧</h3><p>导航栏的右侧包括关于我们、考前模拟（限时开放）、每日一题、往年真题、分类真题和全部文章。</p>
+<div></div>
+
+<p>点击<a href="/about/" target="_blank">关于我们</a>可以浏览关于我们的更多信息。点击<a>考前模拟（限时开放，目前已关闭）</a>，可以下载考前模拟卷并查看答案。点击<a href="/demo/" target="_blank">教学演示</a>，可以体验不同知识点的可交互的动态模型。点击<a href="/past-papers/" target="_blank">往年真题</a>，可以按照考试局与学科查看往年真题，如果你有耐心的话，也可以将鼠标放置于<a href="/past-papers/" target="_blank">往年真题</a>处，它会显示具体学科，点击后就可以直接查看往年真题。点击<a href="/topic-questions/" target="_blank">分类真题</a>，可以按照考试局与学科查看目前平台已有的分类真题资料。点击<a href="/posts/" target="_blank">全部文章</a>，可以按照年份查看所有文章，也可以将鼠标放置于<a href="/posts/" target="_blank">全部文章</a>处，它会显示具体学科，点击后就可以直接查看相关文章。</p>
+<div></div>
+
+<p>除此之外，导航栏的右侧还包括一个重要的搜索功能，可以帮助大家根据关键词搜索具体的文章，节省时间。</p>
+<div class="trm-note warning"><div class="trm-note-title">友情提示</div><p>A Level Clouds在未来<em>也许</em>会上线新的板块或功能，对于主要的板块或功能一般会更新在顶部导航栏的右侧，敬请期待。</p>
+</div>
+
+<h2 id="侧栏"><a href="#侧栏" class="headerlink" title="侧栏"></a>侧栏</h2><p>侧栏提供了联系的方式，包括微信与邮件。但我们希望微信的交流以知识为主，商务交流请通过邮件，我们会定期查看邮件并回复。</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>希望每一位浏览A Level Clouds的用户能有一个舒适的体验，并且有所收获。</p>
+]]></content>
+      <categories>
+        <category>云游日常</category>
       </categories>
   </entry>
   <entry>
